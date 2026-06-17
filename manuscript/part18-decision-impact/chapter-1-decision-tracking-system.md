@@ -51,7 +51,7 @@ affected_files:
 
 implementation:
   target_build: 2026-05-09
-  impl_owner: teammate_b    # Lead code
+  impl_owner: teammate_b    # Code lead
   qa_owner: teammate_c      # Senior QA
 
 related_decisions:
@@ -195,7 +195,7 @@ related_decisions:
 ---
 ```
 
-Jika dilihat tanpa membohongi diri, keluaran ini bernilai 60 poin. Yang benar dan yang salah bercampur.
+Jika dilihat dengan jujur, keluaran ini bernilai 60 poin. Yang benar dan yang salah bercampur.
 
 - **Benar**: pembedaan `owner`/`approved_by` akurat, `target_build`, pengimplementasi, dan QA akurat, relasi `supersedes` tertangkap.
 - **Salah ①**: memasukkan `all_skills` ke `scope`. Pengecualian skill pemulihan sudah dinyatakan eksplisit, tetapi malah ditangkap sebagai keseluruhan.

@@ -179,7 +179,7 @@ flowchart TB
     class B,F,H data;
 ```
 
-Dalam pipeline ini, hal yang **tidak dilakukan** AI justru lebih penting. AI tidak membuat keputusan. Tidak mengarang pemilik. Tidak menaikkan penundaan menjadi keputusan. Yang dilakukan AI hanya sampai memilah kandidat keputusan dari notula dan *menyingkapkan* kolom kosong. Penyataan keputusan dan pelengkapan kolom kosong dilakukan manusia. Inilah penerapan dari sudut pandang pemimpin atas prinsip "slot keputusan dilarang dihasilkan otomatis oleh AI" yang disebut di §17.6.3 — karena begitu keputusan menyebar ke dokumen·sesi·build lain, ia meninggalkan jejak yang tidak dapat dibalik, maka pada gerbang masuk, posisi tempat manusia menyatakan secara eksplisit tetap dipertahankan.
+Dalam pipeline ini, hal yang **tidak dilakukan** AI justru lebih penting. AI tidak membuat keputusan. Tidak mengarang pemilik. Tidak menaikkan penundaan menjadi keputusan. Yang dilakukan AI hanya sampai memilah kandidat keputusan dari notula dan *menyingkapkan* kolom kosong. Pernyataan keputusan dan pelengkapan kolom kosong dilakukan manusia. Inilah penerapan dari sudut pandang pemimpin atas prinsip "slot keputusan dilarang dihasilkan otomatis oleh AI" yang disebut di §17.6.3 — karena begitu keputusan menyebar ke dokumen·sesi·build lain, ia meninggalkan jejak yang tidak dapat dibalik, maka pada gerbang masuk, posisi tempat manusia menyatakan secara eksplisit tetap dipertahankan.
 
 ---
 
@@ -201,7 +201,7 @@ Pada bab kepemimpinan, godaan untuk memasukkan tabel seperti "setelah pipeline r
 
 Pertama, **janjikan sebagai indikator hanya hal yang bisa diukur.** Yang benar-benar bisa dihitung dari pipeline rapat adalah hal-hal ini — jumlah `owner`·`rationale` yang terlewat per keputusan (target 0), proporsi keputusan yang diekstraksi dari notula yang dipromosikan menjadi pending atom, jumlah rapat ulang "bukankah ini sudah diputuskan sebelumnya?". Ketiga hal ini bisa dinyatakan dengan angka, bukan dengan "perasaan", dalam rapat.
 
-Kedua, **tuliskan perkiraan penulis sebagai perkiraan.** Bahwa waktu yang dibutuhkan untuk ekstraksi keputusan tepat seusai rapat adalah "merapikan notula dengan tangan 20\~30 menit → draf AI + pelengkapan dalam waktu kurang dari 5 menit" merupakan perkiraan penulis (belum terverifikasi) berbasis pengalaman dan hipotesis yang belum terverifikasi. Jangan menghafal nilai absolutnya, cukup baca sebagai *perbedaan struktur* ("manusia memilah dari nol" vs. "AI mengekstraksi + hanya melengkapi kolom kosong"). Waktu penghematan yang tepat berbeda-beda tergantung skala rapat·jumlah keputusan.
+Kedua, **tuliskan perkiraan penulis sebagai perkiraan.** Bahwa waktu yang dibutuhkan untuk ekstraksi keputusan tepat seusai rapat adalah "merapikan notula dengan tangan 20\~30 menit → draf AI + pelengkapan dalam waktu kurang dari 5 menit" merupakan perkiraan penulis berbasis pengalaman dan hipotesis yang belum terverifikasi. Jangan menghafal nilai absolutnya, cukup baca sebagai *perbedaan struktur* ("manusia memilah dari nol" vs. "AI mengekstraksi + hanya melengkapi kolom kosong"). Waktu penghematan yang tepat berbeda-beda tergantung skala rapat·jumlah keputusan.
 
 Ketiga, **jangan menyimpulkan kausalitas secara mutlak.** Tidak dipastikan bahwa "rapat ulang berkurang" sepenuhnya berkat pipeline ini. Kematangan tim·tahap proyek juga turut bekerja. Saya hanya menyatakan arahnya (jika keputusan yang terlewat tersingkap tepat seusai rapat, maka itu bekerja ke arah berkurangnya rapat ulang), dan tidak mengarang kelipatannya.
 
@@ -231,7 +231,7 @@ Konflik maupun keputusan terlewat sama-sama merupakan masukan bagi retrospektif.
 
 ---
 
-> **Penerapan di Luar Game.** Insiden rapat berupa "jelas sudah diputuskan tetapi seminggu kemudian agenda yang sama muncul lagi" tidak memandang bidang industri. Jika Anda memasukkan isi notula rapat apa adanya tanpa merapikannya ke LLM untuk mengekstraksi keputusan saja, tetapi membuatnya agar saat pemilik atau dasar kosong tidak diisi dengan tebakan melainkan dilaporkan sebagai `[MISSING]`, maka fakta bahwa keputusan baru jadi setengah akan tersingkap tepat di tempatnya seusai rapat. Misalnya, dalam rapat mingguan penjualan, jika "akun ini ditangani oleh A" hanya beredar lisan dan tidak tercatat, hal itu akan menggantung di udara minggu berikutnya; tetapi jika ekstraksi AI memunculkan `owner: [MISSING]`, di tempat itu juga Anda bisa memastikan pemiliknya dengan satu baris pesan messenger dan menghapus satu rapat ulang. Pembagian di mana penyataan keputusan dan pelengkapan kolom kosong dilakukan manusia, sedangkan ekstraksi ditangani AI, itulah intinya.
+> **Penerapan di Luar Game.** Insiden rapat berupa "jelas sudah diputuskan tetapi seminggu kemudian agenda yang sama muncul lagi" tidak memandang bidang industri. Jika Anda memasukkan isi notula rapat apa adanya tanpa merapikannya ke LLM untuk mengekstraksi keputusan saja, tetapi membuatnya agar saat pemilik atau dasar kosong tidak diisi dengan tebakan melainkan dilaporkan sebagai `[MISSING]`, maka fakta bahwa keputusan baru jadi setengah akan tersingkap tepat di tempatnya seusai rapat. Misalnya, dalam rapat mingguan penjualan, jika "akun ini ditangani oleh A" hanya beredar lisan dan tidak tercatat, hal itu akan menggantung di udara minggu berikutnya; tetapi jika ekstraksi AI memunculkan `owner: [MISSING]`, di tempat itu juga Anda bisa memastikan pemiliknya dengan satu baris pesan messenger dan menghapus satu rapat ulang. Pembagian di mana pernyataan keputusan dan pelengkapan kolom kosong dilakukan manusia, sedangkan ekstraksi ditangani AI, itulah intinya.
 
 ## 19.2.8 Coba Sendiri — Satu Langkah yang Bisa Anda Lakukan Hari Ini
 
@@ -249,7 +249,7 @@ Jika Anda dalam tim, mulailah dengan satu langkah berikut. Masukkan notula rapat
 | Puas dengan tim nol konflik | Konflik mengendap di bawah permukaan (lebih berbahaya) | Konflik adalah sinyal kesehatan, slot retrospektif kuartal |
 | Membuat keputusan hanya secara lisan dan tidak mencatatnya | Rapat ulang agenda sama seminggu kemudian | Ekstraksi AI + pembakuan pending (§19.2.3) |
 | AI mengisi pemilik dengan tebakan | Pemilik yang salah mengeras menjadi atom | Pemaksaan `[MISSING]`, dilarang menebak (§19.2.2) |
-| AI menghasilkan keputusan secara otomatis | Otoritas keputusan menyimpang dari dasar | Penyataan keputusan oleh manusia, AI hanya memperkuat (§17.6.3) |
+| AI menghasilkan keputusan secara otomatis | Otoritas keputusan menyimpang dari dasar | Pernyataan keputusan oleh manusia, AI hanya memperkuat (§17.6.3) |
 | Menaikkan penundaan menjadi keputusan | Agenda yang belum pasti menyebar secara tak dapat dibalik | Memisahkan ke blok deferred (§19.2.3) |
 
 Yang ketiga dan keempat paling sering meledak bersamaan. Tim yang tidak mencatat keputusan menyerahkan seluruhnya kepada AI dengan "rapikan sendiri ya", dan AI dengan ramah mengarang pemiliknya. Jika pemilik karangan itu mengeras menjadi atom, seminggu kemudian timbul konflik yang lebih mahal berupa "saya tidak pernah sepakat untuk menanganinya". Pemaksaan `[MISSING]` memblokir kedua kegagalan itu dengan satu baris.
@@ -260,7 +260,7 @@ Yang ketiga dan keempat paling sering meledak bersamaan. Tim yang tidak mencatat
 
 - Konflik bukan bertujuan nol, melainkan objek klasifikasi 5 jenis, dan empat jenis diselesaikan dengan kutipan sistem.
 - Keputusan rapat diekstraksi oleh AI, tetapi jika pemilik·dasar kosong, diblokir dengan `[MISSING]`.
-- Penyataan keputusan dan pelengkapan kolom kosong oleh manusia, sedangkan ekstraksi·konversi·pendaftaran ditangani AI.
+- Pernyataan keputusan dan pelengkapan kolom kosong oleh manusia, sedangkan ekstraksi·konversi·pendaftaran ditangani AI.
 
 ### Pratinjau Bab Berikutnya
 

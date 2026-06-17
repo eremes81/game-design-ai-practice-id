@@ -22,7 +22,7 @@ Bab ini membahas cara mengubah perintah satu baris itu menjadi **satu halaman su
 
 ## 22.1.1 Prompt Adalah Surat Perintah Kerja — Empat Prinsip Muat dalam Satu Halaman
 
-Surat perintah kerja yang baik tidak harus pendek. Sama seperti saat Anda menyerahkan pekerjaan kepada anggota baru dengan berkata "Kerjakan yang bagus, ya" lalu setiap kali hasilnya berbeda, begitu pula jika Anda berkata "Buatkan dialog" kepada LLM, setiap kali yang datang adalah rata-rata RPG umum. Dengan model yang sama pun, hasilnya berbeda jika surat perintah kerjanya berbeda — bahwa kualitas keluaran bisa berbeda berlipat-lipat adalah anggapan umum di industri, dan buku ini tidak menjanjikan kelipatan itu dengan angka. Yang jelas hanyalah arahnya: prompt yang memuat konteks dan batasan menghasilkan keluaran dengan beban pemeriksaan yang lebih kecil daripada satu baris telanjang.
+Surat perintah kerja yang baik tidak harus pendek. Sama seperti saat Anda menyerahkan pekerjaan kepada anggota baru dengan berkata "Kerjakan yang bagus, ya" lalu setiap kali hasilnya berbeda, begitu pula jika Anda berkata "Buatkan dialog" kepada LLM, setiap kali yang datang adalah rata-rata RPG umum. Dengan model yang sama pun, hasilnya berbeda jika surat perintah kerjanya berbeda — bahwa kualitas keluaran bisa berbeda berlipat-lipat adalah anggapan umum di industri, dan buku ini tidak menjanjikan kelipatan itu dengan angka. Yang jelas hanyalah arahnya: prompt yang memuat konteks dan batasan menghasilkan keluaran dengan beban pemeriksaan yang lebih kecil daripada satu baris polos tanpa konteks.
 
 Empat hal yang harus dipenuhi sekaligus oleh prompt seorang Game Designer adalah sebagai berikut.
 
@@ -115,7 +115,7 @@ Tulis ulang hanya baris ini dengan angka atau kosakata pengamatan. Baris ke-1·3
 Aturan format·halusinasi·verifikasi tetap diberlakukan.
 ```
 
-AI menjawab ulang baris ke-2 menjadi **"Tiga tahun lalu angkanya 9.0. Inilah jawabannya. (datar)"**. Tanpa kata sifat, ia menyatakan krisis lewat perubahan angka, dan lolos kembali pada 5 item voice_profile. Tutup dengan sekali bolak-balik. Antara menulis sendiri dengan tangan tiga baris dialog yang tonnya sudah terjaga sejak awal, versus satu halaman prompt berisi slot + pemeriksaan ★ + sekali bolak-balik — yang terakhir punya beban pemeriksaan lebih kecil; itulah kesimpulan sesi ini (berdasar pengalaman penulis; waktu absolutnya berubah-ubah tergantung tingkat kesulitan ton NPC, jadi sebaiknya dibaca sebagai arah).
+AI menjawab ulang baris ke-2 menjadi **"Tiga tahun lalu 9.0. Inilah jawabannya. (datar)"**. Tanpa kata sifat, ia menyatakan krisis lewat perubahan angka, dan lolos kembali pada 5 item voice_profile. Tutup dengan sekali bolak-balik. Antara menulis sendiri dengan tangan tiga baris dialog yang tonnya sudah terjaga sejak awal, versus satu halaman prompt berisi slot + pemeriksaan ★ + sekali bolak-balik — yang terakhir punya beban pemeriksaan lebih kecil; itulah kesimpulan sesi ini (berdasar pengalaman penulis; waktu absolutnya berubah-ubah tergantung tingkat kesulitan ton NPC, jadi sebaiknya dibaca sebagai arah).
 
 ---
 

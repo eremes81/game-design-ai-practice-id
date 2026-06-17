@@ -74,10 +74,8 @@ DATA-QA    loc_overflow  ui_btn_enhance EN string 24 chars > slot 18 (overflow 6
 DATA-QA    loc_overflow  ui_btn_enhance TH string overflow 11
 LINK       doc_link      gdd_dungeon_021.md -> [reward_table] target moved (404)
 INTEGRITY  k_skill       skill 'k_017_charge' cooldown 0.0 (suspicious, min expected 0.5)
-... (총 47줄, 이하 동형 패턴 — 생략 없이 첨부됨)
+... (total 47 baris, sisanya berpola serupa — dilampirkan tanpa pemotongan)
 ````
-
-Pada baris keterangan log mentah di atas, kalimat Korea `... (총 47줄, 이하 동형 패턴 — 생략 없이 첨부됨)` berarti "(total 47 baris, sisanya berpola serupa — dilampirkan tanpa pemotongan)".
 
 ### ② Keluaran Mentah Claude (tanpa diringkas·dirapikan)
 
@@ -112,7 +110,7 @@ Saya telah mengklasifikasikan log mentah. severity adalah "usulan" saya, dan pen
 
 5. [voice_lint 511·512·513] tone drift 3 butir (formality 0.29~0.33, NPC elder mengharapkan >0.7)
    ※ Tiga baris digabung jadi 1 butir — penyimpangan tone dialog beruntun dari NPC 'elder' yang sama.
-   Alasan: pola di mana NPC yang sama berturut-turut jatuh ke gaya banmal → kemungkinan
+   Alasan: pola di mana NPC yang sama berturut-turut jatuh ke gaya *banmal* (bentuk bahasa informal) → kemungkinan
    hasil kerja satu sesi dari satu penulis naskah. Disarankan ditinjau secara dikelompokkan, bukan per butir.
    Perkiraan: bisa jadi perubahan karakter yang disengaja (adegan amarah, dsb.), jadi menunggu putusan penulis naskah. P1.
    Rekomendasi PIC: naratif

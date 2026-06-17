@@ -198,7 +198,7 @@ Alasan esensial membagi koordinat adalah **karena otomatisasi hanya bekerja di a
 
 **Ketiga, pembangkitan urutan combo oleh LLM baru bekerja jika aturan cancel·input queue terpisah ke dokumen eksternal.** Permintaan terbatas seperti "usulkan 10 urutan 5-combo dalam 7 pasangan yang bisa di-cancel dari karakter ini dan input queue 200ms" hanya mungkin ketika aturan cancel tidak dipaku ke dalam kode melainkan tertuang sebagai dokumen.
 
-Ketiga hal itu mengucapkan satu kalimat yang sama. **Jika core deterministik bercampur dengan spesifikasi, otomatisasi tersumbat; jika terpisah, otomatisasi terbuka.** Penguraian Layer berpurposekan permukaan menyeragamkan bahasa kolaborasi, sedangkan purpose esensialnya adalah memasang prasyarat bagi simulasi otomatis·analisis tangkapan·eksplorasi urutan LLM.
+Ketiga hal itu mengucapkan satu kalimat yang sama. **Jika core deterministik bercampur dengan spesifikasi, otomatisasi tersumbat; jika terpisah, otomatisasi terbuka.** Penguraian Layer secara permukaan bertujuan menyeragamkan bahasa kolaborasi, sedangkan tujuan esensialnya adalah memasang prasyarat bagi simulasi otomatis·analisis tangkapan·eksplorasi urutan LLM.
 
 ### Dari Penerapan Konservatif ke Penerapan Progresif
 

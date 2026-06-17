@@ -121,7 +121,7 @@ Kalimat terakhir — yang membuatnya mencatat alasan pengeluaran — itu penting
 
 ---
 
-## 20.2.4 Worked Transcript — Saat Gerbang Promosi Ditolak
+## 20.2.4 Worked Transcript (rekaman sesi nyata) — Saat Gerbang Promosi Ditolak
 
 Gerbang tidak selalu bekerja dengan rapi. Pada praktiknya terjadi bolak-balik: AI tidak tepat dalam sekali coba, manusia menolak, lalu meminta ulang. Saya pindahkan apa adanya bolak-balik nyata ketika hendak menaikkan `notes.md` anggota tim B selama satu minggu ke shared.
 

@@ -248,7 +248,7 @@ Pada keluaran itu ada dua titik cacat. Pertama, "★ Rekomendasi: pupil keemasan
 Perbaiki dua hal ini saja.
 1. Pada ## Penampilan, hapus baris rekomendasi "pupil keemasan". Warna pupil adalah
    area keputusan director karakter. Untuk butir penampilan, tulis hanya sampai
-   siluet, perawakan, warna faksi; warna dan material detail biarkan kosong dengan "(keputusan director)".
+   siluet, perawakan, warna faksi; detail warna dan material biarkan kosong dengan "(keputusan director)".
 2. Tambahkan butir "kata terlarang" yang hilang pada voice_profile. Sebutkan
    secara eksplisit kata yang tidak akan diucapkan sebagai mentor cendekiawan
    (umpatan, lelucon vulgar, kata modern).

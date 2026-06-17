@@ -106,7 +106,7 @@ flowchart TD
     style R fill:#e3f2fd,stroke:#1565c0
 ```
 
-Intinya adalah **semakin koordinat turun ke bawah, semakin besar porsi yang ditangani penuh oleh AI**. "Mau berapa class" pada L1 adalah identitas game sehingga harus dipegang manusia. Sebaliknya "apakah 312 baris foreign key semuanya cocok" pada L3 bersifat terstruktur dan berulang, jadi AI harus mengambilnya secara utuh. L2 berada di tengah — keputusannya tetap diambil manusia, tetapi AI menopang ekstraksi cakupan dampak berupa "kalau aturan ini diubah, sejauh mana yang ikut goyah".
+Intinya adalah **semakin koordinat turun ke bawah, semakin besar porsi yang ditangani penuh oleh AI**. "Mau berapa class" pada L1 adalah identitas game sehingga harus dipegang manusia. Sebaliknya "apakah 312 baris foreign key (kunci asing) semuanya cocok" pada L3 bersifat terstruktur dan berulang, jadi AI harus mengambilnya secara utuh. L2 berada di tengah — keputusannya tetap diambil manusia, tetapi AI menopang ekstraksi cakupan dampak berupa "kalau aturan ini diubah, sejauh mana yang ikut goyah".
 
 Gambar ini menjelaskan mengapa semua latihan setelah 3.1.4 dimulai di sekitar L3. Karena di situlah tempat dengan efek terbesar dan risiko terkecil. Sekalipun alat skema salah berfungsi, tidak terjadi kecelakaan; relation map hanya menggambar gambar saja; dan pemeriksaan konsistensi bisa ditolak manusia.
 
@@ -203,7 +203,7 @@ Pemeriksaan dari transcript di atas bisa saja diperintahkan dengan tangan setiap
 
 Skill `schema-doc` mem-parsing **sheet $skema** dari xlsm dan secara otomatis menghasilkan dokumen skema markdown. Skema yang sama dengan yang muncul pada pertanyaan 3.1.4 (C) "perlu dicek di skema apakah 0 merupakan nilai valid" — membuat manusia langsung membaca skema terkini tanpa harus mengaduk-aduk file lain. Karena dokumen ikut berubah saat sheet berubah, penyakit kronis berupa ketidaksesuaian antara dokumen dan data sebenarnya pun berkurang.
 
-Tempat kedua alat itu jika dinyatakan ulang dengan koordinat seperti ini. `schema-doc` menjaga **definisi kolom** di L3, dan `gen_relation_map.py` menjaga **relasi** antara L2–L3. Prompt bantuan AI (verifikasi seperti pada 3.1.4) berjalan di atasnya. Ketiganya bukan berjalan sendiri-sendiri, melainkan menangani ketinggian berbeda dari sumbu koordinat yang sama.
+Kalau posisi kedua alat itu dinyatakan ulang dengan koordinat, jadinya seperti ini. `schema-doc` menjaga **definisi kolom** di L3, dan `gen_relation_map.py` menjaga **relasi** antara L2–L3. Prompt bantuan AI (verifikasi seperti pada 3.1.4) berjalan di atasnya. Ketiganya bukan berjalan sendiri-sendiri, melainkan menangani ketinggian berbeda dari sumbu koordinat yang sama.
 
 Cara penggunaan nyata alat-alat ini diikuti dengan tangan pada 3.2, 3.3, dan 3.4. 3.1 adalah peta yang menentukan di mana menyisipkannya, dan tiga bab berikutnya adalah pekerjaan menyisipkannya.
 

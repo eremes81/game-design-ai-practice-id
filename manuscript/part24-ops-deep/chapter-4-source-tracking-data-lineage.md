@@ -9,7 +9,7 @@ author: 이민수
 
 # 24.4 Pelacakan Sumber dan Data Lineage
 
-> Momen kita mulai meragukan sebuah data selalu datang terlambat. Baru setelah angka yang salah masuk ke build live, kita mulai bertanya, "Ini sebenarnya datang dari mana?"
+> Momen kita mulai meragukan sebuah data selalu datang terlambat. Baru setelah angka yang salah masuk ke build live, kita mulai bertanya, "Ini datang dari mana?"
 
 ---
 
@@ -324,7 +324,7 @@ Bagian 24 adalah empat cabang yang menopang kepercayaan operasional dengan otoma
 
 Satu kalimat yang menembus keempat bab ini adalah ini. **Kepercayaan operasional datang dari catatan sistem, bukan dari ingatan manusia.** Sebagaimana verification secara otomatis bertanya "apakah produk ini sesuai aturan", lineage secara otomatis menjawab "data ini datang dari mana". Inti dari keduanya adalah sama-sama tidak runtuh meskipun manusia lupa.
 
-Pengetahuan operasional ini membentuk pola yang sama dengan filosofi Layer terintegrasi di seluruh buku ini. Sebuah rantai satu baris di mana visi (aset·kepercayaan) turun menjadi sistem (aturan sumber), sistem menjadi data (`_source_map.tsv`), dan data menjadi build·QA (audit·pembaruan otomatis). Rantai itu sendiri adalah lineage.
+Pengetahuan operasional ini membentuk pola yang sama dengan filosofi Layer terintegrasi di seluruh buku ini. Sebuah rantai satu baris di mana visi (asetisasi·kepercayaan) turun menjadi sistem (aturan sumber), sistem menjadi data (`_source_map.tsv`), dan data menjadi build·QA (audit·pembaruan otomatis). Rantai itu sendiri adalah lineage.
 
 ---
 

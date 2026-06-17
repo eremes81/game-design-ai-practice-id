@@ -78,7 +78,7 @@ Retrospektif saya berjalan dalam tiga lapis. Harian mengumpulkan benih-benih pol
 
 ```mermaid
 flowchart TD
-    W["Pelaksanaan pekerjaan<br/>(sheet data·GDD·otomasi)"] -->|akumulasi materi| D["Retrospektif harian<br/>retro/daily/*.md<br/>5~10 menit · 1~3 benih pola"]
+    W["Pelaksanaan pekerjaan<br/>(sheet data·dokumen desain (GDD)·otomasi)"] -->|akumulasi materi| D["Retrospektif harian<br/>retro/daily/*.md<br/>5~10 menit · 1~3 benih pola"]
     D -->|pampatkan 5 harian| WK["Retrospektif mingguan<br/>retro/weekly/*.md<br/>30~60 menit · penilaian kandidat alat"]
     WK -->|sintesis 4 mingguan| M["Retrospektif bulanan<br/>retro/YYYY-MM.md<br/>1.5~2 jam · keekonomian·pembuangan"]
     M -->|promosi pola terverifikasi| A["Jadi aset permanen<br/>feedback.md / workflows.md<br/>+ registrasi atom"]

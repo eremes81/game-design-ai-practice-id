@@ -23,7 +23,7 @@ Bab ini melihat apa yang dikeluarkan satu baris itu, apa adanya tanpa dipoles. I
 
 Pertanyaan "kalau atom ini diubah, apa yang terdampak" sebenarnya adalah tiga pertanyaan. Kalau ketiganya dicampur jawabannya jadi kabur; kalau ketiganya dipisah, masing-masing jatuh menjadi satu baris grep.
 
-Pertama, **inbound edge** — siapa yang menunjuk ke saya. Kalau atom A mereferensikan atom B, itu adalah edge berarah A→B. Yang berbahaya saat mengubah B adalah A-A yang menunjuk ke B, yaitu anak panah yang masuk ke B. Karena itu yang dilihat bukan outbound (saya menunjuk siapa) melainkan inbound. Gelombang kejut dari perubahan menjalar mundur menyusuri anak panah.
+Pertama, **inbound edge** — siapa yang menunjuk ke saya. Kalau atom A mereferensikan atom B, itu adalah edge berarah A→B. Yang berbahaya saat mengubah B adalah atom-atom A yang menunjuk ke B, yaitu anak panah yang masuk ke B. Karena itu yang dilihat bukan outbound (saya menunjuk siapa) melainkan inbound. Gelombang kejut dari perubahan menjalar mundur menyusuri anak panah.
 
 Kedua, **affects ontologi** — secara makna ia memengaruhi apa. Ini adalah field `affects:` yang dideklarasikan di frontmatter atom. Walaupun namanya tidak muncul secara langsung, ini adalah keterkaitan semantik yang dideklarasikan perancang bahwa "yang ini memengaruhi yang itu". Ia adalah masalah alias/sinonim yang tak terjangkau grep, yang sudah dimasukkan manusia terlebih dahulu.
 

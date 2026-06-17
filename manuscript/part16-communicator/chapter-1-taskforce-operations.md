@@ -8,7 +8,7 @@ author: 이민수
 
 # 16.1 Mengoperasikan TF Tempur — Hanya Keputusan yang Menjadi Versi Resmi di Ruang Kerja Terisolasi
 
-Kamis pukul 4 sore. Rapat TF tempur baru saja selesai dan tujuh orang kembali ke meja masing-masing. Di papan tulis masih tersisa coretan tentang apakah global cooldown sebaiknya diturunkan dari 0.8 detik ke 0.5 detik atau tidak. System Designer balancing senior berkata, "Di simulasi saya, 0.5 yang benar," sementara code lead berkata, "Kalau 0.5, server tick tidak akan sanggup mengejarnya." UI Designer berkata, "Saya tidak tahu mana yang benar, tapi lebar gauge cooldown jadi terlalu sempit."
+Kamis pukul 4 sore. Rapat TF tempur baru saja selesai dan tujuh orang kembali ke meja masing-masing. Di papan tulis masih tersisa coretan tentang apakah global cooldown sebaiknya diturunkan dari 0.8 detik ke 0.5 detik atau tidak. Desainer balancing senior berkata, "Di simulasi saya, 0.5 yang benar," sementara code lead berkata, "Kalau 0.5, server tick tidak akan sanggup mengejarnya." UI Designer berkata, "Saya tidak tahu mana yang benar, tapi lebar gauge cooldown jadi terlalu sempit."
 
 Ketiganya benar. Dan jika ketiganya mulai menuliskan kesimpulan masing-masing di dokumen bidangnya sendiri, minggu depan ketiga dokumen itu akan saling bertabrakan. Sheet balancing tertulis 0.5, spesifikasi kode tertulis 0.8, panduan UI tertulis 0.6. Siapa pun yang melihatnya tidak akan tahu mana yang versi resmi.
 
@@ -61,7 +61,7 @@ Dari kiri atas agenda masuk, di dalam ruang isolasi berwarna kuning semua kebisi
 
 ---
 
-## 16.1.3 Worked Transcript — Membentuk Ringkasan Keputusan agar Bisa Diserap
+## 16.1.3 Worked Transcript (rekaman sesi nyata) — Membentuk Ringkasan Keputusan agar Bisa Diserap
 
 Saat TF berakhir, pekerjaan yang paling banyak menyita tenaga adalah menyaring "hanya keputusan yang akan naik menjadi versi resmi" dari notula rapat dan sheet eksperimen senilai satu kuartal. Diskusinya panjang, usulan yang ditolak dan usulan yang difinalisasi bercampur, dan angka yang sama tertulis sedikit berbeda di tiap rapat. Jika ini dirapikan manusia secara manual, pekerjaan penutupannya saja menghabiskan satu hari penuh.
 
@@ -195,7 +195,7 @@ Jika dituliskan sebagai prinsip: **Bahasa kerja (md) hanya beredar di dalam fung
 
 Agar mekanisme isolasi dan penyerapan dapat berjalan, di bawahnya harus terhampar lima prinsip pengoperasian. Jika salah satu saja hilang, TF runtuh menjadi ajang diskusi.
 
-- **Kejelasan kewenangan keputusan** — Di meja rapat, siapa pengambil keputusan akhir harus sudah ditetapkan per jenis agenda. Aturan tempur oleh lead perancang, angka oleh System Designer balancing senior, cara implementasi oleh code lead, benturan antarbidang dieskalasi ke Game Director. Jika kewenangan keputusan kabur, rapat molor menjadi diskusi.
+- **Kejelasan kewenangan keputusan** — Di meja rapat, siapa pengambil keputusan akhir harus sudah ditetapkan per jenis agenda. Aturan tempur oleh lead perancang, angka oleh desainer balancing senior, cara implementasi oleh code lead, benturan antarbidang dieskalasi ke Game Director. Jika kewenangan keputusan kabur, rapat molor menjadi diskusi.
 - **Kewajiban notula rapat** — Keputusan tanpa notula bukanlah keputusan. Harus tertinggal sebagai catatan di dalam ruang isolasi. Bahan mentah yang akan diserap saat penutupan adalah notula rapat ini.
 - **Data lebih dulu** — Masukan adalah data, bukan opini. Jika "menurut saya" makin banyak, TF jadi tak berdaya. Membuat `[dasar tidak dicantumkan]` ditandai otomatis pada transcript sebelumnya juga merupakan kelanjutan prinsip ini.
 - **Tenggat** — Tiap agenda diberi tenggat keputusan, eksperimen, implementasi, dan verifikasi. Agenda tanpa tenggat terkatung-katung 1–2 minggu.

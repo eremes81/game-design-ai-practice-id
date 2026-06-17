@@ -14,7 +14,7 @@ version: v3
 > Pembaca utama: penanggung jawab data dan direktur yang membuat keputusan kuartalan berdasarkan KPI (tim berukuran menengah, 10\~50 orang)
 > Versi ringkas untuk pembaca solo/hobi: §13.3.9 "Versi Ringkas Solo"
 
-Saya pernah melihat satu garis merah di dasbor pada suatu Senin pagi. Retensi 30 hari (Retention) jelas merosot dibanding pekan sebelumnya. Orang-orang yang berkumpul di ruang rapat masing-masing mengajukan satu penyebab. Ada yang menyebut wilayah berburu baru yang baru saja di-patch pekan lalu, ada yang menyebut musim baru dari produk pesaing, dan ada juga yang sekadar berkata "faktor musiman". Semuanya terdengar masuk akal. Masalahnya, hingga sore itu berlalu pun, kami bahkan belum sepakat tentang apa yang harus kami verifikasi. Ada lima hipotesis, tetapi tidak satu pun segmen yang ditetapkan untuk diverifikasi.
+Saya pernah melihat satu garis merah di dasbor pada suatu Senin pagi. Retensi 30 hari (Retention) jelas merosot dibanding pekan sebelumnya. Orang-orang yang berkumpul di ruang rapat masing-masing mengajukan satu penyebab. Ada yang menyebut wilayah berburu baru yang baru saja di-patch pekan lalu, ada yang menyebut musim baru dari game pesaing, dan ada juga yang sekadar berkata "faktor musiman". Semuanya terdengar masuk akal. Masalahnya, hingga sore itu berlalu pun, kami bahkan belum sepakat tentang apa yang harus kami verifikasi. Ada lima hipotesis, tetapi tidak satu pun segmen yang ditetapkan untuk diverifikasi.
 
 Bab ini membahas cara mengakhiri pagi seperti itu. Intinya satu kalimat. **Ketika Anda melihat metrik anomali, jangan minta AI memberi diagnosis pasti, melainkan minta 3\~5 hipotesis yang dapat diverifikasi.** AI tidak memvonis "alasan retensi turun adalah X". Ia menyodorkan rancangan verifikasi berbentuk "jika X, maka pada segmen ini akan terlihat seperti ini", dan keputusan tetap dibuat oleh manusia. Teori umum tentang data-driven sudah cukup banyak di buku lain, jadi bab ini hanya berfokus pada *tempat menjalankan teori umum itu dengan alur kerja AI*.
 
@@ -28,7 +28,7 @@ Jika batas ini runtuh, data-driven itu sendiri runtuh. Jika definisi KPI diserah
 
 Pembagian peran ini berbagi tulang punggung yang sama dengan bab-bab awal Bagian 13. Python mengekstraksi log mentah (raw) secara deterministik (13.1), manusia memfiksasi definisi dan hierarki KPI (13.2), dan di bab ini, di atas keduanya, AI hanya menangani *bantuan interpretasi* saat anomali terdeteksi. Ekstraksi itu deterministik, definisi itu manusia, bantuan interpretasi itu AI. Menjaga ketiganya tidak tercampur adalah pengaman seluruh bagian ini.
 
-Pada proyek penulis (MMORPG yang mengutamakan mobile, selanjutnya "Proyek A") tergelar log nyata yang menopang bantuan ini. Di bawah folder memori tim, ada `_economy_log/` (log ekonomi token dan waktu), `_scores_latest.json` (cache skor metrik), dan `_roi_report.md` (laporan ROI/Return on Investment, efek terhadap investasi). Worked transcript (rekaman sesi nyata) di bab ini menerima sinyal anomali yang diekstraksi dari log-log ini sebagai input.
+Pada proyek penulis (MMORPG yang mengutamakan mobile, selanjutnya "Proyek A") tergelar log nyata yang menopang bantuan ini. Di bawah folder memori tim, ada `_economy_log/` (log ekonomi token dan waktu), `_scores_latest.json` (cache skor metrik), dan `_roi_report.md` (laporan ROI/Return on Investment, imbal hasil investasi). Worked transcript (rekaman sesi nyata) di bab ini menerima sinyal anomali yang diekstraksi dari log-log ini sebagai input.
 
 ---
 
@@ -130,7 +130,7 @@ Pola yang diperkirakan: Jika segmen tidak-main juga ikut turun, maka wilayah ber
 Kondisi penyangkalan: Jika segmen tidak-main mempertahankan baseline (di kisaran -5%), tolak hipotesis ini dan condong ke Hipotesis 1.
 
 [Hipotesis 3]
-Hipotesis: Karena faktor eksternal (musim baru produk pesaing), non-bayar secara umum churn, dan wilayah berburu tidak terkait.
+Hipotesis: Karena faktor eksternal (musim baru game pesaing), non-bayar secara umum churn, dan wilayah berburu tidak terkait.
 Segmen verifikasi: Tabel silang 2×2 antara Berbayar/Non-bayar × main-tidaknya Wilayah_berburu_baru.
 Pola yang diperkirakan: Jika faktor eksternal, non-bayar secara umum turun merata tanpa peduli main-tidaknya wilayah berburu.
 Kondisi penyangkalan: Jika penurunan terkonsentrasi pada Wilayah_berburu_baru_main, dugaan faktor eksternal melemah.
@@ -156,7 +156,7 @@ Karena itu, saya persempit ke Hipotesis 1 dan menjalankan Python lagi. Hasil dar
 
 Yang tersisa adalah Hipotesis 4. Manusia memeriksa patch notes — skema telemetry tidak berubah. Kemungkinan artefak pengukuran ditolak. Kini bahan untuk keputusan sudah lengkap.
 
-> **[Keputusan manusia tahap 5 — Decision Card]**
+> **[Keputusan manusia tahap 5 — Decision Card (kartu keputusan)]**
 >
 > - **Terima**: Tingkat kesulitan awal wilayah berburu baru (frekuensi kematian pertama) adalah pemicu utama churn pengguna baru non-bayar. Pada build berikutnya, lakukan A/B untuk menurunkan kepadatan musuh·HP pada rentang level 1\~5.
 > - **Tolak**: Dugaan faktor eksternal (Hipotesis 3), dugaan artefak pengukuran (Hipotesis 4).

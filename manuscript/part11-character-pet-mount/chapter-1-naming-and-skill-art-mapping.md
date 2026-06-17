@@ -9,7 +9,7 @@ author: 이민수
 
 # 11.1 Konvensi Penamaan dan Pemetaan Skill-Aset Seni
 
-Dua hari sebelum tenggat sprint, artist tempur melempar satu klip video pendek lewat messenger tim. Combo tiga pukulan dari kelas Musa (prajurit pedang) yang baru. Pukulan pertama dan kedua diiringi suara pedang membelah angin, tetapi pukulan ketiga sama sekali tidak bersuara. Hening. Si artist bilang sudah memasang semua suaranya, dan penanggung jawab suara bilang sudah menyerahkan semua filenya. Keduanya tidak berbohong. File suaranya jelas-jelas ada di repository. Dengan nama `combo3_swing_final_real.wav`. Nama yang dicari oleh kode game adalah `sfx_K012_combo3_swing.wav`. Tidak satu huruf pun cocok.
+Dua hari sebelum tenggat sprint, artist combat melempar satu klip video pendek lewat messenger tim. Combo tiga pukulan dari kelas Musa (prajurit pedang) yang baru. Pukulan pertama dan kedua diiringi suara pedang membelah angin, tetapi pukulan ketiga sama sekali tidak bersuara. Hening. Si artist bilang sudah memasang semua suaranya, dan penanggung jawab suara bilang sudah menyerahkan semua filenya. Keduanya tidak berbohong. File suaranya jelas-jelas ada di repository. Dengan nama `combo3_swing_final_real.wav`. Nama yang dicari oleh kode game adalah `sfx_K012_combo3_swing.wav`. Tidak satu huruf pun cocok.
 
 Menelusuri insiden hening ini menyita sepanjang sore hari itu. Ini bukan soal satu klip, satu suara. Selama nama masih bisa ditentukan orang secara bebas, insiden seperti ini akan lahir kembali puluhan kali setiap kuartal. Bab ini adalah kisah tentang mengubah kebebasan itu menjadi aturan.
 
@@ -344,7 +344,7 @@ Agar tahap progresif mapan, tiga hal harus tersedia. Pertama adalah mesin lint k
 
 Ketiga elemen ini berjalan di atas infrastruktur yang sama (yaml, lint, statistik pool aset). Ketiganya hanya aktif kalau konvensi penamaan dan yaml pemetaan tersusun rapi sebagai sumber kebenaran tunggal, dan kalau penyusunan itu runtuh, tidak ada input yang bisa diberikan ke LLM sama sekali.
 
-Patut dicatat bahwa ketiga elemen ini secara teori sebenarnya sudah mungkin pada dekade 2010-an. Yang tersumbat ada di tiga tempat. Komputer tidak memahami apa itu sebuah gerakan dalam bahasa alami sehingga tidak bisa membuat kandidat lima slot, memisahkan lalu mengikat voice, anim, dan skill adalah wilayah intuisi manusia, dan mencari "VFX dengan nuansa serupa" lewat deskripsi teks itu sulit. Sejak 2023, dengan kemajuan LLM, ketiga tempat itu masuk ke wilayah yang dapat dibantu. Sebagian besar visi penjadian-aset karakter yang progresif yang dulu hanya ada di atas kertas kini telah berpindah ke tahap penerapan praktis.
+Patut dicatat bahwa ketiga elemen ini secara teori sebenarnya sudah mungkin pada dekade 2010-an. Yang tersumbat ada di tiga tempat. Komputer tidak memahami apa itu sebuah gerakan dalam bahasa alami sehingga tidak bisa membuat kandidat lima slot, memisahkan lalu mengikat voice, anim, dan skill adalah wilayah intuisi manusia, dan mencari "VFX dengan nuansa serupa" lewat deskripsi teks itu sulit. Sejak 2023, dengan kemajuan LLM, ketiga tempat itu masuk ke wilayah yang dapat dibantu. Sebagian besar visi progresif tentang menjadikan karakter sebagai aset yang dulu hanya ada di atas kertas kini telah berpindah ke tahap penerapan praktis.
 
 ---
 

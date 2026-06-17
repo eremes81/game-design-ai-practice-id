@@ -172,7 +172,7 @@ Bahkan untuk tekstur dasar pun, AI tidak cocok untuk semua aset. Pada posisi tem
 
 ## 12.1.5 Gerbang yang Tidak Dapat Dibalik — Verifikasi Konsistensi dan Regresi Visual
 
-Tepat sebelum menyeberangi garis batas, kita periksa apakah aset yang diproduksi massal di segmen yang dapat dibalik tidak melenceng dari keseluruhan hasil game. Ini posisi yang bocor kalau hanya dengan mata manusia, jadi kode memeriksanya lebih dulu.
+Tepat sebelum menyeberangi garis batas, kita periksa apakah aset yang diproduksi massal di segmen yang dapat dibalik tidak melenceng dari keseluruhan tekstur visual game. Ini posisi yang bocor kalau hanya dengan mata manusia, jadi kode memeriksanya lebih dulu.
 
 ```python
 # visual_regression.py — deteksi perubahan tak disengaja saat penggantian aset (kerangka)

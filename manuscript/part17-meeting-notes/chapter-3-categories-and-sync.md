@@ -91,7 +91,7 @@ confidential: internal
 
 ### Operasinya Berbeda untuk Tiap Kategori — Itulah Nilai Sejati Pemisahan
 
-Alasan sebenarnya membagi lima kotak bukanlah label pencarian. Karena cara operasinya berbeda di tiap kotak, pemisahan membuat operasi yang dibedakan terdesain secara alami.
+Alasan sebenarnya membagi lima kotak bukanlah label pencarian. Karena cara operasinya berbeda di tiap kotak, pemisahan membuat operasi yang berbeda-beda terancang secara alami.
 
 `art` memiliki banyak gambar lampiran, sehingga standar caption pada subbab berikutnya menjadi wajib. Karena keputusannya berpusat pada visual, ke dalam slot keputusan masuk referensi gambar seperti `![](images/decision_a.png)`. Pada `battle`, keputusannya berupa angka·aturan sehingga rasio promosi otomatis atom-nya paling tinggi, dan karena satu baris keputusan berujung pada perubahan massal sheet data, visualisasi cakupan dampak (diagram relasi Bagian 11) menjadi penting. Pada `daily`, normal bila hampir tidak ada keputusan, dan karena penumpukannya cepat, ia dipisahkan ke folder otomatis per minggu (`daily/2026-W21/`). Pada `issue`, karena notulanya berserakan, kami mewajibkan pembenahan dalam 24 jam pasca-rapat dan mengekstrak atom pencegahan kambuh ke `issue_postmortem/`. Pada `review`, karena panjang, kami menulis atom ringkasan 5\~10 baris secara terpisah agar otomatis dikutip pada retrospektif kuartal berikutnya.
 
@@ -215,7 +215,7 @@ confidential: internal   # internal / restricted / external_ok
 images:
   - file: character_kim_concept_v3.png
     confidential: restricted
-    reason: 미공개 캐릭터 디자인
+    reason: desain karakter yang belum dirilis
 ```
 
 `internal` berarti berbagi internal perusahaan, `restricted` hanya untuk TF·penanggung jawab terkait, dan `external_ok` berarti persetujuan berbagi pemasaran·eksternal. Saat build notula, keluaran dipisahkan per tingkat, dan gambar yang bukan `external_ok` di-blur otomatis pada salinan berbagi eksternal. Pemisahan otomatis ini memberikan efek langsung yang membuat insiden masking berbagi eksternal praktis menjadi 0.

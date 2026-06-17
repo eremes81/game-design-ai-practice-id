@@ -221,7 +221,7 @@ Menghubungkan kelima server MCP sekaligus di hari pertama adalah kegagalan yang 
 
 Durasi di atas adalah perkiraan penulis (belum terverifikasi) berdasarkan tim berskala menengah (10\~50 orang) di Proyek A, dan dapat berbeda tergantung ukuran tim serta keakraban dengan alat. Yang jelas adalah **bagi sebagian besar tim, tahap 1\~3 sudah cukup**. Tahap 4 (pengembangan server sendiri) baru ditempuh ketika benar-benar harus menghubungkan alat internal khusus yang server MCP-nya belum ada di pasaran. Tanpa sampai ke sana pun, sebagian besar efeknya sudah terambil kembali.
 
-Ada alasan untuk menyinggung JIRA secara tersendiri. Jika ClickUp adalah papan internal tim, JIRA sering kali merupakan alat yang **dibagikan dengan organisasi eksternal** seperti penerbit atau pihak outsourcing. Dengan memasang MCP JIRA, progres papan pihak outsourcing bisa ditarik otomatis setiap minggu sebelum rapat, sehingga task yang dicurigai terlambat dapat dipilah lebih dulu. Rapat pun dimulai bukan dari "berbagi situasi" melainkan dari "keputusan". Namun, semakin sebuah alat dibagikan ke luar, semakin berat pula jebakan izin dan kebocoran pada subbab berikutnya membebani.
+Ada alasan untuk menyinggung JIRA secara tersendiri. Jika ClickUp adalah papan internal tim, JIRA sering kali merupakan alat yang **dibagikan dengan organisasi eksternal** seperti penerbit atau pihak outsourcing. Dengan memasang MCP JIRA, progres papan pihak outsourcing bisa ditarik otomatis setiap minggu sebelum rapat, sehingga task yang dicurigai terlambat dapat dipilah lebih dulu. Rapat pun dimulai bukan dari "berbagi situasi" melainkan dari "keputusan". Namun, semakin sebuah alat dibagikan ke luar, semakin berat pula bobot jebakan izin dan kebocoran yang dibahas pada subbab berikutnya.
 
 ---
 

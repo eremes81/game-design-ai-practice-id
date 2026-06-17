@@ -15,7 +15,7 @@ Kamis sore menjelang malam, tepat sebelum mengunggah build, anggota tim B yang s
 
 Bolak-balik selama 12 menit ini bukan terjadi karena informasinya tidak ada. Informasinya jelas ada. Tercatat di file atom, di notulen rapat, juga di decision card (kartu keputusan). Hanya saja ketiganya berada di laci yang berbeda, dan cara membuka tiap laci pun berbeda. Yang jadi masalah bukan lacinya, melainkan pegangan untuk membuka laci itu.
 
-Bab ini bercerita tentang menyatukan pegangan-pegangan itu menjadi satu. Bukan dengan mengembangkan full-stack sendiri, melainkan dengan menutupi tumpukan hasil kerja desain yang sudah ada di folder dengan satu lapisan web tipis, sehingga anggota tim cukup mengetik satu kata `portal` di address bar browser untuk masuk. Alat intinya hanya tiga. FastAPI yang menjalankan search API dengan Python, nginx yang berdiri di depannya, dan nssm yang menjaga agar PC tetap hidup selama menyala tanpa perlu seseorang mematikannya secara manual.
+Bab ini bercerita tentang menyatukan pegangan-pegangan itu menjadi satu. Bukan dengan mengembangkan full-stack sendiri, melainkan dengan menutupi tumpukan hasil kerja desain yang sudah ada di folder dengan satu lapisan web tipis, sehingga anggota tim cukup mengetik satu kata `portal` di address bar browser untuk masuk. Alat intinya hanya tiga. FastAPI yang menjalankan search API dengan Python, nginx yang berdiri di depannya, dan nssm yang menjaga agar portal tetap hidup selama PC menyala, tanpa perlu seseorang menyalakannya secara manual.
 
 ---
 

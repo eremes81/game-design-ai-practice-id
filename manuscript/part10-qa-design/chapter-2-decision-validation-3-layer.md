@@ -9,7 +9,7 @@ author: 이민수
 
 # 10.2 Sensor 3-Layer Validasi Keputusan — Tempat Bukti Tinjauan Manusia
 
-Pukul 11 malam, job nightly menancapkan satu kartu di alat kolaborasi. Judulnya `[integrity] D17 부합 측정 미수행 7일 경과`. Itu adalah notifikasi bahwa satu keputusan yang diterapkan seminggu lalu masih tertinggal di build tanpa seorang pun memastikan "apakah ia benar-benar bekerja sesuai maksud". Data baik-baik saja. Format sheet, FK, maupun enum semuanya lolos. Namun keputusannya belum tervalidasi.
+Pukul 11 malam, job nightly menancapkan satu kartu di alat kolaborasi. Judulnya `[integrity] D17 pengukuran kesesuaian belum dilakukan, 7 hari berlalu`. Itu adalah notifikasi bahwa satu keputusan yang diterapkan seminggu lalu masih tertinggal di build tanpa seorang pun memastikan "apakah ia benar-benar bekerja sesuai maksud". Data baik-baik saja. Format sheet, FK, maupun enum semuanya lolos. Namun keputusannya belum tervalidasi.
 
 Celah inilah titik awal bab ini. Sekalipun data utuh, keputusan masih bisa salah, dan tempat untuk menangkap kesalahan itu berada di lokasi yang berbeda dari pemeriksaan data. Membagi tempat itu menjadi tiga lapisan, lalu menegaskan sampai mana AI membantu dan di mana manusia membubuhkan capnya pada tiap lapisan — itulah sensor 3-layer validasi keputusan.
 
@@ -77,7 +77,7 @@ def check_new_decision(new_decision, existing_decisions):
     for existing in existing_decisions:
         if has_overlap(new_decision.scope, existing.scope):   # tahap mekanis pertama: irisan scope
             verdict = llm_judge(new_decision, existing)        # tahap AI kedua: kontradiksi/komplementer/tak relevan
-            if verdict.label == "모순":
+            if verdict.label == "kontradiksi":
                 conflicts.append({
                     "with": existing.id,
                     "label": verdict.label,

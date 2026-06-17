@@ -172,7 +172,7 @@ Usulan wikilink:
 | Frasa di teks                                | Kandidat tautan                        | Keyakinan |
 |----------------------------------------------|----------------------------------------|-----------|
 | "Global cooldown pertarungan adalah 0.5 detik" | [[combat_global_cooldown_constant]]    | Tinggi    |
-| "Jika terkena serangan saat cast, cast terputus" | [[combat_skill_cast_interrupt_rule]]   | Tinggi    |
+| "Jika terkena serangan saat sedang cast, cast-nya terputus" | [[combat_skill_cast_interrupt_rule]]   | Tinggi    |
 | "Regenerasi resource hanya dalam kondisi non-pertarungan" | [[combat_resource_regen_rate]]         | Sedang    |
 
 Kandidat atom baru:

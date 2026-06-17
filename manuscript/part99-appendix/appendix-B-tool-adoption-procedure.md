@@ -35,7 +35,7 @@ Sesuai prinsip, alat yang benar-benar saya bawa ke PC pribadi ada enam (per Mei 
 | gdd-gen | Pembuatan GDD otomatis | Pembuatan dokumen umum |
 | gdd-export | Konversi dari Markdown ke xlsx multi-sheet | Konversi xlsx umum |
 
-Jika Anda bandingkan kolom tengah dan kanan pada tabel, akan tampak apa arti generalisasi. Sebelah kiri adalah nama yang mengandung domain seperti "sheet perusahaan" dan "GDD", sedangkan sebelah kanan adalah nama yang telah membuang domain seperti "Excel umum" dan "dokumen umum". Hilangnya perusahaan dari nama adalah tanda pertama generalisasi.
+Jika Anda membandingkan kolom tengah dan kanan pada tabel, akan tampak apa arti generalisasi. Sebelah kiri adalah nama yang mengandung domain seperti "sheet perusahaan" dan "GDD", sedangkan sebelah kanan adalah nama yang telah membuang domain seperti "Excel umum" dan "dokumen umum". Hilangnya perusahaan dari nama adalah tanda pertama generalisasi.
 
 ---
 

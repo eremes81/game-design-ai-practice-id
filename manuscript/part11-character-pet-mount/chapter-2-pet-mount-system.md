@@ -294,7 +294,7 @@ Baris terakhir adalah kesimpulan dari seluruh bab ini. Meski memproduksi massal 
 |---|---|
 | Memindahkan sistem karakter apa adanya ke pet dan mount | Variasi 4 slot yang menghapus slot variant, vfx, sound |
 | Menyalin pet berkerangka sama sebagai sumber daya independen | 1 template + instance, paksa berbagi dengan daftar putih |
-| Commit hasil produksi massal AI tanpa peninjauan | lint 4 gerbang + pengukuran tingkat pembuangan |
+| Commit hasil produksi massal AI tanpa tinjauan manusia | lint 4 gerbang + pengukuran tingkat pembuangan |
 | Tingkat pembuangan tidak turun di setiap siklus | Promosikan alasan pembuangan menjadi aturan prompt (umpan balik) |
 | Memberi skill setingkat karakter pada pet | Batas atas 1 extra_ability per instance |
 | Memberi fungsi tempur pada mount | allow_combat dengan hati-hati, siap kompleksitas ×2 |

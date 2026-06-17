@@ -11,7 +11,7 @@ ip_check: done
 
 # Part 23 · Bab 1. Pola Wrapper, Cascade, dan Junction
 
-> Jangan menambah alat, tetapi buatlah alat untuk mengelola alat. Ini adalah cerita tentang struktur dua lapis yang menyembunyikan 48 alat inti di balik 12 titik masuk global, dan tentang otomasi yang menjaga keselarasan struktur itu tanpa campur tangan manusia.
+> Jangan menambah alat, tetapi buatlah alat untuk membuat alat. Ini adalah cerita tentang struktur dua lapis yang menyembunyikan 48 alat inti di balik 12 titik masuk global, dan tentang otomasi yang menjaga keselarasan struktur itu tanpa campur tangan manusia.
 
 ---
 
@@ -185,7 +185,7 @@ flowchart TD
 
 Pengguna hanya mengingat dua belas yang ada di global. Meski di baliknya tersembunyi empat puluh delapan inti, beban kognitif tetap berada pada dua belas. Wrapper membuat titik masuk menjadi ringan, Junction menghubungkan titik masuk dengan inti, dan `sync_skills.py` menjaga keselarasan dua belas itu di setiap sesi.
 
-Dilihat dari rasionya, titik masuk berbanding inti adalah 1 banding 4 (12 banding 48). Meski alat ditambah, yang harus dihafal pengguna tidak bertambah. Meski inti bertambah menjadi enam puluh atau delapan puluh, Lapis 1 tetap dua belas. Inilah implementasi nyata dari kalimat "jangan menambah alat, tetapi buatlah alat untuk mengelola alat." Yang bertambah adalah Lapis 2 (inti), sedangkan Lapis 1 (titik masuk) yang dihadapi pengguna tetap konstan.
+Dilihat dari rasionya, titik masuk berbanding inti adalah 1 banding 4 (12 banding 48). Meski alat ditambah, yang harus dihafal pengguna tidak bertambah. Meski inti bertambah menjadi enam puluh atau delapan puluh, Lapis 1 tetap dua belas. Inilah implementasi nyata dari kalimat "jangan menambah alat, tetapi buatlah alat untuk membuat alat." Yang bertambah adalah Lapis 2 (inti), sedangkan Lapis 1 (titik masuk) yang dihadapi pengguna tetap konstan.
 
 ---
 
@@ -288,7 +288,7 @@ Nilai pengukuran selama enam bulan dibandingkan sebelum dan sesudah penerapan. Y
 | Pencerminan ke global usai menyunting inti | perlu tahap salin manual | seketika (Junction, tanpa salin) |
 | Panggilan alat validasi serupa | 3\~4 kali manual per pekerjaan | 1 kali (Cascade check) |
 
-Nilai pengukuran bulan pertama penerapan masih naik-turun. Sampai format Wrapper mapan, kecelakaan sinkronisasi terjadi dua kali lebih, dan sampai kebijakan dua belas ditegakkan, slot bergerak antara lima belas dan delapan belas. Stabilisasi terjadi mulai bulan kedua. Setelah `sync_skills.py --cleanup` mulai menertibkan slot di setiap sesi, ledakan slot tidak pernah terjadi lagi.
+Nilai pengukuran bulan pertama penerapan masih naik-turun. Sampai format Wrapper mapan, kecelakaan sinkronisasi terjadi beberapa kali, dan sampai kebijakan dua belas ditegakkan, slot bergerak antara lima belas dan delapan belas. Stabilisasi terjadi mulai bulan kedua. Setelah `sync_skills.py --cleanup` mulai menertibkan slot di setiap sesi, ledakan slot tidak pernah terjadi lagi.
 
 Ungkapan arah seperti "bobot"·"perlu"·"seketika" pada tabel itu disengaja. Karena biaya token dan waktu berbeda di tiap lingkungan, hanya arah perubahannya yang dicatat. Yang jelas adalah Lapis 1 terpaku dari empat puluh menjadi dua belas, dan tahap salin manual lenyap dari pencerminan inti.
 
@@ -331,7 +331,7 @@ Jika Anda beroperasi sendiri tanpa tim maupun SVN, ringkaslah seperti ini. Anda 
 ---
 
 ### Poin-Poin Penting
-- Jangan menambah alat, tetapi buatlah alat untuk mengelola alat — 12 titik masuk global, 48 inti wujud.
+- Jangan menambah alat, tetapi buatlah alat untuk membuat alat — 12 titik masuk global, 48 inti wujud.
 - Wrapper·Junction·sync_skills menjaga keselarasan dua lapis tanpa campur tangan manusia.
 - Semua pola dipicu dari pengukuran kuantitatif retrospektif — ukur dahulu, struktur menyusul.
 

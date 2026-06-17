@@ -31,7 +31,7 @@ YAML frontmatter menyelesaikan keduanya sekaligus. Jika Anda menuliskan metadata
 
 ## 2.1.2 Frontmatter Nyata — 14 Baris Pertama dari Sebuah Dokumen
 
-Alih-alih contoh abstrak, kita lihat langsung frontmatter yang benar-benar dipikul di kepala dokumen kurva reward Proyek A (hanya ID dan nama asli yang disamarkan; strukturnya persis seperti yang dioperasikan).
+Alih-alih contoh abstrak, kita lihat langsung frontmatter yang benar-benar terpasang di kepala dokumen kurva reward Proyek A (hanya ID dan nama asli yang disamarkan; strukturnya persis seperti yang dioperasikan).
 
 ```yaml
 ---
@@ -56,7 +56,7 @@ ip_check: passed
 
 Intinya adalah pemisahan antara bagian di atas dan di bawah `---`. Bagian atas adalah data yang dibaca parser; bagian bawah adalah isi yang dibaca manusia. Renderer Markdown umumnya menyembunyikan frontmatter, sehingga tidak mengganggu saat dibaca. Satu file memuat data (frontmatter) dan konten (isi) sekaligus, sehingga menjadi sumber kebenaran tunggal (single source of truth).
 
-`layer: 2` dan `affects: [L3_BalanceSheet_v2]` — dua baris inilah yang patut diperhatikan. Ini adalah deklarasi bahwa "dokumen konten (L2) ini memberi pengaruh pada balance sheet di Layer data (L3)". Hanya dengan ini, alat bantu bisa menggambar relasi ketergantungan L2→L3 dalam bentuk graf tanpa membaca isi. Sebaliknya, jika dokumen data L3 mereferensikan aturan sistem L1 lewat `depends_on` (ketergantungan terbalik dari bawah ke atas), itu adalah aroma desain yang buruk (design smell). Alat bantu mendeteksi referensi terbalik itu secara otomatis.
+`layer: 2` dan `affects: [L3_BalanceSheet_v2]` — dua baris inilah yang patut diperhatikan. Ini adalah deklarasi bahwa "dokumen konten (L2) ini memberi pengaruh pada balance sheet di Layer data (L3)". Hanya dengan ini, alat bantu bisa menggambar relasi ketergantungan L2→L3 dalam bentuk graf tanpa membaca isi. Sebaliknya, jika dokumen data L3 mereferensikan aturan sistem L1 lewat `depends_on` (ketergantungan terbalik dari bawah ke atas), itu adalah aroma desain (design smell). Alat bantu mendeteksi referensi terbalik itu secara otomatis.
 
 Alasan YAML lebih nyaman ditulis tangan daripada JSON sederhana saja: struktur dinyatakan dengan indentasi, tanda kutip nyaris tak diperlukan, dan Anda bisa menulis komentar dengan `#`. Cocok untuk diisi sendiri oleh Game Designer.
 
@@ -95,7 +95,7 @@ Di sini terjadi sebuah insiden. Kode yang pertama kali dikeluarkan Claude menghi
 TypeError: unsupported operand type(s) for -: 'datetime.date' and 'str'
 ```
 
-Penyebabnya ada di tangan manusia. Sebagian penulis menulis `updated: 2026-05-20` (terparsing sebagai date), sebagian lain menulis `updated: "2026-05-20"` dengan tanda kutip (terparsing sebagai string). Di tempat yang tidak dipaku standar soal format tanggal, tangan manusia bercabang, dan Claude hanya berasumsi pada satu sisi. Saya menolak kode itu dan kembali meminta "normalisasikan kedua notasi dengan aman menjadi date, dan saring juga kasus saat `updated` tidak ada". Claude menyisipkan helper yang memeriksa tipe input lalu menormalkan keduanya menjadi `datetime.date` (blok perbaikannya juga lihat "Coba Sendiri").
+Penyebabnya ada di tangan manusia. Sebagian penulis menulis `updated: 2026-05-20` (terparsing sebagai date), sebagian lain menulis `updated: "2026-05-20"` dengan tanda kutip (terparsing sebagai string). Di tempat yang tidak dipaku standar soal format tanggal, tangan manusia bercabang, dan Claude hanya berasumsi pada satu sisi. Saya menolak kode itu dan kembali meminta "normalisasikan kedua notasi dengan aman menjadi date, dan saring juga kasus saat `updated` tidak ada". Claude menyisipkan helper yang memeriksa tipe input lalu menormalkan keduanya menjadi `datetime.date` (blok perbaikannya juga ada di "Coba Sendiri").
 
 Pelajaran yang sesungguhnya bukanlah bug kode itu. Melainkan bahwa **di tempat yang tidak dipaku standar soal format penulisan tanggal, tangan manusia bercabang**. Karena itu saya menambahkan satu baris `updated: YYYY-MM-DD (tanpa tanda kutip)` ke dalam `_NAMING_FRONTMATTER_STANDARD.md`. Linter, saat memeriksa kode, justru menyingkapkan lubang pada standar yang menjadi acuan pemeriksaan itu sendiri.
 

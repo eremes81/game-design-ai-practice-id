@@ -175,7 +175,7 @@ Jika saya mengutip satu baris log injeksi JIT di PC pribadi (`~/.claude/hooks/_i
 
 ```
 2026-05-24T11:18:17+09:00 | hits: book_writing_project feedback |
-  prompt_head: 1) 우선, gaya bahasanya banyak berubah dibanding bagian pembuka awal...
+  prompt_head: 1) Pertama, gaya bahasanya banyak berubah dibanding bagian pembuka awal...
 ```
 
 Yang ditunjukkan satu baris ini adalah fakta bahwa begitu saya membuka topik "gaya bahasa buku", dua atom `book_writing_project` dan `feedback` otomatis tertarik masuk ke konteks. `inject_atom.py` di PC kantor juga bekerja dengan pola yang sama — kalau masukan cocok dengan regex di `_jit_manifest.json`, isi atom yang bersangkutan ditambahkan di awal (prepend). Yang bisa kita katakan kepada manajemen sebagai "inilah yang kita beli" adalah log seperti ini, bukan kelipatan.
@@ -190,7 +190,7 @@ Bahkan 304 atom yang sama harus disampaikan dengan kalimat berbeda kepada CEO·P
 |---|---|---|
 | CEO·CFO | biaya·strategi | "304 aturan pencegah kekambuhan ter-asetkan — pertahanan terhadap hilangnya pengetahuan saat orang keluar" |
 | PD | jadwal·sumber daya·risiko | "48 jenis pekerjaan berulang otomatis — penyangga throughput saat tertekan jadwal" |
-| Game Director | kualitas·progres | "verification gate bekerja dalam satuan atom — insiden per bidang bisa dilacak" |
+| Game Director | kualitas·progres | "verification gate (gerbang verifikasi) bekerja dalam satuan atom — insiden per bidang bisa dilacak" |
 
 Kepada CEO, saya paksakan 1 halaman. Lampiran boleh panjang, tetapi begitu badan utama melampaui satu halaman, premis "audiens yang tidak punya waktu" runtuh. Lalu permintaan keputusan dirumuskan secara tegas dalam lima slot: **apa·mengapa·dampak·alternatif·tenggat**. Kalau tidak masuk dalam bentuk yang bisa diputuskan CEO dalam 5 menit, keputusan tertunda, dan keputusan yang tertunda kembali memengaruhi alokasi sumber daya.
 

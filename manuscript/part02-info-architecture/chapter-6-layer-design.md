@@ -11,7 +11,7 @@ ip_check: done
 
 # 2.3 Desain Layer — Abstraksi Sistem Game
 
-Ini terjadi pada masa ketika jumlah disiplin kami bertambah dari tiga menjadi delapan. Seorang Game Designer combat menetapkan jangkauan skill pada 8m. Pada minggu yang sama, seorang Level Designer mengunci lebar lorong dungeon pada 6m. Keduanya merupakan keputusan yang sepenuhnya masuk akal di dalam disiplin masing-masing. Masalahnya baru terungkap pada build tiga minggu kemudian. Skill area menembus tembus dinding lorong, dan musuh mati di tempat yang bahkan tidak terlihat. Itu bukan kesalahan siapa pun. Kedua orang itu hanya tidak punya jendela untuk mengintip keputusan satu sama lain.
+Ini terjadi pada masa ketika jumlah disiplin kami bertambah dari tiga menjadi delapan. Seorang Game Designer combat menetapkan jangkauan skill pada 8m. Pada minggu yang sama, seorang Level Designer mengunci lebar lorong dungeon pada 6m. Keduanya merupakan keputusan yang sepenuhnya masuk akal di dalam disiplin masing-masing. Masalahnya baru terungkap pada build tiga minggu kemudian. Skill area-of-effect (AoE) menembus dinding lorong, dan musuh mati di tempat yang bahkan tidak terlihat. Itu bukan kesalahan siapa pun. Kedua orang itu hanya tidak punya jendela untuk mengintip keputusan satu sama lain.
 
 Bab ini bercerita tentang cara membuat jendela tersebut. Yaitu, membuat setiap disiplin tetap memiliki ruangannya sendiri, sambil bisa mengetahui apa yang terjadi di ruangan sebelah hanya melalui satu koordinat. Sistem koordinat itu kita sebut Layer.
 
@@ -64,7 +64,7 @@ Layer yang digunakan dalam buku ini adalah abstraksi 5 tingkat dari 0 sampai 4. 
 
   <rect x="20" y="236" width="720" height="42" rx="6" fill="#2980b9" opacity="0.9"/>
   <text x="34" y="255" font-size="14" fill="#fff" font-weight="bold">L4 Build · Keluaran QA</text>
-  <text x="34" y="272" font-size="12" fill="#fff">Peran procedural generation: verification gate — hasil build · bug · play capture</text>
+  <text x="34" y="272" font-size="12" fill="#fff">Peran procedural generation: verification gate (gerbang verifikasi) — hasil build · bug · play capture</text>
 
   <line x1="10" y1="40" x2="10" y2="274" stroke="#555" stroke-width="1.5" marker-end="url(#arrowDown)"/>
 </svg>
@@ -99,7 +99,7 @@ Satu keluaran bisa membentang di dua Layer. "GDD (Game Design Document, spesifik
 
 ## 2.3.3 Prinsip Meta — Diferensiasi dan Integrasi Sekaligus
 
-Disiplin membentang secara horizontal, sedangkan Layer bertumpuk secara vertikal. Pekerjaan satu disiplin membentang di beberapa Layer. Matriks di bawah merepresentasikan pusat massa distribusi dari 11 disiplin (horizontal) × Layer 0 sampai 4 (vertikal) melalui ketuaan warna sel. Sel yang tua adalah Layer pusat massa disiplin tersebut.
+Disiplin membentang secara horizontal, sedangkan Layer bertumpuk secara vertikal. Pekerjaan satu disiplin membentang di beberapa Layer. Matriks di bawah merepresentasikan pusat massa distribusi dari 11 disiplin (horizontal) × Layer 0 sampai 4 (vertikal) melalui tingkat kepekatan warna sel. Sel yang lebih pekat adalah Layer pusat massa disiplin tersebut.
 
 <svg viewBox="0 0 820 320" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" role="img" aria-label="Matriks diferensiasi integrasi dengan sumbu horizontal 11 disiplin dan sumbu vertikal Layer 0 sampai 4">
   <!-- column headers (분야) -->
@@ -207,7 +207,7 @@ Disiplin membentang secara horizontal, sedangkan Layer bertumpuk secara vertikal
   </g>
 </svg>
 
-Jika dibaca secara vertikal, terlihat satu disiplin membentang di Layer mana saja; jika dibaca secara horizontal, terlihat disiplin mana saja yang berkumpul di satu Layer. Baris L0 (visi) paling tua pada naratif dan art direction — dua disiplin yang paling dekat dengan visi. Baris L3 (data) berkumpul tua pada sistem, combat, level, balance, dan karakter — sinyal bahwa mereka saling berbenturan di sheet data.
+Jika dibaca secara vertikal, terlihat satu disiplin membentang di Layer mana saja; jika dibaca secara horizontal, terlihat disiplin mana saja yang berkumpul di satu Layer. Baris L0 (visi) paling pekat pada naratif dan art direction — dua disiplin yang paling dekat dengan visi. Baris L3 (data) berkumpul pekat pada sistem, combat, level, balance, dan karakter — sinyal bahwa mereka saling berbenturan di sheet data.
 
 Dengan memiliki distribusi ini secara eksplisit, disiplin lain langsung tahu posisinya ketika berkata "aku harus melihat Layer 2 milik combat". Bukan tembok silo yang runtuh, melainkan jendela yang dilubangkan di tembok itu.
 
@@ -274,7 +274,7 @@ Aturan semakin sederhana semakin kuat. Dengan sekadar mengurutkan berdasarkan na
 
 ---
 
-## 2.3.5 Deteksi Referensi Terbalik — Worked Transcript
+## 2.3.5 Deteksi Referensi Terbalik — Worked Transcript (rekaman sesi nyata)
 
 Pada subbab sebelumnya (2.3.4) telah dikatakan "jika L3 menembakkan panah ke arah L1, hampir selalu itu cacat desain". Apa yang terjadi jika deteksi ini diserahkan kepada AI alih-alih mata manusia? Saya pindahkan apa adanya satu sesi nyata yang benar-benar saya jalankan, tanpa dirapikan (hanya informasi yang mengidentifikasi perusahaan yang dianonimkan).
 

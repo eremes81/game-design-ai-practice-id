@@ -34,7 +34,7 @@ Pertama, item pemeriksaan berubah-ubah setiap kali. Hari ini saya teringat "cool
 
 Kedua, format hasil berubah-ubah setiap kali. Jika maksud yang sama saya tuliskan berbeda-beda sebagai "tolong cek", "periksa", "lihat sekilas", AI akan menjawab dengan tabel pada satu hari, dan dengan paragraf pada hari lain. Kalau formatnya tidak konsisten, hasilnya tidak bisa diproses ulang secara otomatis.
 
-Solusinya adalah melepaskan prompt dari tangan dan memasukkannya ke laci. Catatan yang setiap kali ditulis tangan diganti menjadi kartu berlabel, lalu diambil dari laci yang sama. Kartu itulah yang dalam buku ini disebut slash command (perintah garis miring) (skill) dan atom.
+Solusinya adalah melepaskan prompt dari tangan dan memasukkannya ke laci. Catatan yang setiap kali ditulis tangan diganti menjadi kartu berlabel, lalu diambil dari laci yang sama. Kartu itulah yang dalam buku ini disebut slash command (skill, perintah garis miring) dan atom.
 
 ---
 
@@ -194,7 +194,7 @@ Bagian baru:
 Apakah perubahan ini perlu saya catat ke atom definisi perintah /check-sheet?
 ```
 
-Baris terakhir itulah penyempurnaan pola ini. Satu penolakan tidak berhenti sebagai perbaikan sekali pakai, melainkan tercatat ke atom definisi perintah dan menyebar ke manusia berikutnya·pemeriksaan berikutnya. Inilah bunga majemuk dari pembakuan. Kesalahan yang sama tidak disaring dua kali.
+Baris terakhir itulah penyempurnaan pola ini. Satu penolakan tidak berhenti sebagai perbaikan sekali pakai, melainkan tercatat ke atom definisi perintah dan menyebar ke manusia berikutnya dan pemeriksaan berikutnya. Inilah bunga majemuk dari pembakuan. Kesalahan yang sama tidak disaring dua kali.
 
 ---
 
@@ -344,7 +344,7 @@ flowchart LR
 
 Intinya adalah garis putus-putus di kanan bawah. Penolakan bukan akhir, melainkan kembali sebagai input yang memperbaiki perintah itu sendiri. Nomor 4 yang ditolak dalam pemeriksaan konsistensi menjadi aturan pengecualian finisher, dan aturan itu tercatat ke atom lalu menyebar ke pemeriksaan berikutnya. Tanpa umpan balik ini, jawaban salah yang sama akan disaring ulang setiap minggu.
 
-Tangan manusia tertinggal di tiga titik. Pemanggilan (memilih target), verifikasi (terima·benahi·tolak), dan perbaikan aturan (mengembalikan penolakan ke aliran). AI hanya mengerjakan dorongan kandidat di antara ketiganya.
+Tangan manusia tertinggal di tiga titik. Pemanggilan (memilih target), verifikasi (terima, benahi, tolak), dan perbaikan aturan (mengembalikan penolakan ke aliran). AI hanya mengerjakan dorongan kandidat di antara ketiganya.
 
 ---
 

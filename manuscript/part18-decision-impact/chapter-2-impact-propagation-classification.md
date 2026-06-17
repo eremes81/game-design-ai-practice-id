@@ -261,7 +261,7 @@ flowchart TD
     T3 --> I
     T4 --> I
     I --> J[Pelacakan pasca<br/>perkiraan vs aktual → dipelajari untuk perkiraan berikutnya]
-    J -.serapan reversibel.-> B
+    J -.penyerapan reversibel.-> B
     classDef code fill:#dbeafe,stroke:#2563eb,color:#0b2545;
     classDef ai fill:#f3e8ff,stroke:#9333ea,color:#3b0764;
     classDef human fill:#fde68a,stroke:#b45309,color:#000;
@@ -301,9 +301,9 @@ Pola galat: QA selalu melebihi perkiraan (kali ini +50%)
 Penerapan pada keputusan berikutnya: terapkan margin +20% sebagai default pada perkiraan QA
 ```
 
-Blok di atas adalah contoh format yang menunjukkan **seperti apa bentuk** pelacakan pasca. Nilai waktu dan persentasenya bukan data proyek nyata, melainkan input fiktif yang mengisi format, jadi pada proyek Anda sendiri, isilah dengan angka Anda sendiri — persis seperti janji buku ini, kami menunjukkan strukturnya dan angkanya Anda yang mengukur. Terlepas dari formatnya, yang sungguh nyata hanya satu. **Arah galat "QA selalu melebihi perkiraan"**, serta prosedur yang menumpanbalikkan arah itu ke keputusan berikutnya. Karena itulah muncul resep untuk menempelkan margin QA (misalnya: +20%) sejak awal pada perkiraan berikutnya.
+Blok di atas adalah contoh format yang menunjukkan **seperti apa bentuk** pelacakan pasca. Nilai waktu dan persentasenya bukan data proyek nyata, melainkan input fiktif yang mengisi format, jadi pada proyek Anda sendiri, isilah dengan angka Anda sendiri — persis seperti janji buku ini, kami menunjukkan strukturnya dan angkanya Anda yang mengukur. Terlepas dari formatnya, yang sungguh nyata hanya satu. **Arah galat "QA selalu melebihi perkiraan"**, serta prosedur yang mengumpanbalikkan arah itu ke keputusan berikutnya. Karena itulah muncul resep untuk menempelkan margin QA (misalnya: +20%) sejak awal pada perkiraan berikutnya.
 
-Nilai pelacakan pasca bukan pada menebak angka secara persis, melainkan pada menumpanbalikkan arah galat. Makin akurat perkiraannya, makin tinggi kepercayaan pada klasifikasi tingkat, dan makin tinggi kepercayaan, makin mungkin pendelegasian.
+Nilai pelacakan pasca bukan pada menebak angka secara persis, melainkan pada mengumpanbalikkan arah galat. Makin akurat perkiraannya, makin tinggi kepercayaan pada klasifikasi tingkat, dan makin tinggi kepercayaan, makin mungkin pendelegasian.
 
 ---
 

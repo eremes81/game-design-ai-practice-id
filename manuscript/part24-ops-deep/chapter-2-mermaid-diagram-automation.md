@@ -64,7 +64,7 @@ Hanya blok kode, tanpa penjelasan/komentar.
 - economy_loop membaca derived stat milik stat_engine
 ````
 
-Aturan 1 dan 4 adalah intinya. Kecelakaan paling lazim saat menyerahkan diagram pada LLM adalah "halusinasi yang sok ramah". Ia menambahkan node yang tidak diminta ("biasanya sistem login juga ada, jadi saya masukkan"), dan seenaknya menempelkan label berbahasa Korea sehingga ID dan pencarian di isi dokumen jadi tidak cocok. Aturan-aturan itu menghalangi keramahan tersebut.
+Aturan 1 dan 4 adalah intinya. Kecelakaan paling lazim saat menyerahkan diagram pada LLM adalah "halusinasi yang sok ramah". Ia menambahkan node yang tidak diminta ("biasanya sistem login juga ada, jadi saya masukkan"), dan seenaknya menempelkan label dari teks Korea asli sehingga ID dan pencarian di isi dokumen jadi tidak cocok. Aturan-aturan itu menghalangi keramahan tersebut.
 
 ### Tahap 2 — Keluaran Mentah dari Claude (tanpa ringkasan)
 
@@ -83,13 +83,13 @@ graph TB
 ```
 ````
 
-Sintaksisnya beres dan node-nya pun tepat tujuh. Ia tidak mengarang sistem baru. Aturan 1 dan 4 terpenuhi. Namun ada satu hal yang mengganjal. Pada label garis putus-putus terselip bahasa Korea (`langganan reward hook`, `baca derived stat`). Ini bukan pelanggaran aturan. Aturan 3 menyuruh "tempelkan nama relasi", jadi model setia mengikutinya. Hanya saja, dari pengalaman saya tahu bahwa pada Mermaid, bila label berbahasa Korea mengandung spasi, sebagian renderer versi lama akan rusak. Model tidak punya cara untuk mengetahui hal itu.
+Sintaksisnya beres dan node-nya pun tepat tujuh. Ia tidak mengarang sistem baru. Aturan 1 dan 4 terpenuhi. Namun ada satu hal yang mengganjal. Label garis putus-putus masih memuat label hasil terjemahan dari teks Korea asli yang mengandung spasi (`langganan reward hook`, `baca derived stat`). Ini bukan pelanggaran aturan. Aturan 3 menyuruh "tempelkan nama relasi", jadi model setia mengikutinya. Hanya saja, dari pengalaman saya tahu bahwa pada Mermaid, bila label yang mengandung spasi dipakai pada teks aslinya yang berbahasa Korea, sebagian renderer versi lama akan rusak. Model tidak punya cara untuk mengetahui hal itu.
 
 ### Tahap 3 — Verifikasi dan Penolakan oleh Manusia
 
 Di sinilah tahap yang paling sering dilewati dalam otomatisasi, padahal yang paling penting. Saya tidak menerima keluaran apa adanya, melainkan menolaknya. Alasan penolakannya ada dua.
 
-Pertama, spasi pada label berbahasa Korea di garis putus-putus harus diubah menjadi token berbahasa Inggris untuk memastikan kompatibilitas render. Kedua, kopling lemah (garis putus-putus) dan kopling kuat (garis solid) tercampur dalam satu gambar, tetapi tidak ada pembeda warna atau gaya sehingga tidak langsung terbaca sekilas. Dengan dua hal ini saya mengajukan permintaan ulang.
+Pertama, spasi pada label garis putus-putus — yang pada teks aslinya berbahasa Korea — harus diubah menjadi token berbahasa Inggris untuk memastikan kompatibilitas render. Kedua, kopling lemah (garis putus-putus) dan kopling kuat (garis solid) tercampur dalam satu gambar, tetapi tidak ada pembeda warna atau gaya sehingga tidak langsung terbaca sekilas. Dengan dua hal ini saya mengajukan permintaan ulang.
 
 ### Tahap 4 — Prompt Permintaan Ulang
 

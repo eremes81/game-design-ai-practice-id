@@ -13,7 +13,7 @@ ip_check: done
 
 Menjelang akhir sebuah sprint, seorang concept artist melempar satu sketsa karakter lewat messenger tim. "Ini senior Guild Sarjana, kan?" Sosok di layar itu pria berusia tiga puluhan, mengenakan zirah kulit. Padahal di dokumen desain tertulis perempuan berusia empat puluhan, dengan jubah sarjana berwarna abu-abu. Saya menelusuri di mana letak ketidakcocokannya, dan ternyata materi yang diterima concept artist itu adalah dokumen desain versi dua bulan sebelumnya, sementara dalam rentang itu panduan tampilannya sudah berubah dua kali. Satu-satunya orang yang tahu perubahan itu hanyalah Game Designer-nya sendiri.
 
-Kecelakaan ini bukan masalah teknis. Ini masalah alur. Dari satu halaman dokumen desain sampai menjadi aset di dalam game butuh rata-rata 4\~8 minggu, dan dalam rentang itu informasi tentang satu karakter berpindah dari tangan ke tangan: dari kepala Game Designer ke concept artist, ke modeler, ke animator. Setiap kali berpindah, formatnya bisa tidak cocok, dan kalau yang menerima tetap menerimanya dalam kondisi tidak cocok, ia mengisi bagian yang kosong dengan dugaan. Dugaan itu kembali dua bulan kemudian dalam bentuk satu baris pesan di messenger tim.
+Insiden ini bukan masalah teknis. Ini masalah alur. Dari satu halaman dokumen desain sampai menjadi aset di dalam game butuh rata-rata 4\~8 minggu, dan dalam rentang itu informasi tentang satu karakter berpindah dari tangan ke tangan: dari kepala Game Designer ke concept artist, ke modeler, ke animator. Setiap kali berpindah, formatnya bisa tidak cocok, dan kalau yang menerima tetap menerimanya dalam kondisi tidak cocok, ia mengisi bagian yang kosong dengan dugaan. Dugaan itu kembali dua bulan kemudian dalam bentuk satu baris pesan di messenger tim.
 
 Bab ini membahas cara menempatkan alur dari-tangan-ke-tangan itu di atas sebuah sistem, bukan di atas ingatan satu orang.
 
@@ -21,7 +21,7 @@ Bab ini membahas cara menempatkan alur dari-tangan-ke-tangan itu di atas sebuah 
 
 ## 12.3.1 Dari Tangan ke Tangan — Empat Tahap dan Titik Transisinya
 
-Di Proyek A, jalan yang dilalui aset karakter terdiri dari empat tahap. Yang penting bukan tahapnya itu sendiri, melainkan titik transisi di antara satu tahap dan tahap berikutnya. Kecelakaan meledak bukan di dalam sebuah tahap, melainkan tepat pada saat aset diserahkan dari satu tahap ke tahap berikutnya.
+Di Proyek A, jalan yang dilalui aset karakter terdiri dari empat tahap. Yang penting bukan tahapnya itu sendiri, melainkan titik transisi di antara satu tahap dan tahap berikutnya. Insiden meledak bukan di dalam sebuah tahap, melainkan tepat pada saat aset diserahkan dari satu tahap ke tahap berikutnya.
 
 Alih-alih menjelaskan alur ini dengan kata-kata, saya perlu menggambarnya sebagai diagram, dan sepanjang 24 bagian buku ini, ketimbang menggambar kotak dengan tangan, saya selalu meminta kode mermaid ke Claude lalu merendernya. Bab ini memuat di dalam teksnya hasil yang digambar persis dengan teknik itu. Dengan kata lain, saya membuktikan teknik saya sendiri di dalam teks saya sendiri. Berikut adalah keluaran yang saya terima ketika meminta Claude "gambarkan alur empat tahap spec→asset dengan mermaid sehingga gerbang titik transisinya terlihat", dirender apa adanya.
 
@@ -46,7 +46,7 @@ flowchart TD
     class A,B,C,D,E asset;
 ```
 
-Pada setiap dari tiga titik transisi (spesifikasi→visual, visual→3D, statis→dinamis) berdiri sebuah gerbang. Gerbang adalah loket yang memeriksa format dokumen persetujuan sebelum diserahkan ke departemen berikutnya. Kalau formatnya tidak cocok, dokumen ditolak (garis putus-putus) dan dikembalikan ke tahap sebelumnya. Kalau dokumen yang formatnya tidak cocok tetap diterima, departemen berikutnya akan mengisi bagian kosong dengan dugaan. Kecelakaan messenger terjadi ketika Gerbang 1 tidak ada.
+Pada setiap dari tiga titik transisi (spesifikasi→visual, visual→3D, statis→dinamis) berdiri sebuah gerbang. Gerbang adalah loket yang memeriksa format dokumen persetujuan sebelum diserahkan ke departemen berikutnya. Kalau formatnya tidak cocok, dokumen ditolak (garis putus-putus) dan dikembalikan ke tahap sebelumnya. Kalau dokumen yang formatnya tidak cocok tetap diterima, departemen berikutnya akan mengisi bagian kosong dengan dugaan. Insiden messenger terjadi ketika Gerbang 1 tidak ada.
 
 Keunggulan mermaid terlihat dalam gambar ini. Ketika perlu menambah satu gerbang lagi atau menukar urutan tahap, kita tidak menggambar ulang kotak, cukup mengubah satu baris teks. Karena diagramnya berupa teks, ia menjadi objek version control dan di-commit bersama-sama di samping dokumen desain.
 
@@ -101,7 +101,7 @@ status: draft
 - Referensi nuansa karakter dari refgame
 ```
 
-Enam butir tampilan (usia·jenis kelamin·postur·busana di seksi 2, serta ekspresi·sikap di seksi 3) menjadi checklist untuk Gerbang 1. Dua baris "perempuan empat puluhan / jubah abu-abu" yang menjadi penyebab kecelakaan messenger persis ada di seksi ini. Seandainya Gerbang 1 bekerja, sebelum materi diserahkan akan diperiksa apakah enam butir tampilan pada materi yang diterima concept artist sudah cocok dengan dokumen desain terkini.
+Enam butir tampilan (usia·jenis kelamin·postur·busana di seksi 2, serta ekspresi·sikap di seksi 3) menjadi checklist untuk Gerbang 1. Dua baris "perempuan empat puluhan / jubah abu-abu" yang menjadi penyebab insiden messenger persis ada di seksi ini. Seandainya Gerbang 1 bekerja, sebelum materi diserahkan akan diperiksa apakah enam butir tampilan pada materi yang diterima concept artist sudah cocok dengan dokumen desain terkini.
 
 ### Worked Transcript — Satu Putaran Bolak-Balik untuk Mengisi Bagian Kosong Dokumen Desain
 
@@ -138,7 +138,7 @@ Keluaran ini hanya saya terima separuhnya. Seksi ekspresi·sikap hampir saya ter
 
 > Bagus. Ekspresi·sikap diterima. Tampilan kunci sebagai berikut, lalu rapikan ulang: postur = sedikit lebih besar dari rata-rata 170cm, busana = jubah sarjana abu-abu + aksen ungu (warna representatif scholar_guild), mengenakan kacamata. Ekspresi bertempur di luar cakupan spesifikasi ini, jadi hapus saja.
 
-Yang bisa dipelajari dari satu putaran bolak-balik ini adalah, tempat di mana Claude mengisi bagian kosong dengan dugaan justru adalah bagian kosong dalam dokumen desain. Ketika menemui nilai yang tidak diketahui, Claude terbelah menjadi dua. Warna faksi dan ekspresi bertempur ia angkat sebagai pertanyaan dengan berkata "ini tidak saya ketahui", dan pertanyaan itu menunjuk kekosongan lebih dulu daripada checklist gerbang. Sebaliknya, postur ia isi dengan angka yang masuk akal tanpa tanda bahwa ia tidak tahu. Selama yang terakhir itu ada, verifikasi di mana manusia membandingkan baris demi baris dengan dokumen desain final tidak bisa dihilangkan.
+Yang bisa dipelajari dari satu putaran bolak-balik ini adalah, tempat di mana Claude mengisi bagian kosong dengan dugaan justru adalah bagian kosong dalam dokumen desain. Ketika menemui nilai yang tidak diketahui, Claude menempuh dua pola yang berbeda. Warna faksi dan ekspresi bertempur ia angkat sebagai pertanyaan dengan berkata "ini tidak saya ketahui", dan pertanyaan itu menunjuk kekosongan lebih dulu daripada checklist gerbang. Sebaliknya, postur ia isi dengan angka yang masuk akal tanpa tanda bahwa ia tidak tahu. Selama yang terakhir itu ada, verifikasi di mana manusia membandingkan baris demi baris dengan dokumen desain final tidak bisa dihilangkan.
 
 ---
 
@@ -158,7 +158,7 @@ Intinya ada pada Gerbang 1 yang berdiri di ujung tahap ini. Sebelum model sheet 
 
 Di sini atom `image_prompt_design_intent_first` bekerja. Ketika concept artist menulis prompt pun, ia tidak mulai dengan menderetkan kata-kata tampilan seperti "sarjana perempuan jubah abu-abu", melainkan memasukkan lebih dulu maksud desain dari dokumen desain ("otoritatif tetapi adil", "sarjana yang menahan emosi"). Kalau kita hanya menggenggam kata kunci tampilan lalu memproduksi ratusan lembar, akan keluar bertumpuk gambar yang warna pakaiannya cocok tetapi tatapan matanya bukan sarjana — menempatkan maksud di paling depan adalah upaya mengurangi lebih dulu tumpukan "tampilan cocok tetapi kesan tidak cocok" itu. Alat produksinya sama dengan §12.1.1·§12.2.5 — pada SD (SDXL)/ComfyUI yang di-host sendiri, kita memasang sekaligus character LoRA (mengunci wajah·busana) dan ControlNet (mengunci pose·siluet), supaya meski kita menarik ratusan lembar sosok yang sama dengan pose berbeda, wajahnya tidak runtuh.
 
-Butir pertama Gerbang 1, "kecocokan 6 butir tampilan dokumen desain", adalah palang langsung yang menghalangi kecelakaan messenger. Karena sebelum sketsa konsep mengeras menjadi model sheet ia dibandingkan dengan dokumen desain terkini, ketidakcocokan akibat mengerjakan versi dua bulan lalu akan tersangkut di titik ini.
+Butir pertama Gerbang 1, "kecocokan 6 butir tampilan dokumen desain", adalah palang langsung yang menghalangi insiden messenger. Karena sebelum sketsa konsep mengeras menjadi model sheet ia dibandingkan dengan dokumen desain terkini, ketidakcocokan akibat mengerjakan versi dua bulan lalu akan tersangkut di titik ini.
 
 ---
 
@@ -204,7 +204,7 @@ Sebagai gantinya, pada tahap ini terpasang Gerbang 3, yaitu lint aset otomatis. 
 
 Kalau pelanggaran tertangkap, notifikasi dikirim ke 3D artist yang bersangkutan. Pemeriksaan yang dulu bergantung pada ketajaman mata manusia dipindahkan ke ranah deterministik. Butir seperti jumlah poligon·resolusi punya benar-salah yang jelas, sehingga bukan tugas AI maupun manusia, melainkan tugas skrip lint.
 
-Di sini muncul satu tahap yang tidak dapat dibalik. Yaitu proses render yang membaking texture. Texture yang sudah di-bake sekali tidak bisa dikembalikan, sehingga tepat sebelum render Gerbang 3 bekerja sekali lagi. Motion capture di Tahap 4 juga sama-sama tidak dapat dibalik — sesi capture tidak bisa dikembalikan sebelum memanggil ulang aktor dan peralatannya. Gerbang di depan tahap yang tidak dapat dibalik dioperasikan lebih ketat daripada gerbang lain.
+Di sini muncul satu tahap yang tidak dapat dibalik. Yaitu proses render yang memanggang (bake) texture. Texture yang sudah dipanggang sekali tidak bisa dikembalikan, sehingga tepat sebelum render Gerbang 3 bekerja sekali lagi. Motion capture di Tahap 4 juga sama-sama tidak dapat dibalik — sesi capture tidak bisa dikembalikan sebelum memanggil ulang aktor dan peralatannya. Gerbang di depan tahap yang tidak dapat dibalik dioperasikan lebih ketat daripada gerbang lain.
 
 ---
 
@@ -226,7 +226,7 @@ Per satu karakter, 5 orang melihatnya selama 30 menit\~1 jam. lint pada tahap in
 
 ## 12.3.7 Ketika Perubahan Menyentuh Satu Tahap, Seluruh Hilir Tergoncang
 
-Kecelakaan messenger di awal bab ini sebenarnya adalah dua kecelakaan yang menumpuk. Yang satu adalah ketiadaan Gerbang 1 (materi yang tidak cocok lolos), yang lain adalah ketiadaan pelacakan perubahan (fakta bahwa panduan tampilan berubah dua kali tidak menyebar ke hilir). Yang menghalangi kecelakaan kedua adalah pelacakan dampak perubahan.
+Insiden messenger di awal bab ini sebenarnya adalah dua insiden yang menumpuk. Yang satu adalah ketiadaan Gerbang 1 (materi yang tidak cocok lolos), yang lain adalah ketiadaan pelacakan perubahan (fakta bahwa panduan tampilan berubah dua kali tidak menyebar ke hilir). Yang menghalangi insiden kedua adalah pelacakan dampak perubahan.
 
 Kalau materi satu karakter pada tahap mana pun berubah, seluruh materi di hilirnya terdampak. Kalau ini dihitung manusia dengan tangan setiap kali, pasti ada yang terlewat. Karena itu kita menempatkan alat yang melihat posisi rantai lalu otomatis mengeruk materi hilir.
 
@@ -249,7 +249,7 @@ changed = find_downstream_artifacts("K_001", "tampilan.busana")
 #     "texture_K_001_diffuse.png", "rig_K_001.fbx", ...]
 ```
 
-Kalau `changed_field` adalah `"tampilan.busana"`, posisi rantainya nomor 0 (spec), dan seluruh hilirnya — concept·model·texture·rig — tertangkap dalam daftar dampak. Daftar ini dikirim sebagai notifikasi otomatis ke para penanggung jawab. Dilihat dengan analogi papan persetujuan di atas meja, pada saat papan persetujuan nomor 1 disunting, otomatis tertancap bendera merah pada papan persetujuan nomor 2\~8, dan papan yang berbendera kembali masuk ke antrean tinjauan. Kecelakaan messenger terjadi persis karena bendera ini tidak ada — nomor 1 (tampilan dokumen desain) berubah dua kali, tetapi bendera tidak tertancap pada nomor 2 (konsep).
+Kalau `changed_field` adalah `"tampilan.busana"`, posisi rantainya nomor 0 (spec), dan seluruh hilirnya — concept·model·texture·rig — tertangkap dalam daftar dampak. Daftar ini dikirim sebagai notifikasi otomatis ke para penanggung jawab. Dilihat dengan analogi papan persetujuan di atas meja, pada saat papan persetujuan nomor 1 disunting, otomatis tertancap bendera merah pada papan persetujuan nomor 2\~8, dan papan yang berbendera kembali masuk ke antrean tinjauan. Insiden messenger terjadi persis karena bendera ini tidak ada — nomor 1 (tampilan dokumen desain) berubah dua kali, tetapi bendera tidak tertancap pada nomor 2 (konsep).
 
 ---
 
@@ -260,12 +260,12 @@ Berikut adalah perbandingan sebelum-sesudah standardisasi di Proyek A yang saya 
 | Butir | Sebelum standardisasi | Sesudah standardisasi | Arah |
 |---|---|---|---|
 | 1 karakter (dokumen desain→dalam game) | 8\~12 minggu | 4\~6 minggu | sekitar separuh |
-| Kecelakaan dugaan antar tahap | 10\~15 kasus per kuartal | 2\~3 kasus per kuartal | turun besar |
-| Kecelakaan perubahan terlewat | 8\~10 kasus per kuartal | 1\~2 kasus per kuartal | turun besar |
+| Insiden dugaan antar tahap | 10\~15 kasus per kuartal | 2\~3 kasus per kuartal | turun besar |
+| Insiden perubahan terlewat | 8\~10 kasus per kuartal | 1\~2 kasus per kuartal | turun besar |
 | Waktu tinjauan menyeluruh (per karakter) | tersebar·berulang (total 4\~6 jam) | terfokus 30 menit\~1 jam | terkonsentrasi |
 | Onboarding character designer baru | sekitar 2 bulan | sekitar 1 bulan | sekitar separuh |
 
-Siklus karakter berkurang kira-kira menjadi separuh. Hanya saja angka ini jangan disalahpahami. Standardisasi bukan konveyor yang mencetak semua karakter dengan kecepatan yang sama. Untuk karakter utama tetap saya curahkan hampir 8 minggu, dan figuran selesai dalam 4 minggu. Yang dilakukan standardisasi bukan menyeragamkan kecepatan, melainkan membuat perbedaan waktu per tahap terjaga tanpa goyah. Kalau standar mengalir menjadi kontrol, ia kembali sebagai kecelakaan yang memangkas waktu kreatif para kreator — tujuan standardisasi adalah menghilangkan dugaan dan kelalaian, bukan memampatkan waktu.
+Siklus karakter berkurang kira-kira menjadi separuh. Hanya saja angka ini jangan disalahpahami. Standardisasi bukan konveyor yang mencetak semua karakter dengan kecepatan yang sama. Untuk karakter utama tetap saya curahkan hampir 8 minggu, dan figuran selesai dalam 4 minggu. Yang dilakukan standardisasi bukan menyeragamkan kecepatan, melainkan membuat perbedaan waktu per tahap terjaga tanpa goyah. Kalau standar mengalir menjadi kontrol, ia kembali sebagai insiden yang memangkas waktu kreatif para kreator — tujuan standardisasi adalah menghilangkan dugaan dan kelalaian, bukan memampatkan waktu.
 
 ---
 
@@ -293,14 +293,14 @@ Pada Tahap 1·2 AI kuat, Tahap 3 dipegang manusia, dan Tahap 4 dipegang alat det
 | Build tanpa lint aset | Blokir otomatis Gerbang 3 |
 | Memaksa memampatkan semua karakter dalam 4 minggu | Jaga perbedaan waktu per tahap |
 
-Baris paling pertama dan baris ketiga adalah resep langsung untuk kecelakaan messenger di awal bab ini.
+Baris paling pertama dan baris ketiga adalah resep langsung untuk insiden messenger di awal bab ini.
 
 ---
 
 ### Poin-Poin Penting
-- Kecelakaan meledak bukan di dalam tahap, melainkan di titik transisi antar tahap — gerbanglah yang menjaga tempat itu.
+- Insiden meledak bukan di dalam tahap, melainkan di titik transisi antar tahap — gerbanglah yang menjaga tempat itu.
 - Bagian kosong dokumen desain tidak lenyap, melainkan dilemparkan ke hilir dan menjadi dugaan.
-- Pelacakan otomatis dampak perubahan adalah guardrail terbesar yang menghalangi kecelakaan kelalaian.
+- Pelacakan otomatis dampak perubahan adalah guardrail terbesar yang menghalangi insiden kelalaian.
 
 ### Pratinjau Bab Berikutnya
 - 13.1 FAQ·analisis meta-game — awal dari data·KPI
@@ -323,4 +323,4 @@ Baris paling pertama dan baris ketiga adalah resep langsung untuk kecelakaan mes
 3. Coba ubah sengaja satu baris tampilan, lalu pastikan `spec_change_impact` memuntahkan daftar aset hilir secara tepat.
 
 ### Versi Ringkas Solo
-Kalau bekerja sendiri, pipeline konversi·SVN art·tinjauan 5 orang itu berlebihan. Sisakan hanya dua hal minimal. (1) Satu format `character_spec.md` — 6 butir tampilan wajib, dilarang kosong. (2) Kebiasaan menuliskan sendiri dengan tangan satu baris "berkas hilir yang tersentuh perubahan ini" di paling bawah spesifikasi setiap kali mengubah tampilan. Meski tanpa alat, satu baris itu menghalangi kecelakaan perubahan terlewat.
+Kalau bekerja sendiri, pipeline konversi·SVN art·tinjauan 5 orang itu berlebihan. Sisakan hanya dua hal minimal. (1) Satu format `character_spec.md` — 6 butir tampilan wajib, dilarang kosong. (2) Kebiasaan menuliskan sendiri dengan tangan satu baris "berkas hilir yang tersentuh perubahan ini" di paling bawah spesifikasi setiap kali mengubah tampilan. Meski tanpa alat, satu baris itu menghalangi insiden perubahan terlewat.

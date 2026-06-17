@@ -27,12 +27,12 @@ Bab ini tidak membahas hak cipta dan etika secara terpisah. Sebab dalam praktik,
 
 Banyak buku hanya menulis bahwa hak cipta AI itu "kabur karena hukumnya belum ada". Itu hanya setengah benar. Pada Juni 2025, ketika Kementerian Kebudayaan, Olahraga, dan Pariwisata Korea bersama Korea Copyright Commission menerbitkan "Panduan Pendaftaran Hak Cipta atas Karya yang Memanfaatkan AI Generatif", setidaknya di Korea garis batas kelayakan pendaftaran menjadi jelas. Tidak perlu mengarang.
 
-Inti panduan itu bisa diringkas dalam satu kalimat. **Syarat pendaftaran hak cipta adalah "kontribusi kreatif manusia".** Di sinilah dua jenis terpisah.
+Inti panduan itu bisa diringkas dalam satu kalimat. **Syarat pendaftaran hak cipta adalah "kontribusi kreatif manusia".** Di sinilah dua jenis itu terbagi.
 
 | Kategori | Definisi | Pendaftaran |
 |---|---|---|
-| Keluaran GAI | Hasil yang dikeluarkan AI tanpa kontribusi kreatif manusia | Tidak bisa |
-| Karya yang memanfaatkan GAI | Bagian dari hasil yang dibuat manusia dengan AI sebagai alat, yang kontribusi kreatifnya diakui | Bisa |
+| Keluaran AI Generatif | Hasil yang dikeluarkan AI tanpa kontribusi kreatif manusia | Tidak bisa |
+| Karya yang memanfaatkan AI Generatif | Bagian dari hasil yang dibuat manusia dengan AI sebagai alat, yang kontribusi kreatifnya diakui | Bisa |
 
 Selanjutnya panduan menyajikan tiga jalur untuk diakui sebagai "karya yang memanfaatkan AI": ① ketika karya milik pengguna sendiri dimasukkan sebagai prompt sehingga kreativitasnya tercermin pada keluaran, ② ketika pekerjaan tambahan berupa modifikasi atau penambahan terhadap keluaran memiliki kreativitas, ③ ketika pemilihan, penyusunan, dan pengaturan keluaran memiliki kreativitas. Dua poros penilaiannya adalah **"kemampuan mengontrol" dan "kemampuan memprediksi"**. Pencipta diakui kreatif hanya jika ia dapat menentukan dengan jelas apa yang ingin diekspresikan dan menarik keluar hasil sesuai maksudnya.
 
@@ -222,7 +222,7 @@ Jika etika dipersempit hanya pada pekerjaan dan kesepakatan, satu poros akan ter
 
 Infrastruktur tata kelola perusahaan punya dua aset nyata untuk ini. Pada sistem atom ada `_economy_log/` (log ekonomi token dan waktu) dan `_roi_report.md` (laporan ROI). Yang pertama mencatat token dan waktu tiap sesi secara otomatis oleh mesin, yang kedua menjumlahkannya secara berkala untuk dibaca manusia. Intinya, log ini melacak bukan "seberapa banyak AI menggantikan manusia", melainkan "ke mana waktu manusia dibebaskan".
 
-Prinsip angka buku ini ada satu di antara tiga. Pertama, standar publik dikutip apa adanya (syarat pendaftaran panduan, kewajiban pelabelan UU Dasar AI). Kedua, perkiraan penulis ditulis sebagai perkiraan. Ketiga, hanya yang dapat diukur yang dijanjikan sebagai KPI. Dalam ranah hak cipta dan etika, yang dapat diukur bukanlah metrik hasil, melainkan metrik prosedur.
+Prinsip angka buku ini terdiri atas tiga hal. Pertama, standar publik dikutip apa adanya (syarat pendaftaran panduan, kewajiban pelabelan UU Dasar AI). Kedua, perkiraan penulis ditulis sebagai perkiraan. Ketiga, hanya yang dapat diukur yang dijanjikan sebagai KPI. Dalam ranah hak cipta dan etika, yang dapat diukur bukanlah metrik hasil, melainkan metrik prosedur.
 
 | Item ukur | Cara mengukur | Bisa dijanjikan atau tidak |
 |---|---|---|

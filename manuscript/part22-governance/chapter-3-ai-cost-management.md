@@ -256,7 +256,7 @@ Ketiga, **yang tidak diketahui ditulis sebagai tidak diketahui.** "6000 karakter
 | Model teratas untuk semua pekerjaan | Harga sekitar 19 kali bahkan untuk klasifikasi·penggantian | Pembagian model per pekerjaan (§22.3.5) |
 | Mengirim ulang konteks yang sama tiap panggilan | Membuang cache hit 1/10 | Caching konteks tetap (§22.3.6) |
 | Tidak ada batas atas pada penyuntikan otomatis | Seluruh pustaka atom disuntik tiap panggilan | Penjaga jumlah·panjang (§22.3.2) |
-| Mengelola biaya dengan tekad "ayo berhemat" | Daya tahan manusia tak bisa menahan lonjakan | Pakukan batas atas di kode |
+| Mengelola biaya dengan tekad "ayo berhemat" | Kemampuan menahan diri manusia tak bisa menahan lonjakan | Pakukan batas atas di kode |
 | Memanggil LLM bahkan untuk yang bisa deterministik | Panggilan termurah adalah 'tidak memanggil' | Pisahkan pemetaan·penggantian ke kode |
 
 Yang keempat adalah intinya. Bila pengendalian biaya diserahkan ke kemauan manusia, pasti bocor. Kemauan adalah yang paling pertama runtuh saat sibuk, sedangkan biaya paling cepat naik saat sibuk. Maka pengendalian haruslah berupa **konstanta kode** seperti `max_matches = 3`.

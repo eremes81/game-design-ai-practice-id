@@ -16,7 +16,7 @@ version: v3
 
 Ini terjadi pada hari ketika saya meringkas 17 notula rapat dengan AI untuk merapikannya menjadi decision card (kartu keputusan). Keluarannya rapi. Mulai dari ID keputusan, tanggal rapat yang dikutip, hingga satu baris alasan — formatnya sempurna. Salah satu kartu di antaranya tertulis "Pada rapat TF Combat 2026-04-18, kebijakan cooldown ditetapkan". Masalahnya, hari itu tidak ada rapat TF Combat. AI mencampur agenda dan tanggal dari rapat lain lalu mengarang satu kartu yang tampak meyakinkan, dan karena formatnya sempurna, kartu itu nyaris masuk begitu saja ke dalam catatan keputusan tim.
 
-Inilah halusinasi (halusinasi). LLM justru semakin percaya diri menjawab ketika ia kurang tahu. Jika diibaratkan manusia, ia seperti rekan kerja yang di rapat berkata tegas "Ah, itu sudah diputuskan begitu," padahal kalau ditelusuri keputusan semacam itu tidak pernah ada. Ketika satu kalimat itu mengalir ke sheet data, ke balasan CS, atau ke aset atom, jadilah ia sebuah insiden. Bab ini tidak membahas cara membungkam mulut rekan kerja itu — itu mustahil — melainkan cara membangun **gerbang verifikasi yang wajib dilewati sebelum ucapannya diloloskan**. Pembahasan umum tentang halusinasi sudah banyak di buku lain, jadi bab ini hanya berfokus pada *tempat mencegahnya dengan alur kerja AI*.
+Inilah halusinasi (hallucination). LLM justru semakin percaya diri menjawab ketika ia kurang tahu. Jika diibaratkan manusia, ia seperti rekan kerja yang di rapat berkata tegas "Ah, itu sudah diputuskan begitu," padahal kalau ditelusuri keputusan semacam itu tidak pernah ada. Ketika satu kalimat itu mengalir ke sheet data, ke balasan CS, atau ke aset atom, jadilah ia sebuah insiden. Bab ini tidak membahas cara membungkam mulut rekan kerja itu — itu mustahil — melainkan cara membangun **gerbang verifikasi yang wajib dilewati sebelum ucapannya diloloskan**. Pembahasan umum tentang halusinasi sudah banyak di buku lain, jadi bab ini hanya berfokus pada *tempat mencegahnya dengan alur kerja AI*.
 
 ---
 
@@ -24,7 +24,7 @@ Inilah halusinasi (halusinasi). LLM justru semakin percaya diri menjawab ketika 
 
 Tidak ada prompt yang membuat halusinasi menjadi nol. Model yang lebih besar dan prompt yang lebih baik menurunkan frekuensinya, tetapi tidak sampai nol. Karena itu, titik berangkat operasional bukanlah "menghilangkan halusinasi", melainkan "memasang gerbang yang menangkap halusinasi sebelum ia menyentuh keputusan dan data".
 
-Prinsip inti gerbang hanya satu. **Hal-hal yang dapat diarang oleh LLM (kutipan, angka, ID) diverifikasi di tempat yang bukan LLM.** Sumber verifikasi ada tiga: kode (deterministik), dokumen asli (grep), atau mata manusia. Bertanya ulang kepada LLM "tolong cek apakah ini benar" juga bisa menjadi satu tahap gerbang, tetapi itu hanya pelengkap, bukan penentu akhir.
+Prinsip inti gerbang hanya satu. **Hal-hal yang dapat dikarang oleh LLM (kutipan, angka, ID) diverifikasi di tempat yang bukan LLM.** Sumber verifikasi ada tiga: kode (deterministik), dokumen asli (grep), atau mata manusia. Bertanya ulang kepada LLM "tolong cek apakah ini benar" juga bisa menjadi satu tahap gerbang, tetapi itu hanya pelengkap, bukan penentu akhir.
 
 Di sini saya rapikan dulu titik yang paling sering dibingungkan oleh Game Designer. Wilayah yang rentan halusinasi dan yang tahan halusinasi jelas berbeda.
 
@@ -49,34 +49,34 @@ Jika hanya menulis "diverifikasi" secara abstrak, kita tidak tahu apa yang diker
 Pertama, ada dokumen asli yang akan diringkas. Inilah yang menjadi titik acuan verifikasi. Jika kita membiarkan LLM meringkas dari "ingatan" tanpa dokumen asli, tidak ada yang bisa dibandingkan.
 
 ```markdown
-# 회의록 — 2026-04-15 전투 밸런스 검토
+# Notula — 2026-04-15 Tinjauan Balance Combat
 
-참석: Minsoo Lee, Anggota Tim A, Anggota Tim B
-안건:
+Peserta: Minsoo Lee, Anggota Tim A, Anggota Tim B
+Agenda:
 1. Cooldown skill area — pendapat bahwa 8 detik saat ini terlalu pendek. Dipertimbangkan dinaikkan ke 12 detik.
-   결론: Diputuskan sementara 12 detik, dikonfirmasi setelah memeriksa telemetri pada build berikutnya.
+   Kesimpulan: Diputuskan sementara 12 detik, dikonfirmasi setelah memeriksa telemetri pada build berikutnya.
 2. HP transisi fase bos — usulan menurunkan dari 50% ke 30%.
-   결론: Ditunda. Berbenturan dengan jadwal pengarahan seni (art), dibahas ulang minggu depan.
+   Kesimpulan: Ditunda. Berbenturan dengan jadwal pengarahan seni (art), dibahas ulang minggu depan.
 3. Durasi status abnormal baru 'Freeze' — sudah dibahas tetapi angkanya belum ditetapkan.
 ```
 
 ### Langkah 2 — Prompt Ringkasan Pertama
 
 ```
-첨부한 회의록을 결정 카드로 요약하라.
+Ringkas notula terlampir menjadi decision card.
 
-규칙:
+Aturan:
 1) Tiap agenda menjadi 1 kartu. Format: [agenda | kesimpulan | status (konfirmasi/sementara/ditunda) | alasan]
 2) Jangan menghasilkan informasi yang tidak ada di notula. Jangan menerka angka, tanggal, atau peserta.
 3) Untuk agenda yang belum berkesimpulan, setel status menjadi 'belum ditetapkan' dan jangan mengarang kesimpulan sembarangan.
 
-출력 형식: Hanya tabel. Dilarang memberi penjelasan.
+Format keluaran: Hanya tabel. Dilarang memberi penjelasan.
 ```
 
 ### Langkah 3 — Keluaran Pertama Claude (rekonstruksi, kutipan)
 
 ```
-| 안건            | 결론                  | 상태 | 근거                          |
+| agenda          | kesimpulan            | status | alasan                      |
 |----------------|----------------------|------|------------------------------|
 | Cooldown skill area | 8 detik → 12 detik | Sementara | Dikonfirmasi setelah cek telemetri |
 | Transisi fase bos | 50% → 30% ditunda | Ditunda | Bentrok jadwal pengarahan seni |
@@ -90,7 +90,7 @@ Mari lihat kartu ketiga. Pada dokumen asli hanya tertulis "Durasi Freeze sudah d
 Di sini kita tidak menerima keluaran apa adanya, melainkan **memaksa verifikasi-mandiri yang mencocokkan baris demi baris dengan dokumen asli**. Inilah satu jurus kunci bab ini.
 
 ```
-방금 만든 결정 카드 3장을, 첨부한 원본 회의록과 한 항목씩 대조하라.
+Cocokkan 3 decision card yang baru kau buat dengan notula asli terlampir, satu butir demi satu.
 
 Untuk setiap field (kesimpulan, status, alasan, angka) pada tiap kartu:
 - Apakah ini isi yang tertulis langsung di dokumen asli? → [cocok]
@@ -103,7 +103,7 @@ Kembalikan semua field [hasil-arang] yang tidak punya dasar di asli menjadi 'bel
 ### Langkah 5 — Keluaran Verifikasi-Mandiri Claude (rekonstruksi, mentah apa adanya)
 
 ```
-대조 결과:
+Hasil pencocokan:
 
 Kartu 1 (Cooldown skill area)
 - Kesimpulan "8 detik→12 detik": [cocok] Agenda 1 "dinaikkan ke 12 detik"
@@ -169,7 +169,7 @@ Ketika memasukkan gerbang verifikasi ke dalam pipeline otomasi, ada satu insiden
 Saya kutip apa adanya cara hook injeksi atom JIT (`inject_memory.py`) yang benar-benar beroperasi di buku ini menangani masalah ini. hook ini menyela setiap kali pengguna mengetik prompt untuk menginjeksikan memori yang relevan — bisa dikatakan ia adalah *gerbang yang selalu menyala*. Satu baris tertulis jelas pada komentar prinsip desainnya.
 
 ```python
-설계 원칙:
+Prinsip desain:
 - Selalu exit 0 (meski gagal, dilarang mengganggu aliran kerja pengguna)
 - Jika tidak ada kecocokan, kembalikan respons kosong (normal)
 ```
@@ -213,7 +213,7 @@ Pertama, **hanya yang dapat diukur yang dikatakan sebagai angka.** Untuk menjanj
 
 Kedua, **perbandingan antarmodel hanya menyatakan arah.** Arah "model besar lebih sedikit berhalusinasi daripada model kecil" teramati secara stabil. Namun angka absolut semacam "Opus 3%, open 7B 20%" sangat berfluktuasi tergantung pekerjaan, prompt, dan domain, sehingga buku ini tidak mengeklaim nilai absolut. Yang diambil hanya arahnya (semakin besar model semakin sedikit, tetapi bertukar untung dengan biaya).
 
-Ketiga, **standar publik dikutip apa adanya.** Pada bab ini hampir tidak ada angka standar yang perlu diarang, tetapi nilai setelan seperti temperature adalah fakta publik di dokumentasi API model. Pekerjaan verifikasi dan analisis menyetel temperature rendah (mendekati deterministik), pekerjaan kreatif menyetelnya tinggi — ini bukan perkiraan, melainkan definisi perilaku API.
+Ketiga, **standar publik dikutip apa adanya.** Pada bab ini hampir tidak ada angka standar yang perlu dikarang, tetapi nilai setelan seperti temperature adalah fakta publik di dokumentasi API model. Pekerjaan verifikasi dan analisis menyetel temperature rendah (mendekati deterministik), pekerjaan kreatif menyetelnya tinggi — ini bukan perkiraan, melainkan definisi perilaku API.
 
 Maka indikator terukur yang benar-benar dijanjikan bab ini ada tiga — jumlah deteksi [hasil-arang] (jumlah halusinasi yang ditangkap verifikasi-mandiri), jumlah penolakan gerbang grep (jumlah ketidakcocokan angka·ID), dan jumlah penolakan gerbang manusia. Ketiganya dapat dihitung dari log tiap kuartal, dan di rapat kita bisa berbicara dengan angka, bukan dengan "perasaan".
 

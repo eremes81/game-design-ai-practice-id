@@ -36,7 +36,7 @@ WSL2 bukan dinyalakan terus-menerus, melainkan ditarik untuk dipakai hanya saat 
 
 ## A.2 Inventaris Alat
 
-Alat dikelompokkan ke dalam lima cabang: mesin · perkakas, desain · perencanaan, seni, kolaborasi · operasional, dan AI · LLM. Tidak satu orang memakai kelima cabang itu seluruhnya, tetapi seorang Game Designer setiap hari bolak-balik di tiga cabang — desain · perencanaan, kolaborasi · operasional, dan AI · LLM. Mohon perhatikan bahwa tiap cabang berbentuk "satu-dua yang wajib + pendukung".
+Alat dikelompokkan ke dalam lima cabang: mesin · perkakas, desain · perencanaan, seni, kolaborasi · operasional, dan AI · LLM. Tidak ada satu orang pun yang memakai kelima cabang itu seluruhnya, tetapi seorang Game Designer setiap hari bolak-balik di tiga cabang — desain · perencanaan, kolaborasi · operasional, dan AI · LLM. Mohon perhatikan bahwa tiap cabang berbentuk "satu-dua yang wajib + pendukung".
 
 ### A.2.1 Mesin Game · Perkakas
 
@@ -70,18 +70,18 @@ Inilah meja kerja sehari-hari seorang Game Designer. Excel adalah markas besar d
 | Stable Diffusion(SDXL) / ComfyUI | Produksi massal konsep · tekstur utama dengan hosting sendiri (LoRA · ControlNet) |
 | Midjourney | Moodboard awal (pendukung) |
 
-Memang ini bukan alat yang dipakai langsung oleh Game Designer, tetapi ketika bertukar konsep dengan bagian seni, mengetahui alat apa yang ada di sisi mereka akan mengubah resolusi permintaan Anda. Produksi massal utama berporos pada Stable Diffusion(SDXL)/ComfyUI yang di-hosting sendiri — karena aset tidak diunggah ke luar sehingga IP terjaga, dan dengan LoRA · ControlNet karakter konsistensi orang yang sama dapat dikendalikan pada setiap pembangkitan berulang. Alat tertutup seperti Midjourney hanya dipakai sebagai pendukung sebatas moodboard awal saat pertama meraba-raba nuansa proyek, dan tidak dipakai untuk produksi massal utama yang menuntut kendali konsistensi · pengulangan.
+Memang ini bukan alat yang dipakai langsung oleh Game Designer, tetapi ketika bertukar konsep dengan bagian seni, mengetahui alat apa yang ada di sisi mereka akan mengubah resolusi permintaan Anda. Produksi massal utama berporos pada Stable Diffusion(SDXL)/ComfyUI yang di-hosting sendiri — karena aset tidak diunggah ke luar sehingga IP terjaga, dan dengan LoRA · ControlNet untuk karakter, konsistensi orang yang sama dapat dikendalikan pada setiap pembangkitan berulang. Alat tertutup seperti Midjourney hanya dipakai sebagai pendukung sebatas moodboard awal saat pertama meraba-raba nuansa proyek, dan tidak dipakai untuk produksi massal utama yang menuntut kendali konsistensi · pengulangan.
 
 ### A.2.4 Kolaborasi · Operasional
 
 | Alat | Kegunaan |
 |---|---|
 | Alat kolaborasi (ClickUp) | Task |
-| Messenger internal | Komunikasi waktu nyata |
+| Messenger tim internal | Komunikasi waktu nyata |
 | Wiki bikinan sendiri | Wiki · dokumen jangka panjang |
 | Web portal bikinan sendiri | Antarmuka terpadu (20.3) |
 
-Sumbu waktu komunikasilah yang memilah alatnya. Komunikasi waktu nyata yang menuntut kesegeraan lewat messenger internal, hal yang harus dikerjakan lewat alat kolaborasi (tim kami memakai ClickUp), dan pengetahuan yang ingin disimpan lama lewat wiki bikinan sendiri — sekalipun tracker diganti dengan JIRA · Redmine dan wiki diganti dengan Confluence · Notion, dan apa pun messengernya, alur buku ini tetap sama. Web portal bikinan sendiri adalah jendela terpadu yang menyambungkan ketiganya dengan alat AI dalam satu layar, dan dibahas rinci di 20.3.
+Sumbu waktu komunikasilah yang memilah alatnya. Komunikasi waktu nyata yang menuntut kesegeraan lewat messenger tim internal, hal yang harus dikerjakan lewat alat kolaborasi (tim kami memakai ClickUp), dan pengetahuan yang ingin disimpan lama lewat wiki bikinan sendiri — sekalipun tracker diganti dengan JIRA · Redmine dan wiki diganti dengan Confluence · Notion, dan apa pun messengernya, alur buku ini tetap sama. Web portal bikinan sendiri adalah jendela terpadu yang menyambungkan ketiganya dengan alat AI dalam satu layar, dan dibahas rinci di 20.3.
 
 ### A.2.5 AI · LLM
 

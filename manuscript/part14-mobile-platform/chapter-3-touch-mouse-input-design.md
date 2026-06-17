@@ -32,7 +32,7 @@ Ketebalan jari, halangan pandang, batas multi-sentuh, dan presisi semuanya berbe
 
 Dua baris yang paling besar pengaruhnya pada desain di sini adalah "halangan pandang" dan "hover". Halangan pandang memaksa di mana hasil harus ditampilkan, sedangkan ketiadaan hover berarti satu kanal informasi bernama tooltip lenyap seutuhnya di perangkat seluler. Empat baris sisanya lebih mendekati detail turunan dari dua baris ini.
 
-Standar publik memaku perbedaan ini sebagai angka — standar publik seperti sentuh 44pt (HIG)·48dp (Material)·kontras 4.5:1·target sentuh 24 piksel CSS (WCAG SC2.5.8) mengikuti rulebook (buku aturan) §9.1. Angka-angka ini bukan soal selera melainkan produk dari tubuh manusia dan pengukuran, sehingga tolok ukur yang kita pakai saat memverifikasi pemetaan pun pada akhirnya adalah standar ini.
+Standar publik mematok perbedaan ini dalam angka — standar publik seperti sentuh 44pt (HIG)·48dp (Material)·kontras 4.5:1·target sentuh 24 piksel CSS (WCAG SC2.5.8) mengikuti rulebook (buku aturan) §9.1. Angka-angka ini bukan soal selera melainkan produk dari tubuh manusia dan pengukuran, sehingga tolok ukur yang kita pakai saat memverifikasi pemetaan pun pada akhirnya adalah standar ini.
 
 ## 14.3.2 Pemetaan per Tindakan Game
 
@@ -230,7 +230,7 @@ Mouse menikmati tiga kemewahan yang tak dimiliki sentuh. Hover, banyak tombol, d
 
 **Prinsip 1 — Hover.** Mouse bisa menunjuk tanpa menekan. Jika mouse diletakkan di slot skill, muncul tooltip nama·cooldown (CD, waktu jeda)·deskripsi, dan jika diklik ia digunakan. Sentuh tidak punya keadaan tengah ini, sehingga hover adalah kanal yang memungkinkan PC menumpuk lebih banyak informasi. Namun, perlu disadari sejak dini di tahap pemetaan 14.3.3 bahwa informasi yang hanya bergantung pada hover akan kehilangan tempat pada versi mobile.
 
-**Prinsip 2 — Banyak tombol.** Klik kiri tindakan utama, klik kanan pendamping/konteks, klik roda reset sudut pandang, roda untuk zoom. Konflik yang ditangkap lint di atas tepatnya adalah kasus menumpangkan dua tindakan pada klik kanan ini. Banyaknya tombol tidak berarti semuanya harus diisi, lalu malah menimbulkan konflik.
+**Prinsip 2 — Banyak tombol.** Klik kiri tindakan utama, klik kanan pendamping/konteks, klik roda reset sudut pandang, roda untuk zoom. Konflik yang ditangkap lint di atas tepatnya adalah kasus menumpangkan dua tindakan pada klik kanan ini. Banyak tombol bukan alasan untuk mengisi semuanya, karena justru menimbulkan konflik.
 
 **Prinsip 3 — Standar keyboard.** ESC=menu, M=peta, 1\~8=skill, WASD=gerak, Shift=lari, Space=lompat. Pengguna harus bisa menebak tanpa mempelajarinya. Tombol yang menyimpang dari standar dicatat alasannya yang setimpal pada `note`, dan keputusan memberikan Tab untuk pergantian target alih-alih inventory pada 14.3.3 adalah contohnya.
 

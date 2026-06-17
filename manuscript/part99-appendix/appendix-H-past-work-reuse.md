@@ -33,7 +33,7 @@ Tolok ukur pemilahan adalah "konkret atau abstrak". Hasil yang konkret adalah mi
 | Isi keputusan | Perusahaan | — |
 | Pola keputusan (di situasi seperti ini, keputusan seperti ini bagus) | — | Pribadi |
 | Data game | Perusahaan | — |
-| Kiat operasional (operasi rulebook·alat) | — | Pribadi |
+| Kiat operasional (rulebook·operasi alat) | — | Pribadi |
 | Kode | Perusahaan | — |
 | Algoritme·struktur | — | Pribadi |
 

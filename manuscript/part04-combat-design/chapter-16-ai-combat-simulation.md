@@ -187,7 +187,7 @@ Kini kita kumpulkan kedua sumbu dalam satu tempat. Spesifikasi menjanjikan 150ms
 
 ### Prompt
 
-Spesifikasi hit timing-nya 150ms tetapi pengukurannya 220ms. Saya menempelkan log di bawah dan bertanya dengan panjang seperti yang mungkin benar-benar diketik manusia. Permintaan singkat yang maksudnya jelas lebih baik daripada formalitas yang bertele-tele — satu baris yang meminta mencantumkan metode verifikasi dan satu baris larangan memutuskan secara mutlak adalah tulang punggung prompt ini.
+Spesifikasi hit timing-nya 150ms tetapi pengukurannya 220ms. Saya menempelkan log di bawah dan bertanya dengan panjang sewajarnya yang mungkin benar-benar diketik manusia. Permintaan singkat yang maksudnya jelas lebih baik daripada formalitas yang bertele-tele — satu baris yang meminta mencantumkan metode verifikasi dan satu baris larangan memutuskan secara mutlak adalah tulang punggung prompt ini.
 
 > Hit timing skill_thunder di spesifikasi 150ms tetapi terukur 220ms, melampaui +70ms. Dari telemetry di bawah, pisahkan kemungkinan penyebabnya dan tuliskan juga *log mana yang memastikan/menyingkirkan masing-masing*. Jangan memutuskan secara mutlak; jika tidak pasti tandai sebagai 'belum terverifikasi'.  // "metode verifikasi juga" dan "larangan memutuskan mutlak" adalah dua maksud inti. Formalitas lainnya boleh dihilangkan, hasilnya tetap sama.
 >

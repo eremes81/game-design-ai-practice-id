@@ -49,7 +49,7 @@ Teks asli yang dikeruk dari kanal dinormalisasi menjadi satu rekaman per baris. 
 // ... fb_0008 ~ fb_0100 (dihilangkan)
 ```
 
-Pada tahap masukan, rekaman membiarkan `topik·sentimen·tingkat keparahan` kosong. Mengisi kolom kosong itu adalah tugas LLM dua tahap.
+Pada tahap masukan, rekaman membiarkan `topik·sentimen·tingkat keparahan` kosong. Mengisi kolom kosong itu adalah tugas LLM yang menghasilkan dua tabel.
 
 ### Tahap 2 — Prompt: Suruh Klasterisasi, tetapi Paksakan Label, Format, dan Jalan Keluar
 
@@ -182,7 +182,7 @@ Di sini ada satu hal yang berbeda secara menentukan dari §6.2. **Pengiriman bal
 
 ## 15.3.5 Kunci Voice Pengguna ke Dalam Retrospektif Kuartal
 
-Agar umpan balik yang sama tidak goyah ke keputusan berbeda tiap kuartal, hasil klasterisasi harus dikunci sebagai **slot masukan tetap retrospektif kuartal**. Bukan secara impulsif "belakangan banyak keluhan enhancement", melainkan tabel yang direkap dengan sumbu label yang sama tiap kuartal masuk ke dalam tabel retrospektif. Alasan melarang pembuatan label bebas dan menguncinya dengan daftar yang diizinkan di §15.3.2 dipanen kembali di sini.
+Agar umpan balik yang sama tidak goyah ke keputusan berbeda tiap kuartal, hasil klasterisasi harus dikunci sebagai **slot masukan tetap retrospektif kuartal**. Bukan secara impulsif "belakangan banyak keluhan enhancement", melainkan tabel yang direkap dengan sumbu label yang sama tiap kuartal masuk ke dalam tabel retrospektif. Alasan melarang pembuatan label bebas dan menguncinya dengan daftar yang diizinkan di §15.3.2 terbayar di sini.
 
 > **2026 Q2 voice pengguna (rekap otomatis LLM, akumulasi kuartal)**
 > ```

@@ -30,7 +30,7 @@ Nilai sejati otomatisasi juga ada pada titik ini. Ketika klasifikasi diotomatisk
 
 ---
 
-## 13.1.2 [Worked Transcript] 312 Jawaban Terbuka → Klaster Topik
+## 13.1.2 [Worked Transcript (rekaman sesi nyata)] 312 Jawaban Terbuka → Klaster Topik
 
 Saya tunjukkan satu siklus secara utuh, bagaimana ini benar-benar dijalankan. Berikut ini adalah reproduksi setia dari sesi pengklasteran topik atas jawaban terbuka survei in-game pada proyek penulis (MMORPG dengan prioritas mobile, selanjutnya disebut "Proyek A"). Prompt masukan bisa langsung disalin dan dipakai, dan keluarannya merupakan rekonstruksi dari sesi nyata.
 

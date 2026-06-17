@@ -21,7 +21,7 @@ Bab ini adalah catatan tentang proses memasang Hermes Agent — alat yang membua
 
 Seluruh operasional sampai §23.1 berpusat pada Claude Code. Saya mengetik satu kalimat, alat itu merespons sekali, lalu saya meninjau respons tersebut sebelum mengetik kalimat berikutnya. Siklus pendek ini luar biasa cocok untuk pekerjaan presisi. Untuk pekerjaan yang menuntut konfirmasi di setiap langkah — seperti mengubah satu angka balance — sudah seharusnya manusia ikut campur setiap kali.
 
-Masalahnya muncul pada pekerjaan yang panjang. Permintaan seperti "baca semua 30 notulen rapat sebulan terakhir, lalu ekstrak hanya keputusan-keputusannya sebagai kandidat atom" akan membutuhkan 30 kali bolak-balik jika diproses di dalam alur percakapan. Selama 30 putaran itu, saya tidak bisa mengerjakan hal lain. Pada pekerjaan semacam ini, keunggulan alat yang memasangkan masukan dan keluaran secara pendek justru berbalik menjadi kelemahan.
+Masalahnya muncul pada pekerjaan yang panjang. Permintaan seperti "baca semua 30 notulen rapat sebulan terakhir, lalu ekstrak hanya keputusan-keputusannya sebagai kandidat atom" akan membutuhkan 30 kali bolak-balik jika diproses di dalam alur percakapan. Selama 30 putaran itu, saya tidak bisa mengerjakan hal lain. Pada pekerjaan semacam ini, keunggulan alat yang merapatkan masukan dan keluaran dalam siklus pendek justru berbalik menjadi kelemahan.
 
 Agen mengisi kursi yang berlawanan itu. Begitu saya melemparkan tujuannya saja — "ambil keputusan-keputusan dari 30 notulen sebagai kandidat atom, lalu jadikan laporan" — ia memilih sendiri alat yang dipakai, menapaki langkah-langkah perantara secara mandiri, dan setelah selesai hanya membawakan hasilnya. Siklusnya panjang dan otonom. Sebagai gantinya, datang pula kelemahan bahwa manusia tidak melihat setiap langkahnya.
 
@@ -95,7 +95,7 @@ Ada satu jebakan yang tetap ada terlepas dari lokasi pemasangan. Workspace Herme
 
 ---
 
-## 23.2.4 Memasang Hermes dan Koneksi Pertama — Worked Transcript
+## 23.2.4 Memasang Hermes dan Koneksi Pertama — Worked Transcript (rekaman sesi nyata)
 
 Mulai dari sini barulah bagian yang benar-benar perlu dikerjakan dengan tangan. Karena inti bab ini bukan pemasangan itu sendiri melainkan "apa yang Anda suruh kerjakan setelah dipasang", saya akan menelusuri satu pekerjaan pertama sampai tuntas — prompt utuh, keluaran mentah, verifikasi manusia, hingga permintaan ulang. Untuk pekerjaan ini saya memilih yang paling sederhana dari kelompok pekerjaan tertunda di §23.2.2, yakni pemeriksaan integritas sheet data di malam hari.
 

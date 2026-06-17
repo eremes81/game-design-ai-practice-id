@@ -8,7 +8,7 @@ author: 이민수
 
 # 16.3 Satu Keputusan, Tiga Kemasan — Framing Artefak per Disiplin
 
-Ruang rapat 95_BattleTF. Sore hari di hari kami memfinalkan hadiah kehadiran guild menjadi sumber daya +5, saya mengalirkan satu keputusan yang sama ke tiga tempat. Ke kanal tim desain saya kirim spesifikasi markdown, ke tim program satu baris kolom data, dan ke tim seni satu lembar html berisi satu layar. Jawaban datang hampir bersamaan dari ketiganya. Lead program bertanya "kapan trigger-nya terjadi", art director bertanya "apakah posisi tombol kehadiran sesuai dengan panduan 06_UI", dan animator tidak berkata apa-apa. Keputusannya sama, tetapi yang dilihat ketiga orang itu sama sekali berbeda.
+Ruang rapat 95_BattleTF. Pada sore hari ketika kami memfinalkan hadiah kehadiran guild menjadi sumber daya +5, saya mengalirkan satu keputusan yang sama ke tiga tempat. Ke kanal tim desain saya kirim spesifikasi markdown, ke tim program satu baris kolom data, dan ke tim seni satu lembar html berisi satu layar. Jawaban datang hampir bersamaan dari ketiganya. Lead program bertanya "kapan trigger-nya terjadi", art director bertanya "apakah posisi tombol kehadiran sesuai dengan panduan 06_UI", dan animator tidak berkata apa-apa. Keputusannya sama, tetapi yang dilihat ketiga orang itu sama sekali berbeda.
 
 Bab ini adalah catatan tentang mengubah "melihat secara berbeda" itu dari kecelakaan menjadi desain. Mengemas satu keputusan secara berbeda untuk tiap disiplin — itulah framing.
 
@@ -16,7 +16,7 @@ Bab ini adalah catatan tentang mengubah "melihat secara berbeda" itu dari kecela
 
 ## 16.3.1 Lima Orang Membaca Keputusan yang Sama secara Berbeda
 
-Pada satu keputusan hadiah kehadiran guild, ada lima audiens yang menempel. Mereka membaca kalimat yang sama, tetapi masing-masing hanya memilih wilayahnya sendiri dan melewatkan sisanya. Kecelakaan terjadi tepat di tempat yang dilewatkan.
+Pada satu keputusan hadiah kehadiran guild, ada lima audiens yang terlibat. Mereka membaca kalimat yang sama, tetapi masing-masing hanya memilih wilayahnya sendiri dan melewatkan sisanya. Kecelakaan terjadi tepat di tempat yang dilewatkan.
 
 | Audiens | Yang dibaca dengan fokus | Yang secara naluriah dilewati |
 |---|---|---|
@@ -134,7 +134,7 @@ Keluarkan 2 butir [perlu konfirmasi] di kemasan program dari artefak,
 dan sebagai gantinya pisahkan menjadi blok "Item yang Perlu Difinalkan Ulang di 95_BattleTF" di paling atas.
 ```
 
-Dengan satu kali penolakan dan permintaan ulang ini, artefak menjadi bentuk yang bisa langsung dipungut dan dipakai ketiga disiplin di posisinya masing-masing. AI memang membentuk tiga draf kemasan dan bahkan menandai celah-celahnya, tetapi mana yang harus dikurangi dari kemasan mana — menghapus referensi eksternal dari kemasan seni dan mengangkat item yang belum final dari kemasan program — pengguntingan itu pada akhirnya tetap berada di tangan saya. Penilaian inti framing terletak pada sisi pengecualian, bukan penyertaan.
+Dengan satu kali penolakan dan permintaan ulang ini, artefak menjadi bentuk yang bisa langsung dipungut dan dipakai ketiga disiplin di posisinya masing-masing. AI memang membentuk tiga draf kemasan dan bahkan menandai celah-celahnya, tetapi mana yang harus dikurangi dari kemasan mana — menghapus referensi eksternal dari kemasan seni dan mengangkat item yang belum final dari kemasan program — pemangkasan itu pada akhirnya tetap berada di tangan saya. Penilaian inti framing terletak pada sisi pengecualian, bukan penyertaan.
 
 ---
 
@@ -159,7 +159,7 @@ Metodenya bercabang tergantung di mana kemasan akan diletakkan. Mana di antara k
 - Prioritas: milestone ini
 
 ### QA (Verifikasi)
-- Kriteria penerimaan: setelah hadir, sumber daya guild +5 terterap, blokir melebihi 1x sehari
+- Kriteria penerimaan: setelah hadir, sumber daya guild +5 diterapkan, blokir melebihi 1x sehari
 - Risiko: inflasi sumber daya, penambahan ganda multi-perangkat
 ```
 

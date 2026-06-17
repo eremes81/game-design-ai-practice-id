@@ -64,7 +64,7 @@ P2 adalah alternatif atau khusus untuk situasi tertentu. Kalau Anda mengelola ko
 
 ## E.3 MCP Khusus Game (Dikembangkan Sendiri oleh Penulis)
 
-Celah yang tidak terisi oleh MCP komersial dibuat sendiri. Berikut adalah MCP yang penulis kembangkan sendiri agar pas dengan alur kerja game design. Semuanya bertujuan agar sistem yang dibahas di tubuh buku (atom, decision card, notula rapat) bisa langsung dilihat dari LLM.
+Celah yang tidak terisi oleh MCP komersial dibuat sendiri. Berikut adalah MCP yang penulis kembangkan sendiri agar pas dengan alur kerja game design. Semuanya bertujuan agar sistem yang dibahas di dalam buku (atom, decision card, notula rapat) bisa langsung dilihat dari LLM.
 
 | Server | Kegunaan |
 |---|---|

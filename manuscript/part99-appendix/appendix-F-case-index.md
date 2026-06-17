@@ -96,7 +96,7 @@ Lingkungan pribadi (1\~2 orang, atau hobi) meminjam kasus perusahaan dengan meny
 |---|---|
 | Sistem rapat | Tidak diperlukan untuk solo. Cukup catatan sendiri |
 | Operasional TF | Tidak diperlukan untuk solo |
-| Decision card | Hanya keputusan besar |
+| Decision card (kartu keputusan) | Hanya keputusan besar |
 | atom·wikilink | Manfaatkan secara aktif (bernilai bahkan untuk solo) |
 
 ---
@@ -118,7 +118,7 @@ Semua kasus perusahaan dalam buku ini dianonimkan.
 
 ## F.5 Indeks Pekerjaan Non-Game — Menelusuri Kotak "Penerapan di Luar Game"
 
-> Indeks balik bagi pembaca yang bekerja di luar game (perancang·PM·pekerja kantoran umum). Kotak "Penerapan di Luar Game" di akhir setiap bab pada isi utama adalah jembatan untuk membaca alur kerja bab tersebut dengan memindahkannya ke pekerjaan yang tidak terkait dengan game. Jika isi domain game terasa berat, Anda boleh membuka dahulu kotak-kotak di bawah ini dan masuk melalui kasus pekerjaan Anda sendiri. Indeks ini adalah jangkar bagi "Jalur Pekerjaan Umum" (Bagian 1·2 → 17 → 16 → 18 → 21·22) dan Kursus Kilat 90 Menit (17.1 → 16.2 → 22.1 → 21.1).
+> Indeks balik bagi pembaca yang bekerja di luar game (perancang·PM·pekerja kantoran umum). Kotak "Penerapan di Luar Game" di akhir setiap bab pada isi utama adalah jembatan untuk membaca alur kerja bab tersebut dengan memindahkannya ke pekerjaan yang tidak terkait dengan game. Jika isi domain game terasa berat, Anda boleh membuka dahulu kotak-kotak di bawah ini dan masuk melalui kasus pekerjaan Anda sendiri. Indeks ini adalah jangkar bagi "Jalur Pekerjaan Umum" (Bagian 1·2 → 17 → 16 → 18 → 21·22) dan Kursus Super Singkat 90 Menit (17.1 → 16.2 → 22.1 → 21.1).
 
 ### F.5.1 Proses·Kolaborasi (Transfer ke luar game paling langsung)
 

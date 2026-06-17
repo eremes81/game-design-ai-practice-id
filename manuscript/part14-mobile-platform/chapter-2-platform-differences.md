@@ -26,7 +26,7 @@ Pertama, kita lihat dulu peta perbedaannya. Di bawah ini adalah tabel batasan pl
 | Input | Sentuh | Sentuh (+sebagian keyboard) | Keyboard·mouse·gamepad |
 | Target sentuh minimum | 44pt (Apple HIG) | 48dp (Material) | Klik — tidak berlaku |
 | Layar | 4.7\~6.7 inci | 4.5\~7 inci (variasi besar) | 21\~32 inci |
-| Pembayaran | App Store | Google Play | Mandiri·Steam |
+| Pembayaran | App Store | Google Play | Mandiri (kanal sendiri)·Steam |
 | Notifikasi | APNs | FCM | OS·mandiri |
 | Penyimpanan | iCloud | Google Drive·mandiri | Steam Cloud·mandiri |
 | Siklus penggantian OS | 1\~2 tahun | 1 tahun (fragmentasi besar) | 5\~10 tahun |
@@ -134,7 +134,7 @@ Berkas ini melakukan tiga hal sekaligus. (1) **Spesifikasi** yang dibaca AI saat
 
 ---
 
-## 14.2.4 Worked Transcript: Rulebook → Usulan Percabangan AI → Verifikasi
+## 14.2.4 Worked Transcript (rekaman sesi nyata): Rulebook → Usulan Percabangan AI → Verifikasi
 
 Sekarang kita ikuti pekerjaan nyata dari awal sampai akhir. Situasinya seperti ini. Sambil menyiapkan peluncuran tambahan untuk PC, handler input yang semula hanya ada di seluler harus dicabangkan untuk versi PC. Berdasarkan rulebook, saya meminta Claude membuat draf adapter input PC, memverifikasinya dengan lint, lalu menjalankan satu siklus penuh hingga penolakan dan permintaan ulang.
 

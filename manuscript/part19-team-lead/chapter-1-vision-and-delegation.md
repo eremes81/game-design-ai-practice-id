@@ -1,5 +1,5 @@
 ---
-title: "19.1 Mengubah Visi Menjadi Lembar Penilaian Keputusan — Menguji 26 Berkas decisions/ pada LLM"
+title: "19.1 Mengubah Visi Menjadi Lembar Penilaian Keputusan — Menguji 26 Keputusan di decisions/ pada LLM"
 part: 19
 chapter: 1
 status: v3
@@ -9,7 +9,7 @@ ip_check: done
 version: v3
 ---
 
-# 19.1 Mengubah Visi Menjadi Lembar Penilaian Keputusan — Menguji 26 Berkas decisions/ pada LLM
+# 19.1 Mengubah Visi Menjadi Lembar Penilaian Keputusan — Menguji 26 Keputusan di decisions/ pada LLM
 
 > Pembaca utama: Design Director dan lead Game Designer yang memimpin tim berskala menengah (10–50 orang)
 > Versi ringkas untuk pembaca solo/hobi: §19.1.8 "Versi Ringkas Solo"
@@ -230,7 +230,7 @@ Bab visi·pendelegasian sangat tergoda memasukkan tabel seperti "setelah visi di
 
 Pertama, **yang dihitung dicatat sebagai hasil pengukuran nyata.** atom `decisions/` saat ini berjumlah 26 (berdasarkan pengukuran nyata per Mei 2026). Jumlah kasus yang dinaikkan ke gerbang manusia dari vonis tahap-1 LLM, dan di antaranya jumlah yang dikoreksi karena salah vonis, adalah nilai ukur nyata yang dihitung dari log sesi. Bahwa 1 dari 2 vonis pelanggaran (D0019) di worked transcript di atas ternyata salah vonis juga merupakan hasil sesi nyata.
 
-Kedua, **efek hanya dinyatakan sebagai arah.** "Pembandingan setengah hari menyusut menjadi tinjauan sedikit kasus" adalah arah strukturnya, bukan waktu absolut. Waktu penghematan yang persis berubah-ubah menurut jumlah keputusan, skala tim, dan panjang isi atom, jadi tepat dibaca sebagai perbedaan struktur antara "26 dengan tangan" dan "tahap-1 LLM + gerbang manusia". Indikator hasil seperti waktu rapat dan skor motivasi tidak ditentukan oleh visi seorang diri, jadi sebab-akibatnya tidak dipastikan.
+Kedua, **efek hanya dinyatakan sebagai arah.** "Pembandingan setengah hari menyusut menjadi tinjauan sedikit kasus" adalah arah strukturnya, bukan waktu absolut. Karena waktu penghematan yang persis berbeda-beda menurut jumlah keputusan, skala tim, dan panjang isi atom, lebih tepat dibaca sebagai perbedaan struktur antara "26 dengan tangan" dan "tahap-1 LLM + gerbang manusia". Indikator hasil seperti waktu rapat dan skor motivasi tidak ditentukan oleh visi seorang diri, jadi sebab-akibatnya tidak dipastikan.
 
 Ketiga, **yang dijanjikan hanya yang dapat diukur.** Yang benar-benar dapat diukur dari alur kerja ini adalah — jumlah keputusan yang diuji pada pemeriksaan visi per kuartal, jumlah kasus yang lolos gerbang manusia, tingkat salah vonis (proporsi yang dikoreksi manusia menjadi sejalan dari vonis pelanggaran LLM), dan jumlah keputusan yang tidak terbakukan jadi atom (keputusan yang didelegasikan tetapi terlewat dari pemeriksaan karena tidak ada atom-nya). Empat ini dapat dinyatakan dengan angka, bukan "perasaan", dalam rapat. Khususnya **tingkat salah vonis** membuktikan dengan angka setiap kuartal alasan mengapa vonis LLM tidak boleh ditelan mentah-mentah.
 
@@ -261,7 +261,7 @@ Kalau Anda bekerja dalam tim, mulailah dengan satu langkah berikut. Pertama-tama
 ---
 
 ### Poin-Poin Penting
-- Yang penting pada visi bukan penulisannya, melainkan menguji pada keputusan — 26 berkas decisions/ diuji pada 5 slot visi setiap kuartal.
+- Yang penting pada visi bukan penulisannya, melainkan menguji pada keputusan — 26 keputusan di decisions/ diuji pada 5 slot visi setiap kuartal.
 - LLM menyusutkan 26 menjadi sedikit kasus, tetapi salah satunya bisa jadi salah vonis (D0019).
 - Kalau keputusan T1·T2 yang didelegasikan ditinggalkan sebagai atom, pemeriksaan visi menjadi jaring pengaman pascakejadian bagi pendelegasian.
 

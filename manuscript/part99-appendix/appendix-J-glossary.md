@@ -82,7 +82,7 @@ Tempat di mana teks menuliskan tingkat beserta rentang jumlah, seperti "tim skal
 | MCP | Model Context Protocol | Standar untuk menghubungkan alat AI dengan layanan eksternal |
 | API | Application Programming Interface | Aturan pemanggilan antarprogram |
 | UE | Unreal Engine | Unreal Engine |
-| atom | (istilah khas buku ini) | Kartu keputusan atau aturan yang dikunci jadi aturan dengan format 1 keputusan = 1 file |
+| atom | (istilah khas buku ini) | Kartu keputusan/aturan yang dibakukan dengan format 1 keputusan = 1 file |
 | Wrapper / Cascade / Junction | (istilah khas buku ini) | Titik masuk alat yang sering dipakai / alat yang menggabungkan beberapa pemeriksaan sekaligus / tautan simbolis yang menghubungkan ke badan utama |
 | rg | ripgrep | Perintah pencarian teks cepat (alat CLI pengganti grep). Dipakai untuk pencarian menyeluruh pada kode dan dokumen |
 | ClickUp | (pelacak tugas/isu) | Alat kolaborasi cloud yang mengelola pekerjaan dan jadwal. JIRA, Redmine, dan Linear termasuk kategori yang sama. Dihubungkan lewat MCP agar AI dapat membaca dan memperbaruinya |

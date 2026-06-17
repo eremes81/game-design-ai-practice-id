@@ -193,7 +193,7 @@ def find_orphans(G):                     # inbound 0 = kandidat yatim
     return [n for n in G.nodes if G.in_degree(n) == 0]
 ```
 
-Intinya dua baris. `simple_cycles` menangkap dependensi siklik (A requires B requires C requires A), dan `in_degree(n) == 0` menangkap node yatim — Anda tidak perlu menulis DFS sendiri. Dua fungsi sisanya pun sama-sama berupa satu baris dengan watak yang sama. `find_broken_wikilinks` mengumpulkan `[[...]]` badan teks dengan ekspresi reguler lalu menyaring yang tidak ada di daftar node, dan rujukan balik muncul dengan menyusuri graf secara terbalik (lengkapnya di "Coba Sendiri"). Visualisasi mewarnai node berdasarkan Layer dan edge berdasarkan tipe relasi, serta menggambar node yang banyak dirujuk (banyak edge inbound) lebih besar agar hub menonjol. Seperti folder yang ditata dengan label warna pada laci kabinet, pola muncul lebih dulu dalam jangkauan pandang.
+Intinya dua baris. `simple_cycles` menangkap dependensi siklik (A requires B requires C requires A), dan `in_degree(n) == 0` menangkap node yatim — Anda tidak perlu menulis DFS sendiri. Dua fungsi sisanya pun sama-sama berupa satu baris dengan watak yang sama. `find_broken_wikilinks` mengumpulkan `[[...]]` badan teks dengan ekspresi reguler lalu menyaring yang tidak ada di daftar node, dan rujukan balik muncul dengan menyusuri graf secara terbalik (lengkapnya di "Coba Sendiri"). Visualisasi mewarnai node berdasarkan Layer dan edge berdasarkan tipe relasi, serta menggambar node yang banyak dirujuk (banyak edge inbound) lebih besar agar hub menonjol. Seperti folder yang ditata dengan label warna pada kabinet, pola muncul lebih dulu dalam jangkauan pandang.
 
 Di bawah ini graf yang memindahkan relasi nyata dari atom-atom yang dibahas pada sesi 2.4.2. Arah panah berarti "atom asal menjalin relasi menuju atom tujuan".
 
@@ -258,7 +258,7 @@ Node yang menjadi titik asal dan tujuan panah relasi tidak hanya berupa atom kep
 Definition: aksi satuan yang diaktifkan karakter selama combat. Mencakup input, cooldown, sumber daya, dan efek.
 Required Properties: input / cooldown / cost / effects
 Subtypes: active_skill (is_a) / passive_skill (is_a) / ultimate_skill (is_a)
-Bukan skill: basic attack [[concept_auto_attack]] / transformasi [[concept_transformation]]
+Bukan skill: serangan otomatis [[concept_auto_attack]] / transformasi [[concept_transformation]]
 ```
 
 Jika Anda menulis `boss_skill is_a skill`, aturan konsep tingkat atas otomatis diwariskan. Pada Proyek A ada sekitar 19 atom definisi konsep semacam ini, dan semua atom keputusan merujuk padanya. Begitu kosakata disatukan menjadi satu kamus, beban penerjemahan antara rapat, dokumen, dan kode lenyap. Ibaratnya berbagi satu kamus yang sama, bukan menaruh kamus yang berbeda di tiap meja. `concept_reward_currency` yang tertangkap sebagai tautan rusak di worked transcript sebelumnya adalah persis "item kosong yang sudah disepakati untuk didaftarkan di kamus tapi belum dibuat".

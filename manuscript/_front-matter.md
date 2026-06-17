@@ -41,7 +41,7 @@ Buku ini ditulis tiga kali.
 
 Yang pertama bukanlah sebuah buku, melainkan **manual internal**. Selama enam bulan menjalankan alur kerja AI di perusahaan, saya membakukan keputusan, alat, dan prosedur ke dalam dokumen agar tim tidak perlu menanyakan aturan yang sama dua kali. Dokumen itu tidak dibuat untuk diterbitkan, melainkan dokumen operasional yang menumpuk demi mengurangi pengulangan harian. Dari sanalah kekonkretan buku ini berasal — artinya, fondasinya bukan kasus yang direka-reka demi sebuah buku, melainkan manual yang benar-benar berjalan.
 
-Yang kedua adalah **draf pertama** yang memindahkan manual itu menjadi sebuah buku. Tetapi hasilnya malah menjadi generalisasi yang terdengar meyakinkan tentang "AI bisa melakukan hal-hal semacam ini". Tabelnya banyak, dan angka yang memperlihatkan dampaknya pun banyak. Sebagian besar angka itu diberi keterangan dengan huruf kecil "angka olahan". Ketika saya membacanya ulang, justru itulah cacat terbesarnya. Saya berbicara tentang pemanfaatan AI tetapi tidak memperlihatkan layar yang sesungguhnya, dan berbicara tentang dampak tetapi mengangkat angka yang dibuat-buat. Saat memindahkan kekonkretan manual ke dalam buku, justru kekonkretan itulah yang hilang.
+Yang kedua adalah **draf pertama** yang memindahkan manual itu menjadi sebuah buku. Tetapi hasilnya malah menjadi generalisasi yang terdengar meyakinkan tentang "AI bisa melakukan hal-hal semacam ini". Tabelnya banyak, dan angka yang memperlihatkan dampaknya pun banyak. Sebagian besar angka itu diberi keterangan dengan huruf kecil "angka rekaan". Ketika saya membacanya ulang, justru itulah cacat terbesarnya. Saya berbicara tentang pemanfaatan AI tetapi tidak memperlihatkan layar yang sesungguhnya, dan berbicara tentang dampak tetapi mengangkat angka yang dibuat-buat. Saat memindahkan kekonkretan manual ke dalam buku, justru kekonkretan itulah yang hilang.
 
 Maka untuk yang ketiga, saya menulis ulang semuanya. Inilah naskah yang kini ada di tangan Anda. Saya menghidupkan kembali kekonkretan manual internal, tetapi menjaga prinsip buku ini tetap sederhana.
 
@@ -85,11 +85,11 @@ Bila Anda tersangkut pada sebuah istilah, jangan berhenti di situ; lewati saja d
 
 ## Cara Pemanfaatan Termudah
 
-Terakhir, saya bisikkan satu cara tercepat untuk memanfaatkan buku ini: membacakan buku ini secara utuh kepada alat AI seperti Claude Code.
+Terakhir, saya bisikkan satu cara tercepat untuk memanfaatkan buku ini: membiarkan alat AI seperti Claude Code membaca buku ini secara utuh.
 
 Buku ini tidak ditulis hanya untuk dibaca manusia. Prompt lengkap, kode, dan prosedur verifikasi tiap bab saya tulis dalam bentuk yang dapat dipahami dan direproduksi langsung oleh AI. Jadi, di folder proyek Anda sendiri, Anda dapat menyerahkan buku ini kepada AI — entah dalam bentuk PDF maupun teks — dan memintanya seperti "Baca pola pemeriksaan konsistensi dalam buku ini, lalu buatkan alat pemeriksa yang sesuai dengan sheet data kami". Maka AI akan memasang alur kerja bab terkait sesuai lingkungan Anda. Jalur membuat sendiri bab demi bab dengan tangan, dan jalur menyerahkan buku secara utuh kepada AI lalu membuatnya bersama-sama — keduanya sama-sama terbuka.
 
-Hanya satu hal yang tidak berubah. Apa yang akan diadopsi dan apa yang akan ditolak — keputusan akhir itu, seperti yang berulang kali ditegaskan buku ini dari awal hingga akhir, tetap menjadi bagian Anda. Sekalipun Anda membacakan buku kepada AI untuk memasang sistem, kursi untuk meninjau kandidat yang dilontarkan sistem itu tetap dijaga oleh manusia. Bahkan cara pemanfaatan termudah pun bekerja di atas prinsip tersebut.
+Hanya satu hal yang tidak berubah. Apa yang akan diadopsi dan apa yang akan ditolak — keputusan akhir itu, seperti yang berulang kali ditegaskan buku ini dari awal hingga akhir, tetap menjadi bagian Anda. Sekalipun Anda membiarkan AI membaca buku ini untuk memasang sistem, kursi untuk meninjau kandidat yang dilontarkan sistem itu tetap dijaga oleh manusia. Bahkan cara pemanfaatan termudah pun bekerja di atas prinsip tersebut.
 
 ---
 

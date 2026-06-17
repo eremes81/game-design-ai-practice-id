@@ -151,7 +151,7 @@ Repository ini adalah **edisi Bahasa Indonesia (sumber markdown)** dari buku yan
 ### Bagian 16 · Sang Komunikator
 
 - [16.1 Mengoperasikan TF Tempur — Hanya Keputusan yang Menjadi Versi Resmi di Ruang Kerja Terisolasi](manuscript/part16-communicator/chapter-1-taskforce-operations.md)
-- [16.2 Kolaborasi Lintas Pekerjaan — Memilah Permintaan Eksternal ke dalam 3 Jalur](manuscript/part16-communicator/chapter-2-cross-job-collaboration.md)
+- [16.2 Kolaborasi Lintas Peran — Memilah Permintaan Eksternal ke dalam 3 Jalur](manuscript/part16-communicator/chapter-2-cross-job-collaboration.md)
 - [16.3 Satu Keputusan, Tiga Kemasan — Framing Artefak per Disiplin](manuscript/part16-communicator/chapter-3-cross-team-artifact-framing.md)
 
 ### Bagian 17 · Notula Rapat
@@ -170,7 +170,7 @@ Repository ini adalah **edisi Bahasa Indonesia (sumber markdown)** dari buku yan
 
 ### Bagian 19 · Lead dan Kepemimpinan Tim
 
-- [19.1 Mengubah Visi Menjadi Lembar Penilaian Keputusan — Menguji 26 Berkas decisions/ pada LLM](manuscript/part19-team-lead/chapter-1-vision-and-delegation.md)
+- [19.1 Mengubah Visi Menjadi Lembar Penilaian Keputusan — Menguji 26 Keputusan di decisions/ pada LLM](manuscript/part19-team-lead/chapter-1-vision-and-delegation.md)
 - [19.2 Mengklasifikasikan Konflik dan Tidak Membiarkan Keputusan Bocor dari Rapat — AI Pendukung Kepemimpinan Rapat](manuscript/part19-team-lead/chapter-2-conflict-and-meeting-leadership.md)
 - [19.3 Strategi Adopsi AI dan Meyakinkan Manajemen — dari Konservatif ke Progresif, ROI Tidak Direkayasa](manuscript/part19-team-lead/chapter-3-ai-adoption-strategy.md)
 

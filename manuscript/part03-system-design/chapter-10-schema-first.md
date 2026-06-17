@@ -52,7 +52,7 @@ Jika urutan dibalik—mengisi data lebih dulu lalu merapikan skema kemudian—ma
 
 ---
 
-## 3.2.2 Worked Transcript — dari `$skema` sampai csv Sekaligus
+## 3.2.2 Worked Transcript (rekaman sesi nyata) — dari `$skema` sampai csv Sekaligus
 
 Alih-alih menjelaskan dengan kata-kata, mari kita lewatkan satu sheet sungguhan dari awal sampai akhir. Misalkan kita membuat sheet skill baru. Berikut adalah rekaman lengkap yang dijalankan dengan bantuan AI. Saya tidak meringkasnya, dan membiarkan apa adanya bagian yang melenceng serta bagian yang ditolak manusia.
 
@@ -202,7 +202,7 @@ Jika skema adalah aturan **di dalam** sheet, maka FK adalah aturan **di antara**
 
 `gen_relation_map.py` otomatis mendeteksi relasi FK antar sheet data dan menggambarkannya sebagai diagram relasi HTML interaktif. Ketika panah-panah seperti `class_id`→Class milik Skill dan `set_id`→ItemSet milik Item berkumpul dalam satu layar, "FK yang target referensinya telah hilang" mencolok sebagai panah yang terputus. Insiden seperti nomor 47 yang hilang di pembuka bab ini terlihat sebagai garis terputus pada diagram relasi **saat sedang mengisi data**, bukan sebagai garis merah di log build.
 
-Penggunaan worked dan visualisasi alat ini dibahas serius di 3.3. Yang perlu diingat di bab ini hanya satu. Jika `$skema` tidak mengeksplisitkan FK, maka baik diagram relasi maupun pemeriksaan integritas tidak punya grafik untuk digambar. **Mengeksplisitkan FK bukanlah pilihan, melainkan prasyarat dari skema dulu.**
+Penggunaan worked transcript dan visualisasi alat ini dibahas serius di 3.3. Yang perlu diingat di bab ini hanya satu. Jika `$skema` tidak mengeksplisitkan FK, maka baik diagram relasi maupun pemeriksaan integritas tidak punya grafik untuk digambar. **Mengeksplisitkan FK bukanlah pilihan, melainkan prasyarat dari skema dulu.**
 
 ---
 

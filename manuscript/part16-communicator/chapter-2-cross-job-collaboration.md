@@ -1,12 +1,12 @@
 ---
-title: "16.2 Kolaborasi Lintas Pekerjaan — Memilah Permintaan Eksternal ke dalam 3 Jalur"
+title: "16.2 Kolaborasi Lintas Peran — Memilah Permintaan Eksternal ke dalam 3 Jalur"
 part: 16
 chapter: 2
 version: v3
 author: 이민수
 ---
 
-# 16.2 Kolaborasi Lintas Pekerjaan — Memilah Permintaan Eksternal ke dalam 3 Jalur
+# 16.2 Kolaborasi Lintas Peran — Memilah Permintaan Eksternal ke dalam 3 Jalur
 
 Selasa pagi, messenger berbunyi tiga kali nyaris bersamaan.
 
@@ -18,15 +18,15 @@ Penanggung jawab publisher: "Tolong terapkan panduan budaya Islam pada build Asi
 
 Jumlah karakter ketiga pesan itu mirip. Namun yang satu adalah pekerjaan yang selesai dalam 30 menit, yang satu lagi adalah insiden yang menuntut saya langsung menahan Code Lead, dan yang terakhir adalah jadwal eksternal yang harus diselipkan ke dalam rencana kuartalan. Kalau ketiganya diperlakukan dengan bobot yang sama hanya karena jatuh di kotak masuk yang sama, saya bisa menghabiskan setengah hari untuk pekerjaan 30 menit, sementara insiden yang sesungguhnya dibiarkan terbengkalai sampai malam.
 
-Permintaan yang masuk ke Game Designer punya nuansa sebanyak ragam pekerjaan yang ada. Masalahnya, semua permintaan itu tiba dalam bentuk yang sama: "pesan satu baris". Bab ini membahas pekerjaan memilah baris-baris itu ke dalam tiga jalur begitu mereka masuk. Pada saat jalur terpilah, di situlah ditentukan apa yang harus dihentikan sekarang dan apa yang ditunda ke nanti.
+Permintaan yang masuk ke Game Designer punya nuansa sebanyak ragam peran yang ada. Masalahnya, semua permintaan itu tiba dalam bentuk yang sama: "pesan satu baris". Bab ini membahas pekerjaan memilah baris-baris itu ke dalam tiga jalur begitu mereka masuk. Pada saat jalur terpilah, di situlah ditentukan apa yang harus dihentikan sekarang dan apa yang ditunda ke nanti.
 
 ---
 
 ## 16.2.1 Kolaborasi Menentukan Pekerjaan Inti
 
-Game Designer tidak membuat kode, art, maupun suara secara langsung. Ia hanya menulis spesifikasi, menyampaikan maksud, dan memvalidasi hasil. Semua keluaran lahir lewat tangan pekerjaan lain. Karena itu, kualitas kolaborasi menentukan langsung kualitas hasil kerja desain.
+Game Designer tidak membuat kode, art, maupun suara secara langsung. Ia hanya menulis spesifikasi, menyampaikan maksud, dan memvalidasi hasil. Semua keluaran lahir lewat tangan peran lain. Karena itu, kualitas kolaborasi menentukan langsung kualitas hasil kerja desain.
 
-Pada Proyek A tempat saya bekerja sebagai direktur (MMORPG yang mengutamakan mobile, tim skala menengah (10\~50 orang)), jika dibentangkan, pekerjaan yang sehari-hari berkolaborasi dengan Game Designer adalah seperti ini.
+Pada Proyek A tempat saya bekerja sebagai direktur (MMORPG yang mengutamakan mobile, tim skala menengah (10\~50 orang)), jika dibentangkan, peran yang sehari-hari berkolaborasi dengan Game Designer adalah seperti ini.
 
 <svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13">
   <rect x="300" y="120" width="120" height="60" rx="8" fill="#2b3a55" stroke="#1a2433"/>
@@ -63,7 +63,7 @@ Pada Proyek A tempat saya bekerja sebagai direktur (MMORPG yang mengutamakan mob
   </g>
 </svg>
 
-Tujuh pekerjaan saling terkait, mulai dari frekuensi harian hingga kuartalan. 40\~60% dari waktu yang dihabiskan Game Designer di mejanya tersedot ke kolaborasi ini. Artinya, waktu untuk pekerjaan inti (perancangan) hanya tersisa separuh. Kalau begitu, mengurangi waktu kolaborasi sama dengan menambah waktu pekerjaan inti. Dan penyebab terbesar yang menggerogoti waktu kolaborasi adalah kegagalan memilah permintaan yang masuk, sehingga energi tercurah ke tempat yang salah.
+Tujuh peran saling terkait, mulai dari frekuensi harian hingga kuartalan. 40\~60% dari waktu yang dihabiskan Game Designer di mejanya tersedot ke kolaborasi ini. Artinya, waktu untuk pekerjaan inti (perancangan) hanya tersisa separuh. Kalau begitu, mengurangi waktu kolaborasi sama dengan menambah waktu pekerjaan inti. Dan penyebab terbesar yang menggerogoti waktu kolaborasi adalah kegagalan memilah permintaan yang masuk, sehingga energi tercurah ke tempat yang salah.
 
 ---
 
@@ -73,9 +73,9 @@ Mari kembali ke tiga pesan tadi. Di permukaan, semuanya adalah "tolong lakukan \
 
 - Permintaan warna dari Art Lead adalah **ranah selera dan maksud**. Ini bukan soal benar atau salah, melainkan soal kesepakatan. Hampir tidak butuh kode maupun koordinasi jadwal.
 - Bug hadiah ganda dari QA adalah **cacat yang harus ditangani segera**. Karena berkaitan langsung dengan aset pengguna, prioritasnya tinggi, dan Code Lead harus segera dilibatkan.
-- Penerapan panduan dari publisher adalah **perubahan yang terikat jadwal eksternal**. Cakupannya luas, ada tenggat eksternal berupa peninjauan kuartal, dan melibatkan beberapa pekerjaan sekaligus.
+- Penerapan panduan dari publisher adalah **perubahan yang terikat jadwal eksternal**. Cakupannya luas, ada tenggat eksternal berupa peninjauan kuartal, dan melibatkan beberapa peran sekaligus.
 
-Ketiga nuansa ini saya sebut masing-masing dengan satu kata. **Kesepakatan (align)**, **Cacat (defect)**, **Jadwal (schedule)**. Pekerjaan mendorong permintaan yang masuk ke salah satu dari tiga ini lebih dulu — di Proyek A ini saya bakukan menjadi alur kerja bernama `request-triangulate`. Nama triangulasi (triangulate) diberikan karena maknanya: mengurung satu titik (permintaan) dengan tiga titik acuan (karakter pekerjaan·tingkat urgensi·ketergantungan eksternal) untuk menentukan posisinya.
+Ketiga nuansa ini saya sebut masing-masing dengan satu kata. **Kesepakatan (align)**, **Cacat (defect)**, **Jadwal (schedule)**. Mendorong permintaan yang masuk ke salah satu dari tiga ini lebih dulu — inilah yang di Proyek A saya bakukan menjadi alur kerja bernama `request-triangulate`. Nama triangulasi (triangulate) diberikan karena maknanya: mengurung satu titik (permintaan) dengan tiga titik acuan (karakter peran·tingkat urgensi·ketergantungan eksternal) untuk menentukan posisinya.
 
 Alur klasifikasinya adalah sebagai berikut.
 
@@ -91,7 +91,7 @@ flowchart TD
 
     S --> S1[Masukkan ke roadmap kuartal<br/>amankan lead time cukup]
     D --> D1[Tetapkan prioritas P0~P2<br/>hubungkan Code Lead segera]
-    F --> F1[Sampaikan maksud saja<br/>ekspresi diserahkan ke pekerjaan terkait]
+    F --> F1[Sampaikan maksud saja<br/>ekspresi diserahkan ke peran terkait]
 
     style S fill:#fde2c4,stroke:#c98a3a
     style D fill:#f6c6c6,stroke:#c25151
@@ -214,7 +214,7 @@ Kalau klasifikasinya akurat, lima baris dari kotak masuk yang sama akan terurai 
 
 Ada saatnya permintaan datang bukan satu-dua, melainkan menyerbu sebagai satu gumpalan. Misalnya beberapa minggu menjelang peninjauan publisher, atau saat perombakan total sistem pertempuran. Dalam keadaan begini, pekerjaannya sendiri diisolasi ke ruang kerja sementara seperti `95_BattleTF`, dan begitu selesai, hanya keputusannya yang dipromosikan menjadi naskah resmi. Mekanisme isolasi·penyerapan itu beserta praktik operasional "hanya html yang diserahkan ke tim art (md dipelajari 0)" telah dibahas seluruhnya di bab sebelumnya, 16.1.
 
-Dari sudut pandang klasifikasi (3-track), kalau ditambahkan satu baris saja, kira-kira begini. Kolaborasi yang membesar menjadi satu gumpalan umumnya adalah keadaan di mana perkara Track-S (jadwal) terurai melintasi beberapa pekerjaan, sehingga ketika penanganan per jalur secara individual tak lagi mampu menampungnya, ia dipindahkan ke wadah satu tingkat di atasnya, yaitu ruang kerja isolasi. Artinya, kalau klasifikasi 3-track adalah pintu masuk, isolasi TF adalah ruang yang menampung gumpalan besar yang sudah melewati pintu itu.
+Dari sudut pandang klasifikasi (3-track), kalau ditambahkan satu baris saja, kira-kira begini. Kolaborasi yang membesar menjadi satu gumpalan umumnya adalah keadaan di mana perkara Track-S (jadwal) terurai melintasi beberapa peran, sehingga ketika penanganan per jalur secara individual tak lagi mampu menampungnya, ia dipindahkan ke wadah satu tingkat di atasnya, yaitu ruang kerja isolasi. Artinya, kalau klasifikasi 3-track adalah pintu masuk, isolasi TF adalah ruang yang menampung gumpalan besar yang sudah melewati pintu itu.
 
 ---
 
@@ -226,7 +226,7 @@ Dari sudut pandang klasifikasi (3-track), kalau ditambahkan satu baris saja, kir
 | Salah memilah perkara jadwal sebagai kesepakatan | Pakukan pertanyaan tenggat eksternal di urutan penentu nomor 1 |
 | Menangani cacat sinkronisasi yang tampak seperti selera sebagai kesepakatan | "Ketidakcocokan timing/nilai" dicurigai sebagai cacat lebih dulu |
 | Memutuskan selera yang tampak seperti cacat sebagai cacat | Balik tanya "apakah render aktual dibanding spesifikasi" lalu tunda |
-| Game Designer ikut menentukan ekspresi di jalur kesepakatan | Hanya sampai maksud, ekspresi diserahkan ke pekerjaan terkait |
+| Game Designer ikut menentukan ekspresi di jalur kesepakatan | Hanya sampai maksud, ekspresi diserahkan ke peran terkait |
 | Memulai perkara jadwal terlambat | Segera masukkan ke roadmap kuartal, amankan lead time |
 
 Separuh dari tabel ini adalah kesalahan di tahap klasifikasi, dan separuhnya adalah kesalahan penanganan setelah klasifikasi. Sekalipun klasifikasinya akurat, kalau penanganan per jalurnya keliru, efeknya lenyap. (Untuk jebakan terkait isolasi·promosi·media TF, lihat tabel jebakan di 16.1.)

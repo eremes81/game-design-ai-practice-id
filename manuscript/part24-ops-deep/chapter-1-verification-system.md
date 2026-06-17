@@ -60,7 +60,7 @@ Bahwa keluaran tiap tahap berbeda juga penting. `audit` menghasilkan FAIL (bukti
 
 ## 24.1.3 Tahap Pertama — Audit `_source_map.tsv`
 
-Pemeriksaan yang paling dulu berjalan adalah konsistensi sumber. Pipeline pembuatan dokumen saya mencatat di `_source_map.tsv` dari berkas sumber mana sebuah dokumen hasil sintesis (misalnya isi GDD) berasal. Satu baris memaku silsilah (lineage) yang menyatakan "bagian hasil ini = sintesis dari berkas-berkas sumber ini".
+Pemeriksaan yang paling dulu berjalan adalah konsistensi sumber. Pipeline pembuatan dokumen saya mencatat di `_source_map.tsv` dari berkas sumber mana sebuah dokumen hasil sintesis (misalnya isi GDD) berasal. Satu baris mengunci silsilah (lineage) yang menyatakan "bagian hasil ini = sintesis dari berkas-berkas sumber ini".
 
 Alasan ini menjadi alat verifikasi adalah karena **jika manusia mengedit hasil dengan tangan, pemetaannya jadi rusak**. Kalau ada orang yang langsung mengubah bagian GDD yang dibangkitkan otomatis, bagian itu tidak lagi menjadi sintesis setia dari berkas sumber. Skrip audit membandingkan hash tiap bagian hasil dengan hash hasil sintesis ulang dari sumbernya, dan jika tidak cocok, ia mengeluarkan FAIL. Aturan "audit FAIL saat ada editan manual" lahir dari sini.
 
@@ -74,7 +74,7 @@ Setelah lolos audit, kita beralih ke pemeriksaan tautan. Dokumen saya menghubung
 
 Kasus yang bisa dipulihkan itu jelas. Yaitu ketika node target **hanya berganti nama tetapi tetap ada di tempat yang sama**. Penggantian nama seperti `재료_목재_A` → `재료_목재_상` di atas akan dikoreksi otomatis oleh skrip dari nama lama ke nama baru, asalkan peta alias (alias map) sudah diperbarui. Sebaliknya, jika target dihapus seluruhnya atau tak bisa dilacak ke mana perginya, pemulihan dibatalkan dan referensi yang putus dilaporkan.
 
-Di sini ada satu keputusan desain. **Jika pemulihan otomatis dilakukan terlalu agresif, itu berbahaya.** Kalau skrip mencari "nama yang mirip" lalu menyambungkannya sembarangan, tautan bisa salah tersambung ke node bermakna lain dan menimbulkan insiden yang lebih buruk. Karena itu, pemulihan pada `wikilink_apply.py` bersifat konservatif — hanya penggantian nama yang punya peta alias eksplisit yang dikoreksi otomatis, sedangkan kasus yang butuh tebakan diserahkan ke manusia. Keutamaan otomasi terletak pada kesederhanaan menahan diri: hanya mengotomatiskan yang pasti, dan dengan jujur menyerahkan yang ambigu kepada manusia.
+Di sini ada satu keputusan desain. **Jika pemulihan otomatis dilakukan terlalu agresif, itu berbahaya.** Kalau skrip mencari "nama yang mirip" lalu menyambungkannya sembarangan, tautan bisa salah tersambung ke node bermakna lain dan menimbulkan insiden yang lebih buruk. Karena itu, pemulihan pada `wikilink_apply.py` bersifat konservatif — hanya penggantian nama yang punya peta alias eksplisit yang dikoreksi otomatis, sedangkan kasus yang butuh tebakan diserahkan ke manusia. Keutamaan otomasi terletak pada sikap menahan diri: hanya mengotomatiskan yang pasti, dan dengan jujur menyerahkan yang ambigu kepada manusia.
 
 ---
 
@@ -202,7 +202,7 @@ Berikut adalah kecenderungan yang saya amati pada Proyek A di perusahaan pengemb
 | Waktu penemuan referensi putus | Setelah laporan pengguna·QA | Sebelum commit (arah: insiden → pencegahan) |
 | Durasi sekali pemeriksaan konsistensi | Beberapa jam (perkiraan penulis) | Puluhan detik (pengukuran skrip) |
 | Latensi tumpukan stale | Mengendap berminggu-minggu | WARN di commit berikutnya |
-| Insiden pemulihan otomatis yang salah | Tidak ada | Tetap 0 berkat pemulihan konservatif |
+| Insiden pemulihan otomatis yang salah | Tidak berlaku | Tetap 0 berkat pemulihan konservatif |
 
 Daripada mempercayai angka secara harfiah, saya menyarankan untuk hanya memercayai arahnya — bahwa "waktu penemuan tertarik maju dari pascakejadian ke prakejadian". Nilai sejati sistem verifikasi terletak bukan pada penghematan waktu, melainkan pada **perpindahan posisi: insiden tertangkap sebelum sampai ke pengguna**.
 

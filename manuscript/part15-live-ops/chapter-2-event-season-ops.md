@@ -109,11 +109,11 @@ Dari enam baris aturan itu, tidak ada satu baris pun yang *menentukan* tema atau
 ```
 | Nama Kandidat      | Tema                | Ringkasan Tier Hadiah              | Alasan                                  | Flag                     |
 |--------------------|---------------------|-------------------------------------|-----------------------------------------|--------------------------|
-| Bendungan Banjir   | menahan banjir sungai| batu penempaan 25 / gold 4 puluh ribu / kostum | koop=metafora menyusun bendungan, langsung terkait kontribusi kumulatif | |
-| Menerbangkan Lentera| festival air musim panas| batu penempaan 20 / gold 3 puluh ribu / gelar | tone festival, menyegarkan suasana ketimbang kompetisi | |
-| Perang Boss Terik  | menumbangkan jelmaan terik| batu penempaan 30 / gold 5 puluh ribu / kostum | pakai ulang aset boss existing, batas hadiah | [PERINGATAN PENGULANGAN] |
-| Balapan Arus       | berlomba menunggang arus| batu penempaan 28 / gold 4.5 puluh ribu / mount | campuran koop + kompetisi | [AMBIGU] |
-| Koleksi Ikan Koi   | koop tipe koleksi   | batu penempaan 22 / gold 3.5 puluh ribu / gelar | hambatan masuk rendah bagi pemain kasual | |
+| Bendungan Banjir   | menahan banjir sungai| batu penempaan 25 / gold 40 ribu / kostum | koop=metafora menyusun bendungan, langsung terkait kontribusi kumulatif | |
+| Menerbangkan Lentera| festival air musim panas| batu penempaan 20 / gold 30 ribu / gelar | tone festival, menyegarkan suasana ketimbang kompetisi | |
+| Perang Boss Terik  | menumbangkan jelmaan terik| batu penempaan 30 / gold 50 ribu / kostum | pakai ulang aset boss existing, batas hadiah | [PERINGATAN PENGULANGAN] |
+| Balapan Arus       | berlomba menunggang arus| batu penempaan 28 / gold 45 ribu / mount | campuran koop + kompetisi | [AMBIGU] |
+| Koleksi Ikan Koi   | koop tipe koleksi   | batu penempaan 22 / gold 35 ribu / gelar | hambatan masuk rendah bagi pemain kasual | |
 
 [PERINGATAN PENGULANGAN] Perang Boss Terik: core_loop praktis sama dengan coop raid pada W-3.
   Pengulangan kerangka sama dalam selang 3 minggu → khawatir kelelahan pengguna. Disarankan kerangka lain (absensi/koleksi).
@@ -253,7 +253,7 @@ Kalender kuartal harus terlihat dalam satu pandang agar event dan musim tidak be
   <rect x="360" y="252" width="14" height="14" fill="#854d0e"/><text x="380" y="264" fill="#9ca3af" font-size="11">Event musim</text>
 </svg>
 
-Gambar satu lembar ini menjelaskan penilaian di §15.2.5 secara visual. Warna menunjukkan jenis kerangka. **Kalau warna yang sama muncul dua kali dalam 2\~3 minggu, lint [C] di §15.2.4 akan menyalak.** Lalu, karena gauge inflasi di bawah hampir menyentuh garis merah (batas 90), kelonggaran 7 untuk dipakai pada penutup musim Juni (W6) nyaris saja tersisa — itulah 7 yang diamankan dengan menurunkan hadiah `Bendungan Banjir` ke 18.
+Gambar satu lembar ini menjelaskan penilaian di §15.2.5 secara visual. Warna menunjukkan jenis kerangka. **Kalau warna yang sama muncul dua kali dalam 2\~3 minggu, lint [C] di §15.2.4 akan menyalak.** Lalu, karena gauge inflasi di bawah hampir menyentuh garis merah (batas 90), hanya tersisa kelonggaran 7 untuk dipakai pada penutup musim Juni (W6) — itulah 7 yang diamankan dengan menurunkan hadiah `Bendungan Banjir` ke 18.
 
 ---
 
@@ -299,7 +299,7 @@ Baris terakhir (penurunan playtime hari kerja) adalah sinyal yang paling sering 
 
 ## 15.2.9 Sampai Mana Efeknya Bisa Dikatakan dengan Jujur
 
-Bab event sangat menggoda untuk memasukkan tabel seperti "setelah menjalankan event koop, retention naik dari 30% ke 50%". Angka semacam itu, kalau tidak diverifikasi, justru menggerus kepercayaan buku. Yang bisa dikatakan bab ini hanya tiga hal.
+Bab event sangat menggoda untuk memasukkan tabel seperti "setelah menjalankan event koop, retention (tingkat retensi) naik dari 30% ke 50%". Angka semacam itu, kalau tidak diverifikasi, justru menggerus kepercayaan buku. Yang bisa dikatakan bab ini hanya tiga hal.
 
 Pertama, **arahnya bisa dikatakan dari pengamatan industri.** Event yang memperkuat hadiah absensi mendongkrak jumlah pengguna aktif jangka pendek, event koop meningkatkan kohesi komunitas, dan paket terbatas mendongkrak pendapatan selama periode event — ini adalah pemahaman umum industri yang lahir dari mengamati game live. Hanya saja, *seberapa banyak*-nya bervariasi besar tergantung game dan komposisi pengguna, jadi memindahkan begitu saja angka perusahaan lain itu berbahaya.
 

@@ -77,7 +77,7 @@ Ujaran yang berlanjut dari retrospektif menjadi self-improving memiliki lima pol
 - <>
 ```
 
-Slot boleh kosong. Fakta bahwa ia kosong itu sendiri adalah catatan "hari ini tidak ada perbaikan baru". Namun jika selama beberapa hari berturut-turut kelima slot kosong semua, itu bukan berarti tidak ada bahan perbaikan, melainkan sinyal bahwa retrospektif mulai mengeras menjadi formalitas. Saat itulah lemparkan pertanyaan pemicu. "Apa yang minggu ini saya kerjakan dua kali dengan tangan?"
+Slot boleh kosong. Fakta bahwa ia kosong itu sendiri adalah catatan "hari ini tidak ada perbaikan baru". Namun jika selama beberapa hari berturut-turut kelima slot kosong semua, itu bukan berarti tidak ada bahan perbaikan, melainkan sinyal bahwa retrospektif mulai mengeras menjadi formalitas. Saat itulah lemparkan pertanyaan pemicu. "Apa pekerjaan yang sama yang minggu ini saya kerjakan dua kali dengan tangan?"
 
 Ujaran muncul dalam keadaan kabur. "Notula rapatnya terlalu panjang." Untuk menumbuhkannya menjadi kandidat, kuantifikasikan menjadi satu keluaran. "Notula rapatnya terlalu panjang" dikonversi menjadi satu alat, yaitu skill `meeting_summary`, yang menerima notula rapat dan mengekstrak hanya keputusan serta action item. "Istilahnya membingungkan" dikonversi menjadi atom `glossary_lookup` yang memuat 30 kosakata domain, dan "pertanyaan yang sama ditanyakan setiap kali" dikonversi menjadi slash command `/onboarding` yang mengotomatiskan panduan hari pertama bagi karyawan baru. "Sinkronisasi sering terlewat" jatuh menjadi pembaruan manifest dan penambahan atom JIT.
 
@@ -185,7 +185,7 @@ Tempat loop terputus selalu sudah tertentu setiap kalinya. Jika mode kegagalan d
 
 | Titik putus | Gejala | Resep |
 |---|---|---|
-| Tidak ada ujaran | 5 slot selalu kosong | Tambahkan pertanyaan pemicu: "Apa yang dikerjakan dua kali dengan tangan" |
+| Tidak ada ujaran | 5 slot selalu kosong | Tambahkan pertanyaan pemicu: "Apa pekerjaan yang sama yang dikerjakan dua kali dengan tangan" |
 | Tidak jatuh jadi kandidat | Kabur ala "perbaiki secara keseluruhan" | Paksa kuantifikasi menjadi satu keluaran |
 | Evaluasi ROI dilewati | Bikin dulu baru lihat | Jadikan rumus ROI templat 5 menit |
 | Dibuat tapi tidak muncul | Registrasi terlewat | Paksa checklist registrasi |

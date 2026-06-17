@@ -23,7 +23,7 @@ Cara kerja yang menjadi benang merah seluruh buku ini dapat diringkas menjadi li
 | Kerangka | Apa itu | Mengapa netral terhadap alat |
 |---|---|---|
 | Standar → templat → verification gate | Mengukuhkan aturan yang disepakati (standar) menjadi kerangka isian (templat), lalu menempatkan gerbang (gate) yang secara otomatis menyaring apakah hasilnya mematuhi aturan | Konsep aturan, kerangka, dan pemeriksaan dapat dinyatakan dengan teks atau skrip di alat mana pun |
-| atom = 1 keputusan 1 berkas | Menuliskan satu keputusan ke dalam satu berkas kecil, mengambilnya saat dibutuhkan, dan hanya mengubah satu sel itu saat hendak merevisi | Memecah keputusan menjadi berkas-berkas kecil cukup memerlukan sistem berkas saja |
+| atom = 1 keputusan 1 berkas | Menuliskan satu keputusan ke dalam satu berkas kecil, mengambilnya saat dibutuhkan, dan hanya mengubah satu butir itu saat hendak merevisi | Memecah keputusan menjadi berkas-berkas kecil cukup memerlukan sistem berkas saja |
 | Injeksi JIT | Memilih hanya keputusan yang benar-benar diperlukan untuk percakapan saat ini, tepat pada waktunya (Just-In-Time), lalu menyuntikkannya ke model | Ini adalah prinsip "masukkan hanya konteks yang diperlukan", dan cara menyuntikkannya hanya berbeda dari satu alat ke alat lain |
 | Loop retrospektif | Menengok kembali apa yang telah dikerjakan dalam satuan harian, mingguan, dan bulanan, lalu mengangkat pola yang berulang menjadi aturan untuk pekerjaan berikutnya | Prosedur menengok dan memperbaiki bergantung pada kebiasaan dan dokumen, bukan pada alat |
 | Batas peminjaman alat | Yang dibawa hanyalah kerangka (algoritma, struktur), sedangkan data domain ditinggalkan (Lampiran B) | Pertimbangan tentang apa yang dibawa dan apa yang ditinggalkan adalah sama di alat mana pun |
@@ -88,7 +88,7 @@ Saat membicarakan pemindahan, informasi yang paling cepat usang adalah nama mode
 |---|---|
 | Nama produk dan nomor generasi model | Pembedaan peran seperti "model yang andal bernalar", "model yang menerima konteks panjang" |
 | Angka spesifik batas konteks | Prinsip JIT, "karena ada batas, masukkan hanya konteks yang benar-benar diperlukan" |
-| Angka spesifik harga dan kecepatan | Kesadaran biaya, "pekerjaan mahal hanya dijalankan untuk yang lolos gate" |
+| Angka spesifik harga dan kecepatan | Kesadaran biaya, "pekerjaan mahal hanya dijalankan untuk yang lolos gerbang (gate)" |
 | Cara menyalakan dan mematikan fitur tertentu | "Peran yang dijalankan fitur itu" dan kerangka yang menggantikannya |
 
 Cara memastikan model dan fitur terbaru di lapangan pun cukup satu baris di tiap alat. Di Claude Code, perintah `/model` langsung menampilkan model yang sedang dipakai beserta pilihannya, dan alat seperti ChatGPT atau Cursor juga menampilkan informasi yang sama di layar pengaturan atau dropdown pemilihan model. Maka, bila ada kalimat dalam buku ini yang tampak tidak cocok dengan nama model, bukan kalimat itu yang keliru, melainkan modelnya yang sudah berlalu satu generasi. Selama perannya sama, metodenya tetap berlaku apa adanya. Bila saat membaca buku ini Anda merasa nama modelnya asing, janganlah meragukan teksnya, tetapi pastikan dahulu kondisi terkini alat yang ada di tangan Anda dengan perintah seperti `/model`.

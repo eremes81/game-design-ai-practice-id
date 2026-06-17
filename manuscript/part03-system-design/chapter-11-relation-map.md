@@ -15,7 +15,7 @@ Seorang Game Designer baru datang ke meja saya pada minggu pertamanya bekerja. "
 
 Adegan inilah yang membuat saya menulis bab ini. Di kepala seorang System Designer ada graf dependensi. Masalahnya, graf itu hanya ada di kepalanya. Begitu orangnya berganti, gambarnya pun lenyap. Saya butuh alat untuk mengeksternalisasi gambar itu, dan itulah yang saya buat: `gen_relation_map.py`.
 
-Saat sheet data hanya 5–10 buah, kepala kita masih cukup. Begitu melewati 30, memori kerja manusia tidak sanggup lagi. Folder sheet sebuah proyek biasanya melampaui batas itu sejak dini. Tabel yang menuliskan dependensi dari mana ke mana dalam bentuk teks, sekalipun dibaca, tidak membentuk gambar di kepala. Bab ini mengikuti dari awal sampai akhir proses nyata (worked process) untuk membangkitkan peta relasi kunci asing (FK) secara otomatis menjadi peta relasi HTML interaktif.
+Saat sheet data hanya 5–10 buah, kepala kita masih cukup. Begitu melewati 30, memori kerja manusia tidak sanggup lagi. Folder sheet sebuah proyek biasanya melampaui batas itu sejak dini. Tabel yang menuliskan dependensi dari mana ke mana dalam bentuk teks, sekalipun dibaca, tidak membentuk gambar di kepala. Bab ini mengikuti dari awal sampai akhir proses nyata (worked process) untuk membangkitkan relasi kunci asing (FK) secara otomatis menjadi peta relasi HTML interaktif.
 
 ---
 
@@ -221,7 +221,7 @@ Namun, ini tidak berarti gambar menangkap semua masalah. Gambar menangkap **caca
 
 ## 3.3.4 Tanpa Pembaruan Otomatis, Peta Akan Lapuk
 
-Peta relasi tidak selesai dengan sekali dibuat. Sheet ditambah dan diubah setiap minggu. Peta relasi yang diserahkan pada pembaruan manual akan menyimpang dari struktur nyata dalam satu-dua bulan, dan peta yang menyimpang justru memandu ke jalan yang salah, sehingga lebih baik tidak ada sama sekali. Anggota tim yang pernah terbakar oleh gambar yang sekali salah, setelah itu tidak akan melihat gambar lagi — inilah kegagalan yang paling mahal.
+Peta relasi tidak selesai dengan sekali dibuat. Sheet ditambah dan diubah setiap minggu. Peta relasi yang diserahkan pada pembaruan manual akan menyimpang dari struktur nyata dalam satu-dua bulan, dan peta yang menyimpang justru memandu ke jalan yang salah, sehingga lebih baik tidak ada sama sekali. Anggota tim yang pernah kapok karena gambar yang sekali salah, setelah itu tidak akan melihat gambar lagi — inilah kegagalan yang paling mahal.
 
 Karena itu, pembaruan dikaitkan dengan pemicu otomatis.
 
@@ -244,7 +244,7 @@ HTML yang dihasilkan otomatis di-deploy ke hosting statis internal (portal peren
 | Gambar dibuat tetapi tidak ada yang melihat | Tidak dikaitkan ke alur kerja | Wajibkan lampiran gambar pada permintaan perubahan & rapat |
 | Dibuat lalu tidak diperbarui sehingga lapuk | Bergantung pada pembaruan manual | Pemicu otomatis wajib; yang manual jadi tak berguna dalam sebulan |
 
-Dalam pengoperasian `gen_relation_map.py`, yang paling sering membuat saya terbakar adalah baris ketiga. Kalau hanya memercayai aturan `*_id`, referensi tersembunyi seperti `count` atau `value` akan terlewat (AI di 3.3.2.3 pun memperingatkan batasan ini sendiri), dan `grade` yang merupakan Enum jadi false positive sebagai FK. Loop verifikasi yang melihat spesifikasi sekaligus data nyata adalah jawaban untuk baris ini.
+Dalam pengoperasian `gen_relation_map.py`, yang paling sering membuat saya kapok adalah baris ketiga. Kalau hanya memercayai aturan `*_id`, referensi tersembunyi seperti `count` atau `value` akan terlewat (AI di 3.3.2.3 pun memperingatkan batasan ini sendiri), dan `grade` yang merupakan Enum jadi false positive sebagai FK. Loop verifikasi yang melihat spesifikasi sekaligus data nyata adalah jawaban untuk baris ini.
 
 ---
 
@@ -269,7 +269,7 @@ Kalau langsung mencoba menangani seluruh sheet data perusahaan sekaligus, hasiln
 
 ### Versi Ringkas Solo
 
-Kalau tidak ada waktu untuk membuat alatnya, pada minggu pertama Anda boleh mulai dengan satu lembar mermaid yang digambar tangan. Tuliskan langsung FK dari 5 sheet ke mermaid dengan format 3.3.2.3. Kalau Anda membawa satu lembar ini ke rapat lalu menunjukkan "inilah dependensi sistem kita", nilainya terbukti di tempat itu juga. Begitu nilainya terlihat, alat otomasi secara alami akan menyusul berikutnya. Beban bahwa sejak awal harus keluar alat yang langsung berfungsi, boleh Anda turunkan.
+Kalau tidak ada waktu untuk membuat alatnya, pada minggu pertama Anda boleh mulai dengan satu lembar mermaid yang digambar tangan. Tuliskan langsung FK dari 5 sheet ke mermaid dengan format 3.3.2.3. Kalau Anda membawa satu lembar ini ke rapat lalu menunjukkan "inilah dependensi sistem kita", nilainya terbukti di tempat itu juga. Begitu nilainya terlihat, alat otomasi secara alami akan menyusul berikutnya. Anda boleh melepaskan beban untuk langsung menghasilkan alat yang berfungsi sempurna sejak awal.
 
 Perluasannya mengalir secara alami dengan urutan ini — minggu ke-1 gambar tangan mermaid sheet Anda sendiri → minggu ke-2 menambahkan warna Layer dan klik → 1 bulan pembaruan otomatis (git hook atau batch malam) → 3 bulan deploy ke portal internal → 6 bulan peta relasi gabungan seluruh sheet.
 

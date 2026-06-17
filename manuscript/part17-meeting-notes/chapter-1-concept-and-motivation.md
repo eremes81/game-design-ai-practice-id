@@ -25,7 +25,7 @@ Sistem RnD pribadi yang saya jalankan terbagi menjadi 17 dokumen. Standar penama
 
 Awalnya saya heran. Notula rapat — bukankah cukup ditulis saja? Namun setelah diukur, ternyata titik nyerinya bukan pada *penulisan* notula, melainkan pada *apa yang terjadi setelah* notula. Di rapat, keputusan jelas-jelas dibuat. Masalahnya, siapa yang bertanggung jawab atasnya, atas dasar apa, sampai kapan, dan menuju apa — semua itu menguap begitu kita melangkah keluar dari pintu ruang rapat.
 
-Bila keputusasan ini digambarkan dalam satu adegan, hasilnya seperti ini.
+Bila keterputusan ini digambarkan dalam satu adegan, hasilnya seperti ini.
 
 ```mermaid
 flowchart LR
@@ -128,7 +128,7 @@ Batas antara dapat dibalik dan tidak dapat dibalik ada di sini. Hingga pembuanga
 
 ---
 
-## 17.1.5 Worked Transcript — Meloloskan Selembar Notula Rapat yang Rusak
+## 17.1.5 Worked Transcript (rekaman sesi nyata) — Meloloskan Selembar Notula Rapat yang Rusak
 
 Bila hanya bicara secara abstrak terasa tidak mengena, maka saya salin apa adanya catatan dari memasukkan selembar notula rapat yang benar-benar rusak ke dalam pipeline. Inputnya adalah notula rapat yang formatnya runtuh separuh.
 

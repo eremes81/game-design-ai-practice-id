@@ -126,7 +126,7 @@ Tiga hal yang terlalu memakan waktu jika diisi sendiri secara manual, itulah yan
 
 Intinya terletak pada prompt yang **mewajibkan pengutipan dasar pertimbangan dan secara eksplisit melarang halusinasi**. Berikut adalah teks lengkap prompt pengisian yang benar-benar saya jalankan operasionalnya.
 
-### Worked Transcript — Pengisian Slot Keputusan
+### Worked Transcript (rekaman sesi nyata) — Pengisian Slot Keputusan
 
 **Prompt (dimasukkan oleh manusia):**
 

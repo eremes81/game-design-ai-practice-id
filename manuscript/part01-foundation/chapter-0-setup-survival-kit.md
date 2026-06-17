@@ -37,7 +37,7 @@ flowchart LR
 
 Prinsipnya, ikuti panduan resmi saat memasang. Alat sering berubah, dan berkas instalasi yang diunduh dari jalur tidak resmi itu berbahaya. Karena itu buku ini tidak mencantumkan tautan unduhan, melainkan memandu cara menemukan jalur resmi. Jika Anda mengetik "Claude Code dokumentasi resmi" atau "Claude Code install" di kotak pencarian, halaman dokumentasi resmi Anthropic akan muncul paling atas. Cara teraman adalah menggunakan perintah instalasi persis seperti yang tertera di halaman itu.
 
-Ada baiknya Anda memahami gambaran besarnya. Claude Code (buku ini menyeragamkan penulisannya dalam ejaan Latin) adalah alat yang berjalan di terminal, dan biasanya dipasang dengan perintah satu baris. Alurnya sedikit berbeda untuk tiap OS.
+Ada baiknya Anda memahami gambaran besarnya. Claude Code (buku ini menyeragamkan penulisannya dalam bahasa Inggris) adalah alat yang berjalan di terminal, dan biasanya dipasang dengan perintah satu baris. Alurnya sedikit berbeda untuk tiap OS.
 
 | OS | Yang Diperlukan | Alur Instalasi (konsep) |
 |---|---|---|
