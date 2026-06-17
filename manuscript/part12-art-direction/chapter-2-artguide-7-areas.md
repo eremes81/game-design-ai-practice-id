@@ -147,7 +147,7 @@ layer: L1
 - Saturasi berlebihan
 ```
 
-Di sini ada satu baris yang penting. Pada `## 2. 색상`, baris "Palet utama: diwarisi dari 00_Common". Ini penegasan bahwa domain karakter tidak menentukan warna secara mandiri, melainkan mewarisi konvensi bersama dari tingkat atas. Satu baris inilah perangkat yang secara struktural mencegah insiden merah muda neon pada bagian pembuka. Jika `_STYLE_GUIDE.md` semua domain mewarisi `00_Common` setidaknya untuk urusan warna, maka benturan warna paling tidak sudah ditangkal di tahap konstitusi.
+Di sini ada satu baris yang penting. Pada `## 2. Warna`, baris "Palet utama: diwarisi dari 00_Common". Ini penegasan bahwa domain karakter tidak menentukan warna secara mandiri, melainkan mewarisi konvensi bersama dari tingkat atas. Satu baris inilah perangkat yang secara struktural mencegah insiden merah muda neon pada bagian pembuka. Jika `_STYLE_GUIDE.md` semua domain mewarisi `00_Common` setidaknya untuk urusan warna, maka benturan warna paling tidak sudah ditangkal di tahap konstitusi.
 
 ## 12.2.4 Bagaimana Menarik Non-Game-Designer ke dalam Kolaborasi
 
@@ -192,13 +192,11 @@ proporsi realistis kepala-tubuh 7.5, saturasi sedang, ...
 
 Bila blok intensi berada di atas prompt, gambar itu menjadi bagian dari keputusan. Saat orang berikutnya menghasilkan pose lain dari karakter yang sama, ia tidak menjiplak penampilan, melainkan kembali memenuhi intensi. Bahkan ketika gambar tidak disukai dan dibuang, diskusi bisa dilakukan berdasarkan "intensi mana yang tidak terbaca." Prompt yang hanya menuliskan penampilan berakhir pada "menurut selera saya yang ini lebih bagus" dan tidak meninggalkan dasar untuk diverifikasi, sedangkan prompt yang didahului intensi meninggalkan catatan untuk menelaah apa yang terpenuhi dan apa yang terlewat.
 
-Di sini pemilihan alat berkelindan dengan prinsip intensi-lebih-dulu. Untuk menghasilkan "pose lain dari karakter yang sama" secara berulang sesuai intensi, prompt saja tidak cukup. Pembagian alat di Proyek A sama dengan §12.1.1 — untuk produksi massal utama, kami memasang character LoRA (mengunci wajah dan kostum) serta ControlNet (pose dan siluet) pada SD (SDXL)/ComfyUI yang di-host sendiri, sehingga "keterkenalan pada jarak 5m" yang dituntut blok intensi tetap terjaga meski pose berubah, dan IP pun ikut terlindungi. Alat tertutup (seperti Midjourney) hanya dipakai sebatas moodboard awal.
+Di sini pemilihan alat berkelindan dengan prinsip intensi-lebih-dulu. Untuk menghasilkan "pose lain dari karakter yang sama" secara berulang sesuai intensi, prompt saja tidak cukup. Pembagian alat di Proyek A sama dengan §12.1.1 — untuk produksi massal utama, kami memasang character LoRA (mengunci wajah dan kostum) serta ControlNet (pose dan siluet) pada SD (SDXL)/ComfyUI yang di-host sendiri, sehingga "keterbacaan pada jarak 5m" yang dituntut blok intensi tetap terjaga meski pose berubah, dan IP pun ikut terlindungi. Alat tertutup (seperti Midjourney) hanya dipakai sebatas moodboard awal.
 
 ## 12.2.6 Worked Transcript: Satu Siklus Spesifikasi Konsep Karakter
 
 Untuk melihat bagaimana otonomi domain dan keterlibatan Game Designer benar-benar berjalan, mari telusuri satu siklus `01_Character` dari awal hingga akhir. Berikut ini adalah rekonstruksi dari pekerjaan nyata ketika saya menyerahkan penyusunan draf spesifikasi konsep karakter cendekiawan (`K_007_scholar`) kepada AI. Tanpa diringkas, keluaran yang janggal dan penolakan saya pun saya muat apa adanya.
-
-*Catatan penerjemah: Edisi Bahasa Indonesia ini diterjemahkan dengan AI sebagai draf awal, lalu ditinjau dan disunting oleh manusia. Seluruh worked transcript dalam edisi ini adalah terjemahan dari sesi asli berbahasa Korea — bukan dijalankan ulang dalam Bahasa Indonesia. Prompt dan keluaran di dalam blok kode juga diterjemahkan agar mudah dibaca. Teks asli Korea — materi yang dijanjikan buku ini untuk tidak diubah — tetap dipertahankan apa adanya di edisi Korea (pada repository sumber di GitHub). Sintaksis kode, pengidentifikasi, angka, dan nilai verifikasi tidak diubah sama sekali. Konversi mata uang bersifat perkiraan, dengan kurs sekitar 1.500 won per dolar AS pada pertengahan 2026.*
 
 **① Prompt yang saya lemparkan ke AI (lengkap)**
 
@@ -242,13 +240,13 @@ Sangat terpelajar tetapi tidak angkuh, tegas kepada murid namun hangat.
 
 **③ Verifikasi dan penolakan saya (di mana letak salahnya dan mengapa)**
 
-Pada keluaran itu ada dua titik cacat. Pertama, "★ Rekomendasi: pupil keemasan" pada `## 외형`. Ini jelas-jelas pelampauan wewenang. Warna pupil dan detail visual semacam itu adalah area otonomi director karakter, tetapi AI mematoknya di tahap konsep. Jika dibiarkan, director akan melipat penilaiannya sendiri sambil berkata "ini sudah ditetapkan di desain", atau mengabaikannya dan berbenturan — salah satu dari dua itu. Kedua, `voice_profile` berisi 4 butir, bukan 5. "Kata terlarang" hilang seluruhnya. Kata apa yang sama sekali tidak boleh diucapkan seorang karakter mentor sama pentingnya dengan kepribadian, tetapi AI melewatkannya.
+Pada keluaran itu ada dua titik cacat. Pertama, "★ Rekomendasi: pupil keemasan" pada `## Penampilan`. Ini jelas-jelas pelampauan wewenang. Warna pupil dan detail visual semacam itu adalah area otonomi director karakter, tetapi AI mematoknya di tahap konsep. Jika dibiarkan, director akan melipat penilaiannya sendiri sambil berkata "ini sudah ditetapkan di desain", atau mengabaikannya dan berbenturan — salah satu dari dua itu. Kedua, `voice_profile` berisi 4 butir, bukan 5. "Kata terlarang" hilang seluruhnya. Kata apa yang sama sekali tidak boleh diucapkan seorang karakter mentor sama pentingnya dengan kepribadian, tetapi AI melewatkannya.
 
 **④ Permintaan ulang (perbaiki tepat dua titik saja)**
 
 ```
 Perbaiki dua hal ini saja.
-1. Pada ## 외형, hapus baris rekomendasi "pupil keemasan". Warna pupil adalah
+1. Pada ## Penampilan, hapus baris rekomendasi "pupil keemasan". Warna pupil adalah
    area keputusan director karakter. Untuk butir penampilan, tulis hanya sampai
    siluet, perawakan, warna faksi; warna dan material detail biarkan kosong dengan "(keputusan director)".
 2. Tambahkan butir "kata terlarang" yang hilang pada voice_profile. Sebutkan
