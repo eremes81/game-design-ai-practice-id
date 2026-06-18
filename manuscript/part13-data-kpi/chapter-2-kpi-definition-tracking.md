@@ -90,11 +90,11 @@ Keluaran berupa 5 baris per kandidat (metrik/perubahan/hipotesis/segmen pemeriks
 tingkat keyakinan tinggi-sedang-rendah), tanpa prosa.
 ```
 
-Yang menjadi ciri prompt ini adalah hampir semua dari lima baris aturannya berupa larangan. Jika diberi kebebasan, AI akan mempercantik diagnosis KPI menjadi narasi pasti yang tampak masuk akal (seperti "DAU turun karena event kehadiran berakhir", memastikan event yang tidak ada di log). Karena itu, **larangan diagnosis pasti, hanya hipotesis, segmen hanya dari dalam input, jika tidak tahu katakan tidak tahu** dipaku sebagai patok, sehingga garis yang tak boleh dilewati AI ditarik lebih dahulu.
+Yang menjadi ciri prompt ini adalah hampir semua dari lima baris aturannya berupa larangan. Jika diberi kebebasan, AI akan mempercantik diagnosis KPI menjadi narasi pasti yang tampak masuk akal (seperti "DAU turun karena event login harian (event kehadiran) berakhir", memastikan event yang tidak ada di log). Karena itu, **larangan diagnosis pasti, hanya hipotesis, segmen hanya dari dalam input, jika tidak tahu katakan tidak tahu** dipaku sebagai patok, sehingga garis yang tak boleh dilewati AI ditarik lebih dahulu.
 
 ### Langkah 3 — Keluaran Claude (mentah, kutipan)
 
-Berikut adalah rekonstruksi dari bentuk yang sebenarnya dimuntahkan LLM. Saya tidak meringkas atau memperindahnya, dan membiarkan apa adanya bahkan bagian di kandidat ketiga yang diam-diam melanggar aturan.
+Berikut adalah rekonstruksi dari bentuk yang sebenarnya dimuntahkan LLM. Saya tidak meringkas atau memperindahnya, dan membiarkan apa adanya bahkan bagian di baris terakhir yang diam-diam melanggar aturan.
 
 ```
 [Kandidat Sinyal Anomali — 2 buah]
@@ -118,12 +118,12 @@ Kandidat 2
 - Segmen pemeriksaan: retensi kohort dau_by_newbie(d0_7)
 - Tingkat keyakinan: rendah
 
-[Catatan] Berakhirnya event kehadiran baru-baru ini tampaknya menjadi penyebab penurunan durasi sesi.
+[Catatan] Berakhirnya event login harian baru-baru ini tampaknya menjadi penyebab penurunan durasi sesi.
 ```
 
 Dua kandidat pertama dalam keluaran ini mematuhi aturan. Hipotesis ditulis sebagai hipotesis, segmen ditunjuk dari dalam input, dan kandidat 2 dengan sendirinya menurunkan tingkat keyakinannya menjadi 'rendah' sambil berkata "tidak bisa dipastikan karena tidak ada data rentang perubahan biasa". Inilah wujud keluaran yang baik — AI melaporkan keterbatasannya sendiri.
 
-Masalahnya ada pada satu baris `[Catatan]` di paling bawah. Ia **memastikan "berakhirnya event kehadiran" yang tidak ada di log** sebagai penyebab. Ini pelanggaran aturan 3. Hal inilah yang tersangkut pada langkah berikutnya.
+Masalahnya ada pada satu baris `[Catatan]` di paling bawah. Ia **memastikan "berakhirnya event login harian" yang tidak ada di log** sebagai penyebab. Ini pelanggaran aturan 3. Hal inilah yang tersangkut pada langkah berikutnya.
 
 ### Langkah 4 — Verifikasi dan Penolakan (tempat manusia)
 
@@ -138,7 +138,7 @@ Ketiga, **penangguhan kandidat 2.** AI sendiri berkata "tidak bisa dipastikan" d
 Maka kita ajukan permintaan ulang.
 
 ```
-Baris [Catatan] di paling bawah memastikan event kehadiran yang tidak ada di input,
+Baris [Catatan] di paling bawah memastikan event login harian yang tidak ada di input,
 jadi hapus. Sisakan hanya kandidat 1, dan tulis ulang penurunan durasi sesi menjadi
 satu baris aksi "periksa kotak mana yang paling banyak turun" dengan memilah ke
 d0_7/d8plus × ios/aos 2x2. Jangan memastikan penyebab, hanya aksi pemeriksaan saja.

@@ -1,4 +1,4 @@
-# Lampiran E. Katalog Server MCP (dari Sudut Pandang Game Designer)
+# Lampiran E. Katalog Server MCP (dari Sudut Pandang Game Design)
 
 MCP (Model Context Protocol) adalah jalur yang menghubungkan LLM ke alat dan data eksternal dengan cara yang terstandar. Pada Bagian 20 saya membahas MCP untuk manajemen proyek, tetapi server MCP yang bisa ditarik ke alur kerja game design jauh lebih banyak dari itu. Lampiran ini mengumpulkan kandidat-kandidat tersebut agar terlihat sekilas, dan memberi prioritas tentang urutan adopsi yang baik — sebuah katalog.
 

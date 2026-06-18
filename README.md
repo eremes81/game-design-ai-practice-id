@@ -215,7 +215,7 @@ Repository ini adalah **edisi Bahasa Indonesia (sumber markdown)** dari buku yan
 - [Lampiran B. Prosedur Peminjaman Alat (Menggeneralisasi dari Perusahaan ke Penggunaan Pribadi)](manuscript/part99-appendix/appendix-B-tool-adoption-procedure.md)
 - [Lampiran C. Referensi Izin dan Pengaturan](manuscript/part99-appendix/appendix-C-permissions-settings.md)
 - [Lampiran D. Standar Penamaan dan Frontmatter Dokumen R&D](manuscript/part99-appendix/appendix-D-naming-frontmatter-standard.md)
-- [Lampiran E. Katalog Server MCP (dari Sudut Pandang Game Designer)](manuscript/part99-appendix/appendix-E-mcp-server-catalog.md)
+- [Lampiran E. Katalog Server MCP (dari Sudut Pandang Game Design)](manuscript/part99-appendix/appendix-E-mcp-server-catalog.md)
 - [Lampiran F. Indeks Kasus (Perusahaan / PC Pribadi)](manuscript/part99-appendix/appendix-F-case-index.md)
 - [Lampiran G. Kumpulan Kasus Skrip Operasional](manuscript/part99-appendix/appendix-G-operation-scripts.md)
 - [Lampiran H. Mendaur Ulang Materi Pekerjaan Lama](manuscript/part99-appendix/appendix-H-past-work-reuse.md)

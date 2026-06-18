@@ -103,7 +103,7 @@ status: draft
 
 Enam butir tampilan (usia·jenis kelamin·postur·busana di seksi 2, serta ekspresi·sikap di seksi 3) menjadi checklist untuk Gerbang 1. Dua baris "perempuan empat puluhan / jubah abu-abu" yang menjadi penyebab insiden messenger persis ada di seksi ini. Seandainya Gerbang 1 bekerja, sebelum materi diserahkan akan diperiksa apakah enam butir tampilan pada materi yang diterima concept artist sudah cocok dengan dokumen desain terkini.
 
-### Worked Transcript — Satu Putaran Bolak-Balik untuk Mengisi Bagian Kosong Dokumen Desain
+### Worked Transcript (rekaman sesi nyata) — Satu Putaran Bolak-Balik untuk Mengisi Bagian Kosong Dokumen Desain
 
 Alih-alih mengisi sendiri seluruh spesifikasi dari nol dengan tangan, saya hanya menetapkan identitas dan peran, lalu menerima draf tampilan·ekspresi dari Claude. Berikut adalah satu putaran bolak-balik yang sebenarnya, secara penuh. Saya tidak meringkasnya.
 

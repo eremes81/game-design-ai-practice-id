@@ -77,7 +77,7 @@ Memang ini bukan alat yang dipakai langsung oleh Game Designer, tetapi ketika be
 | Alat | Kegunaan |
 |---|---|
 | Alat kolaborasi (ClickUp) | Task |
-| Messenger tim internal | Komunikasi waktu nyata |
+| messenger tim internal | Komunikasi waktu nyata |
 | Wiki bikinan sendiri | Wiki · dokumen jangka panjang |
 | Web portal bikinan sendiri | Antarmuka terpadu (20.3) |
 

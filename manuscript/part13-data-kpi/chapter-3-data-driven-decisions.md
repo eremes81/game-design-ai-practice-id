@@ -45,7 +45,7 @@ flowchart TB
     D --> E["Tahap 4 deterministik: ekstraksi ulang Python<br/>agregasi rinci hanya untuk segmen yang ditunjuk"]
     E --> F{"Tahap 5 manusia: keputusan<br/>terima, tolak, atau tunda hipotesis"}
     F -->|Tersangkal| C
-    F -->|Terkonfirmasi| G["Catat decision card → terapkan ke build"]
+    F -->|Terkonfirmasi| G["Catat decision card (kartu keputusan) → terapkan ke build"]
     classDef code fill:#dbeafe,stroke:#2563eb,color:#0b2545;
     classDef ai fill:#f3e8ff,stroke:#9333ea,color:#3b0764;
     classDef human fill:#fde68a,stroke:#b45309,color:#000;

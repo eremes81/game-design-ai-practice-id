@@ -26,9 +26,9 @@ Pertama, kita lihat dulu peta perbedaannya. Di bawah ini adalah tabel batasan pl
 | Input | Sentuh | Sentuh (+sebagian keyboard) | Keyboard·mouse·gamepad |
 | Target sentuh minimum | 44pt (Apple HIG) | 48dp (Material) | Klik — tidak berlaku |
 | Layar | 4.7\~6.7 inci | 4.5\~7 inci (variasi besar) | 21\~32 inci |
-| Pembayaran | App Store | Google Play | Mandiri (kanal sendiri)·Steam |
-| Notifikasi | APNs | FCM | OS·mandiri |
-| Penyimpanan | iCloud | Google Drive·mandiri | Steam Cloud·mandiri |
+| Pembayaran | App Store | Google Play | kanal sendiri·Steam |
+| Notifikasi | APNs | FCM | OS·kanal sendiri |
+| Penyimpanan | iCloud | Google Drive·server sendiri | Steam Cloud·server sendiri |
 | Siklus penggantian OS | 1\~2 tahun | 1 tahun (fragmentasi besar) | 5\~10 tahun |
 
 iOS dan Android berbeda pada *API* pembayaran, penyimpanan, dan notifikasi, tetapi layar serta cara mengoperasikan yang dilihat pengguna hampir sama. PC berbeda secara menyeluruh pada input, layar, dan efek visualnya. Karena itu, berlawanan dengan intuisi, beban operasional bukanlah ×3 melainkan lebih mendekati ×2 — sebab jarak antara iOS dan Android pendek.
