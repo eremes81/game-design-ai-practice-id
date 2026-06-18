@@ -53,7 +53,7 @@ Tanpa spesifikasi ini, adegan ruang rapat itu terulang. Jika spesifikasinya ada,
 - Aturan cancel: dari aksi mana ke aksi mana bisa di-cancel
 - Input queue: berapa lebar jendela (ms) untuk menerima input berikutnya di tengah aksi
 
-**Ketiga, AI karakter·monster.** Logika perilaku NPC — Behavior Tree (Behavior Tree, selanjutnya BT), state machine (FSM (Finite State Machine, mesin status berhingga)/HFSM), tabel keputusan. Pola perilaku monster, transisi fase bos, kerja sama NPC pendamping, dan simulasi gerombolan masuk di sini.
+**Ketiga, AI karakter·monster.** Logika perilaku NPC — Behavior Tree (BT), state machine (FSM (Finite State Machine, mesin status berhingga)/HFSM), tabel keputusan. Pola perilaku monster, transisi fase bos, kerja sama NPC pendamping, dan simulasi gerombolan masuk di sini.
 
 **Keempat, rumus damage·sumber daya·cooldown.** Matematika ketika pilihan pemain diubah menjadi hasil. Koefisien damage·pengurangan pertahanan·kritikal·koreksi atribut, kurva konsumsi·pemulihan sumber daya (MP/tenaga/stamina), distribusi cooldown.
 
@@ -97,7 +97,7 @@ Jika dirangkum kembali dalam tabel, hasilnya seperti ini.
 | L1 | Struktur combo·cancel / Spesifikasi Look & Feel / Kerangka kelas | Lambat |
 | L2 | Kurva progres koloni musuh per chapter / Alur pembukaan skill | Sedang |
 | L3 | Sheet koefisien damage skill, nilai cooldown, konsumsi sumber daya | Cepat |
-| L4 | DPS terukur build, jalur combo yang nyata-nyata mungkin, umpan balik pemain | Tiap build |
+| L4 | DPS terukur build, jalur combo yang benar-benar bisa dilakukan, umpan balik pemain | Tiap build |
 
 Ciri khas combat design adalah **bobot L4 lebih besar dibanding bidang lain.** Pada desain skenario, spesifikasi L1 hampir langsung menjadi versi final, tetapi tempur berbeda. "Hit feel-nya bagus" adalah wilayah yang baru bisa diketahui dengan memukul langsung dengan tangan di build dan melihat layar. Sekalipun ditulis "hitstop 5 frame" di spesifikasi, apakah itu benar-benar terasa berat hanya terkonfirmasi di L4. Karena itu, alat simulasi dan pengukuran otomatis menciptakan nilai terbesar di bidang ini (4.4).
 
@@ -170,7 +170,7 @@ Transcript di atas hanya menunjukkan satu tempat (spesifikasi). Di seluruh comba
 
 **1) Simulasi — nilai terbesar.** Menghitung di muka kurva DPS (Damage Per Second, damage per detik)·jalur combo·konsumsi sumber daya tanpa build. Jauh lebih cepat ketimbang membuat build lalu mengukur dengan tangan. Pada 4.4 ditangani langsung dengan simulator `simulate_dps`.
 
-**2) Pembangkitan otomatis state machine·BT.** Mengubah penjelasan bahasa alami seperti "bos ini berubah brutal di bawah 50% HP, dan saat brutal ia memakai pola 3 pukulan beruntun" menjadi diagram BT/FSM. Akurasinya tinggi — struktur aturan adalah wilayah yang ditangani LLM dengan baik. Waktu untuk memindahkan logika dari kepala ke gambar pun hemat.
+**2) Pembangkitan otomatis state machine·BT.** Mengubah penjelasan bahasa alami seperti "bos ini mengamuk (enrage) di bawah 50% HP, dan saat mengamuk ia memakai pola 3 pukulan beruntun" menjadi diagram BT/FSM. Akurasinya tinggi — struktur aturan adalah wilayah yang ditangani LLM dengan baik. Waktu untuk memindahkan logika dari kepala ke gambar pun hemat.
 
 **3) Analisis otomatis tangkapan build.** Mengekstrak secara otomatis hit timing·tingkat keberhasilan combo·distribusi damage dari rekaman gameplay. Namun, ini adalah **tempat dengan tingkat kesulitan implementasi tertinggi** (di bawah kita timbang dengan jujur).
 
@@ -272,7 +272,7 @@ Yang lebih inti dari angka itu sendiri adalah arahnya. Keempat item sama-sama be
 ## Poin-Poin Penting
 
 - Combat design adalah posisi tempat Layer terbanyak berputar serentak di satu meja, dari spesifikasi L1, sheet L3, hingga pengukuran build L4.
-- Penguraian Layer berpermukaan menyeragamkan bahasa kolaborasi, tetapi esensinya adalah prasyarat otomatisasi berupa simulasi·tangkapan·eksplorasi LLM.
+- Penguraian Layer secara permukaan menyeragamkan bahasa kolaborasi, tetapi esensinya adalah prasyarat otomatisasi berupa simulasi·tangkapan·eksplorasi LLM.
 - Penilaian akhir atas "hit feel-nya bagus" adalah bagian manusia, dan AI membuat dengan cepat materi dasar bagi penilaian itu.
 
 ---

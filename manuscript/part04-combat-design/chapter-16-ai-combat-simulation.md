@@ -183,7 +183,7 @@ Selisih waktu antara `input` dan `hit` itulah hit timing yang terukur. 12.560 âˆ
 
 ## 4.4.5 Worked Transcript: Spesifikasi 150ms vs Pengukuran 220ms
 
-Kini kita kumpulkan kedua sumbu dalam satu tempat. Spesifikasi menjanjikan 150ms, dan telemetry mengukur 220ms. +70ms. Ujung jari benar. Saya menelusuri sampai tuntas bersama AI proses mempersempit *penyebab* selisih ini. Tanpa meringkasnya, saya muat apa adanya bahkan adegan ketika AI di awal salah menebak.
+Kini kita kumpulkan kedua sumbu dalam satu tempat. Spesifikasi menjanjikan 150ms, dan telemetry mengukur 220ms. +70ms. Ujung jari benar. Saya menelusuri sampai tuntas bersama AI proses mempersempit *penyebab* selisih ini. Tanpa meringkasnya, saya muat apa adanya bahkan adegan ketika AI di awal salah arah.
 
 ### Prompt
 

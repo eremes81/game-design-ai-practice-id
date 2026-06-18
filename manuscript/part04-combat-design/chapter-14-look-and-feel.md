@@ -83,9 +83,9 @@ Keempat yang di atas terikat menjadi tiga sumbu bab ini dan menjadi objek penguk
 
 Ada alasan mengapa di antara tiga sumbu, timing yang pertama dibahas. Ketika pemain meragukan game feel, hal pertama yang tersangkut adalah sensasi 'reaksinya terlambat', dan sehebat apa pun yang lain, bila input-nya lamban, pada momen itu semuanya runtuh. Karena itu kita tangkap timing lebih dahulu.
 
-Sumbu pertama game feel adalah waktu. Dari momen tombol ditekan (0ms) sampai momen layar pertama kali bereaksi, berapa ms yang dibutuhkan. Manusia mengejutkan pekanya terhadap jeda ini. Selisih antara 60ms dan 120ms 'tidak bisa dijelaskan dengan kata-kata, tapi tangan tahu'.
+Sumbu pertama game feel adalah waktu. Dari momen tombol ditekan (0ms) sampai momen layar pertama kali bereaksi, berapa ms yang dibutuhkan. Manusia luar biasa peka terhadap jeda ini. Selisih antara 60ms dan 120ms 'tidak bisa dijelaskan dengan kata-kata, tapi tangan tahu'.
 
-Satu kali serangan bukanlah satu titik sederhana, melainkan beberapa peristiwa yang terbentang di atas sumbu waktu. Bila kita meletakkan 1 hit Basic Attack di atas sumbu waktu, bentuknya seperti ini.
+Satu kali serangan bukanlah satu titik sederhana, melainkan beberapa peristiwa yang terbentang di atas sumbu waktu. Bila kita meletakkan 1 hit Basic Attack (serangan dasar) di atas sumbu waktu, bentuknya seperti ini.
 
 <svg viewBox="0 0 720 270" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
   <rect x="0" y="0" width="720" height="270" fill="#fafafa" stroke="#ddd"/>
@@ -131,7 +131,7 @@ Rentang yang dianjurkan berbeda menurut genre·karakter, tetapi ada garis acuan 
 | Reaksi berat (skill besar) | 200\~400ms | Pre-delay yang disengaja demi rasa berbobot |
 | Charging (isi ulang panjang) | 500\~2000ms | Penantian yang disengaja, ditangani terpisah |
 
-Rentang ini bukan acuan mutlak. Sebagai **perkiraan penulis (belum terverifikasi)**, mobile kasual cenderung bergeser ±50ms ke arah input yang lebih longgar, sedangkan konsol fighting cenderung dikencangkan lebih ketat. Yang inti bukan angkanya sendiri, melainkan tim berbagi garis acuan 'serangan ringan game kita kita sepakati 90ms'. Garis acuan harus ada agar kita bisa berkata 'benar/salah' setelah melihat build.
+Rentang ini bukan acuan mutlak. Sebagai **perkiraan penulis (belum terverifikasi)**, mobile kasual cenderung bergeser ±50ms ke arah input yang lebih longgar, sedangkan konsol fighting cenderung dikencangkan lebih ketat. Yang inti bukan angkanya sendiri, melainkan tim berbagi garis acuan 'serangan ringan game kita, kita sepakati di 90ms'. Garis acuan harus ada agar kita bisa berkata 'benar/salah' setelah melihat build.
 
 Namun di sini ada satu jebakan. Mata manusia tidak bisa membedakan 90ms dan 110ms. Pada 60fps, 1 frame kira-kira 16.67ms, dan selisih 20ms ini hanya sekitar satu frame. Apakah ucapan "kok rasanya agak lambat ya?" di ruang rapat benar atau salah, dengan mata akhirnya tidak bisa diputuskan. Karena itu pengukuran dibutuhkan.
 

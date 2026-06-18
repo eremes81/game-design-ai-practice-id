@@ -158,7 +158,7 @@ Setelah alat dirangkai, dibutuhkan ritme. Lini paling stabil jika berputar dalam
 | Kamis | Tinjauan sampel ke-2 (lead naratif) | 2–3 menit/kota |
 | Jumat | Terapkan ke build + siapkan seed minggu depan | Singkat |
 
-Selasa adalah jantung lini. Saat generator kota menjatuhkan manifest, generator NPC menggigitnya, generator item menggigitnya, dan Squad bahkan menempatkannya. Rantai ini berputar di latar belakang tanpa intervensi penulis. Selama itu, penulis menulis main quest (L0, sepenuhnya manual). Imbalan sejati dari merangkai alat ada di sini. Jika alat-alat terpisah, penulis harus turun tangan tiga kali pada hari Selasa, tetapi jika dirangkai, ia tidak turun tangan sekali pun.
+Selasa adalah jantung lini. Saat generator kota menjatuhkan manifest, generator NPC menerimanya, generator item menerimanya, dan Squad bahkan menempatkannya. Rantai ini berputar di latar belakang tanpa intervensi penulis. Selama itu, penulis menulis main quest (L0, sepenuhnya manual). Imbalan sejati dari merangkai alat ada di sini. Jika alat-alat terpisah, penulis harus turun tangan tiga kali pada hari Selasa, tetapi jika dirangkai, ia tidak turun tangan sekali pun.
 
 Satu penulis tunggal memproduksi 5–7 kota dalam seminggu, lengkap dengan NPC·senjata yang menyertainya. Empat minggu berarti 20–28 kota. Target 30 kota tercapai dalam 6 minggu.
 
@@ -177,7 +177,7 @@ Sehat atau tidaknya lini dilihat dari angka, bukan kesan. Berikut empat indikato
 
 Indikator yang paling khas lini adalah yang kedua, **jumlah konflik lintas generator**. Saat hanya memakai satu alat tunggal, angka ini tidak ada. Jika angka ini tiba-tiba melampaui 10, itu bukan berarti satu alat rusak, melainkan **kontrak antar alat (manifest) yang pecah**. Biasanya ini meledak ketika skema manifest generator kota diubah tetapi generator NPC masih membaca skema lama. Tanpa indikator ini, kecelakaan tersebut tidak akan terlihat sampai rilis.
 
-Keempat indikator dimasukkan sebagai retrospektif kuartal tiap minggu. Jika trennya memburuk, jumlah kota yang diproduksi minggu berikutnya dikurangi dari 5–7 menjadi 3–5 dan penyebabnya ditelusuri.
+Keempat indikator dikumpulkan tiap minggu dan dibawa ke retrospektif kuartalan. Jika trennya memburuk, jumlah kota yang diproduksi minggu berikutnya dikurangi dari 5–7 menjadi 3–5 dan penyebabnya ditelusuri.
 
 ---
 

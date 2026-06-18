@@ -155,7 +155,7 @@ LLM hanya melempar hipotesis yang mempersempit ruang pencarian, seperti "tumpang
 
 ## 8.5.3 Matchmaking: Balance Lain yang Menutupi Counter
 
-Sekalipun matriks win rate disesuaikan dengan sempurna, penyebab sesungguhnya pemain merasa "kalah" ada di tempat lain. Yaitu **dengan siapa ia diadu.** Kalau pemain dengan skill 1500 bertemu pemain 2200, sekalipun counter job-nya 5:5, hasilnya sudah ditentukan. Karena itu matchmaking bukan sekadar fitur server, melainkan **bagian dari balance**. Kalau matriks bertanggung jawab atas keadilan antarjob, matchmaking bertanggung jawab atas keadilan antarskill.
+Sekalipun matriks win rate disesuaikan dengan sempurna, penyebab sesungguhnya pemain merasa "kalah" ada di tempat lain. Yaitu **dengan siapa ia diadu.** Kalau pemain dengan skill 1500 bertemu pemain 2200, sekalipun counter job-nya 5:5, hasilnya sudah ditentukan. Karena itu matchmaking bukan sekadar fitur server, melainkan **bagian dari balance**. Kalau matriks bertanggung jawab atas keadilan antarjob, matchmaking bertanggung jawab atas keadilan antarlevel keterampilan.
 
 Sebagian besar game kompetitif menerapkan MMR (Matchmaking Rating, skor matchmaking). MMR adalah skor tersembunyi yang naik saat menang dan turun saat kalah, dan pemain dengan skor mirip diadu satu sama lain. Pembaruan skor adalah rumus deterministik — Elo paling luas dipakai, dan karena merupakan standar terbuka, ia salah satu dari sedikit rumus yang boleh saya kutip di buku ini.
 

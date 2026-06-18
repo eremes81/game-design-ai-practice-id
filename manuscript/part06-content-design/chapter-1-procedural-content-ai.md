@@ -171,7 +171,7 @@ Slot imbalan: { gold: ?, exp: ?, item: arit pemetik }
 
 ```json
 {
-  "npc_name": "Bibi Sammwol",
+  "npc_name": "Bibi Samwol",
   "motive": "Setiap malam lolongan serigala merusak kebun ramuannya, hingga ia tak berani pergi mencabut bahan obat terakhir.",
   "quest_text": "Kalau malam tiba, serigala-serigala mengobrak-abrik kebun ramuan. Aku takut sampai kaki tak bisa melangkah, jadi tolong cabutkan saja enam akar bahan obat di kaki bukit untukku.",
   "reward": { "gold": 120, "exp": 300 }
@@ -180,7 +180,7 @@ Slot imbalan: { gold: ?, exp: ?, item: arit pemetik }
 
 Ada yang harus kita berhenti dan cermati di sini. AI membuat dan memasukkan field `reward` *padahal tidak disuruh*. Ini persis menunjukkan mengapa sumbu 1 dan sumbu 2 harus dipisahkan. Angka imbalan (Layer 3) adalah tempat rulebook L1, bukan tempat AI (L2). Kalau itu diserahkan ke AI, angkanya goyah setiap pemanggilan dan kurva imbalan runtuh.
 
-**Tahap 4 — Verifikasi·penolakan manusia.** Peninjau melakukan dua hal. (1) *Menghapus* field `reward` — ini sel yang harus diisi rulebook. (2) Memeriksa nada. "Bibi Sammwol", satu baris motif, dan dua kalimat teks permintaan cocok dengan nada desa pedesaan. Lolos. Seandainya AI memasukkan kata di luar dunia seperti "permintaan dari guild penyihir", di sini ia ditolak dan dikembalikan ke tahap kerangka.
+**Tahap 4 — Verifikasi·penolakan manusia.** Peninjau melakukan dua hal. (1) *Menghapus* field `reward` — ini sel yang harus diisi rulebook. (2) Memeriksa nada. "Bibi Samwol", satu baris motif, dan dua kalimat teks permintaan cocok dengan nada desa pedesaan. Lolos. Seandainya AI memasukkan kata di luar dunia seperti "permintaan dari guild penyihir", di sini ia ditolak dan dikembalikan ke tahap kerangka.
 
 **Tahap 5 — Penetapan data Layer 3.** Slot imbalan yang dihapus diisi ulang oleh rulebook. Ini rumus deterministik yang terikat pada level wilayah dan tingkat kesulitan tujuan. `gold: 85, exp: 240`. Yang masuk adalah nilai yang sesuai kurva, bukan 120·300 yang dimuntahkan AI secara sembarang.
 

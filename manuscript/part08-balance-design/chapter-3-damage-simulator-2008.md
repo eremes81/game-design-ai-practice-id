@@ -38,7 +38,7 @@ Alasan simulator menghasilkan 612 hanya satu: karena tangannya cuma satu. Selama
 
 ## 8.3.2 Worked Transcript — Mendesak AI Soal Asal-Usul 612
 
-Saya yang di tahun 2008 menambal celah 27% ini dengan tangan. Saya membaca log simulasi baris demi baris dengan mata, menghitung pada frame mana skill terhalang. Butuh setengah hari. Sekarang, 18 tahun berlalu, saya melempar log yang sama kepada Claude. Berikut adalah transkrip lengkap dari satu sesi yang benar-benar saya jalankan. Tanpa diringkas, dan saya muat apa adanya termasuk percobaan pertama yang melenceng — sebab melencengnya itu adalah separuh dari cara menggunakan alat ini.
+Saya yang di tahun 2008 menambal celah 27% ini secara manual. Saya membaca log simulasi baris demi baris dengan mata, menghitung pada frame mana skill terhalang. Butuh setengah hari. Sekarang, 18 tahun berlalu, saya melempar log yang sama kepada Claude. Berikut adalah transkrip lengkap dari satu sesi yang benar-benar saya jalankan. Tanpa diringkas, dan saya muat apa adanya termasuk percobaan pertama yang melenceng — sebab melencengnya itu adalah separuh dari cara menggunakan alat ini.
 
 Prompt yang saya lempar berbunyi begini.
 
@@ -199,7 +199,7 @@ Sisi luar (hipotesis·interpretasi — AI dipersilakan):
 - Kueri sebab seperti "kenapa win rate kombinasi karakter ini abnormal".
 - Mencari pola BLOCKED di log, draf laporan bahasa alami, draf skenario yaml.
 
-Worked transcript di depan bergerak persis di atas garis ini. Dari sisi luar, AI dengan cepat menyusun hipotesis "tabrakan GCD adalah penyebabnya". Tetapi angka 27%, angka 612, sampai akhir tetaplah nilai yang dihitung oleh inti deterministik, dan AI menerima nilai itu lalu hanya menafsirkannya. Lalu dua kali ia berhenti dengan "dengan data ini tidak bisa dipastikan" — sambil meminta informasi yang tak bisa diberikan inti deterministik (asumsi critical dari spesifikasi). Berhenti inilah penanda alat yang baik. Tidak salah mengira hipotesis sebagai diagnosis.
+Worked transcript di depan bergerak persis di atas garis ini. Dari sisi luar, AI dengan cepat menyusun hipotesis "tabrakan GCD adalah penyebabnya". Tetapi angka 27%, angka 612, sampai akhir tetaplah nilai yang dihitung oleh inti deterministik, dan AI menerima nilai itu lalu hanya menafsirkannya. Lalu dua kali ia berhenti dengan "dengan data ini tidak bisa dipastikan" — sambil meminta informasi yang tak bisa diberikan inti deterministik (asumsi critical dari spesifikasi). Berhenti inilah penanda alat yang baik. Yakni tidak mengira hipotesis sebagai diagnosis.
 
 Ada satu hal yang saya akui secara jujur soal angka. Angka-angka konkret di bab ini seperti 847·612·731·412 kali adalah nilai contoh yang saya susun untuk keperluan penjelasan. Namun **arah** bahwa DPS spesifikasi selalu keluar lebih tinggi dari hasil terukur simulasi, **struktur** bahwa gap itu terurai menjadi tabrakan struktural dan varians statistik, serta **prinsip** bahwa pengunci seed adalah prasyarat pengujian regresi — itu semua telah berulang kali saya konfirmasi sambil benar-benar menjalankannya selama 18 tahun sejak 2008. Besaran rasionya berbeda-beda tergantung proyek, tetapi arah dan strukturnya tidak berubah.
 

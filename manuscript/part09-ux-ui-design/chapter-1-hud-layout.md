@@ -56,8 +56,6 @@ PC, berkat presisi mouse·tooltip hover·layar besar, tetap terjangkau pandangan
 
 Saya tunjukkan satu siklus penuh dari awal hingga akhir tentang cara menjalankannya secara nyata. Berikut adalah rekonstruksi yang setia dari sesi peninjauan HUD tempur proyek penulis (MMORPG yang mengutamakan mobile, selanjutnya "Proyek A"). Prompt input dapat langsung disalin dan dipakai, dan keluarannya merupakan rekonstruksi dari sesi nyata.
 
-> *Catatan: seluruh worked transcript (rekaman sesi nyata) dalam edisi ini adalah terjemahan dari sesi asli berbahasa Korea — bukan dijalankan ulang dalam Bahasa Indonesia.*
-
 ### Langkah 1 — Input: Lemparkan tangkapan layar + manifes elemen bersamaan
 
 Jika hanya melempar tangkapan layar, AI akan "menebak" layar. Karena itu, koordinat·warna·klasifikasi elemen yang sudah diketahui build dimasukkan sekalian sebagai manifes. Ini bukan ditulis dari nol, melainkan tinggal diekstrak dari hasil build (realitas cara ekstraksi dibandingkan secara jujur di §9.1.4).

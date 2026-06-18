@@ -170,7 +170,7 @@ last_updated: 2026-05-18
 - Kebaikan kecil melahirkan hasil yang lebih besar daripada tindakan kepahlawanan besar.
 ```
 
-Ketiga baris pilar inilah yang menentukan arah ratusan halaman di bawahnya. `status: locked` bukan sekadar label. Salah satu pemeriksaan otomatis di L4 membaca label ini, sehingga apabila dokumen locked diubah dalam sebuah PR, merge dipasang agar terblokir tanpa persetujuan Lead Naratif.
+Ketiga baris pilar inilah yang menentukan arah ratusan halaman di bawahnya. `status: locked` bukan sekadar label. Salah satu pemeriksaan otomatis di L4 membaca label ini, sehingga apabila dokumen locked diubah dalam sebuah PR, sistem dikonfigurasi agar merge terblokir tanpa persetujuan Lead Naratif.
 
 ---
 
@@ -297,7 +297,7 @@ Jika batas antara otomatis dan manual jelas, waktu tinjauan menjadi dapat dipred
 
 ---
 
-## 5.1.8 Mencoba Menyuruh AI Mengerjakan Layer — Worked Transcript
+## 5.1.8 Mencoba Menyuruh AI Mengerjakan Layer — Worked Transcript (rekaman sesi nyata)
 
 Sampai sini adalah strukturnya. Namun tempat struktur ini benar-benar bekerja adalah saat membuat konten baru. Saya pindahkan apa adanya sebuah sesi nyata, ketika saya menyuruh Claude — pada proyek yang lima lapisnya sudah terpasang — mengambil ide side quest sepanjang satu baris lalu menebarkannya ke dalam Layer. Tanpa diringkas, termasuk bagian yang melenceng dan bagian yang ditolak.
 

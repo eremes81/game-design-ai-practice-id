@@ -141,7 +141,7 @@ Keempat pemeriksa tidak 100% akurat. Karena itulah nama keluarannya bukan "pelan
 
 ---
 
-## 5.2.4 Worked Transcript: Menjalankan voice_lint Satu Putaran
+## 5.2.4 Worked Transcript (rekaman sesi nyata): Menjalankan voice_lint Satu Putaran
 
 Kalimat abstrak "ada pemeriksa" tak memberi rasa nyata. Mari kita jalankan sekali sungguhan. Berikut masukan yang mereproduksi insiden "raja berbicara kasar" tadi.
 

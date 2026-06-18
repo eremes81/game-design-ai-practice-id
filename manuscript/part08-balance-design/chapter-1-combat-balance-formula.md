@@ -12,7 +12,7 @@ ip_check: done
 
 > **Tujuan pembelajaran bab ini** (tingkat kesulitan 🟡 praktis · prasyarat: aritmetika dasar·perhitungan tabel): Anda akan mampu memisahkan balans tempur menjadi tempat untuk formula dan tempat untuk angka, lalu—dengan berpijak pada dua sifat yaitu determinisme dan keterlacakan—membedakan sampai sejauh mana sesuatu boleh diserahkan kepada AI dan dari titik mana manusia harus menguncinya sebagai rulebook.
 
-Pukul dua dini hari, muncul notifikasi bahwa tingkat keselamatan (survival rate) job tanker di server live menyentuh 89%. Tidak ada tanker yang gagal menghabisi bos sampai akhir, dan terlalu banyak tanker yang tidak mati. Untuk mencari jejak tangan seseorang yang pernah mengutak-atik ini, saya membuka sheet data. Tampak satu baris koefisien pertahanan. `DEF / (DEF + 1000)`. Di mana pun pada sheet itu tidak tertulis kapan, oleh tangan siapa, dan atas dasar apa angka 1000 ini turun dari 1200 menjadi 1000. Mulailah pelacakan yang baru selesai setelah saya menyisir log chat, menyisir riwayat build, dan akhirnya harus sampai pada ingatan seorang balancer yang sudah resign tiga tahun lalu.
+Pukul dua dini hari, muncul notifikasi bahwa tingkat bertahan hidup (survival rate) job tanker di server live menyentuh 89%. Tidak ada tanker yang gagal menghabisi bos sampai akhir, dan terlalu banyak tanker yang tidak mati. Untuk mencari jejak tangan seseorang yang pernah mengutak-atik ini, saya membuka sheet data. Tampak satu baris koefisien pertahanan. `DEF / (DEF + 1000)`. Di mana pun pada sheet itu tidak tertulis kapan, oleh tangan siapa, dan atas dasar apa angka 1000 ini turun dari 1200 menjadi 1000. Mulailah pelacakan yang baru selesai setelah saya menyisir log chat, menyisir riwayat build, dan akhirnya harus sampai pada ingatan seorang balancer yang sudah resign tiga tahun lalu.
 
 Adegan ini dialami siapa pun yang pernah mengoperasikan balans tempur, setidaknya sekali. Dan penyebab sebenarnya dari adegan ini bukanlah bahwa angka 1000 itu salah. Penyebabnya adalah bahwa angka itu hidup di tempat **formula**, sedangkan **riwayat** perubahan formula itu tidak ada di mana pun. Formula balans tempur adalah area yang paling harus deterministik di dalam game, dan area yang paling harus dapat dilacak. Mengapa kedua sifat inilah yang menjadi alasan AI tidak boleh dimasukkan ke tempat ini—itulah tulang punggung bab ini.
 
@@ -139,7 +139,7 @@ Jika tiga tempat—formula, angka, dan riwayat—dilihat sekaligus, bentuknya se
   <text x="540" y="66" font-size="14" text-anchor="middle" fill="#27865a" font-weight="bold">_Decisions</text>
   <text x="540" y="88" font-size="11" text-anchor="middle" fill="#333">Riwayat keputusan (log)</text>
   <text x="540" y="110" font-size="11" text-anchor="middle" fill="#666">1 catatan per perubahan</text>
-  <text x="540" y="130" font-size="11" text-anchor="middle" fill="#666">Alasan·percobaan·pascaukur</text>
+  <text x="540" y="130" font-size="11" text-anchor="middle" fill="#666">Alasan·percobaan·pascaterap</text>
   <text x="540" y="150" font-size="11" text-anchor="middle" fill="#666">Materi inti onboarding</text>
   <!-- arrows -->
   <line x1="210" y1="100" x2="240" y2="100" stroke="#888" stroke-width="1.5" marker-end="url(#ah)"/>
@@ -147,7 +147,7 @@ Jika tiga tempat—formula, angka, dan riwayat—dilihat sekaligus, bentuknya se
   <line x1="540" y1="160" x2="540" y2="200" stroke="#27865a" stroke-width="1.5" stroke-dasharray="4 3"/>
   <path d="M120,205 L540,205" stroke="#27865a" stroke-width="1.5" fill="none"/>
   <path d="M540,205 L540,162" stroke="#27865a" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
-  <text x="225" y="225" font-size="11" text-anchor="middle" fill="#27865a">Satu perubahan formula → satu log keputusan (lampiran alasan·percobaan·pascaukur)</text>
+  <text x="225" y="225" font-size="11" text-anchor="middle" fill="#27865a">Satu perubahan formula → satu log keputusan (lampiran alasan·percobaan·pascaterap)</text>
   <defs>
     <marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L6,3 L0,6 Z" fill="#888"/>

@@ -70,7 +70,7 @@ Keempat standar ini, bila ditata berdasarkan Layer, posisinya masing-masing menj
 
 Mengatakan bahwa dokumen master mengintegrasikan empat standar bukan berarti "menjejalkan semua isi ke dalam satu file", melainkan "mengumpulkan aturan di posisi L1". Karena itulah otomatisasi yang akan muncul nanti bisa ditumpangkan di atas batas Layer (apa yang terjadi bila pemisahan ini runtuh dibahas di 7.1.11).
 
-## 7.1.3 Format Metadata Ruang — Tempat Input Tempat Otomatisasi Menempel
+## 7.1.3 Format Metadata Ruang — Titik Input tempat Otomatisasi Menempel
 
 Satu ruang mengikuti format berikut. Format inilah antarmuka input bagi otomatisasi.
 
@@ -175,7 +175,7 @@ def measure(dungeon):
 
 Lima metrik dikeluarkan dalam bentuk yang dapat dibandingkan dengan dungeon lain. Dipakai sebagai metrik keragaman kumpulan dungeon. Namun, metrik yang beragam tidak berarti dungeon itu menyenangkan. Metrik dipakai untuk mencegah insiden, bukan untuk menjamin keseruan. Jalan buntu 0 buah tidak menjamin keseruan. Keseruan lahir dari insight desainer, dan verifikasi graf hanya menjadi alas yang menopang agar insight itu tidak terkubur oleh insiden.
 
-## 7.1.7 Contoh Terkerjakan — Menyerahkan Ekstraksi tags ke AI, Menolaknya, dan Memintanya Ulang
+## 7.1.7 Worked Transcript (rekaman sesi nyata) — Menyerahkan Ekstraksi tags ke AI, Menolaknya, dan Memintanya Ulang
 
 Bagian yang paling sering ingin dilepas tangan oleh manusia dalam otomatisasi adalah input `tags`. Memberi tag pada 100 ruang itu membosankan, dan kalau hanya melihat tangkapan layar ruang, manusia pun bingung. Pekerjaan yang berulang dan kriteria penilaiannya jelas seperti inilah justru tempat yang baik bagi AI untuk menopang draf awal. Subbab ini membentangkan tanpa olahan alur kerja yang benar-benar saya jalankan untuk pekerjaan itu — mulai dari prompt, keluaran AI yang ditolak, hingga permintaan ulang dari manusia.
 
@@ -231,7 +231,7 @@ scholar_theme, vertical_layout, water_hazard
 
 Kali ini berkurang menjadi 3 buah, semuanya ada di dalam kamus, dan tidak ada duplikasi kategori. Manusia menerima hasil ini. `tags: [scholar_theme, vertical_layout, water_hazard]` pada format ruang difinalisasi seperti ini.
 
-Pelajaran dari contoh terkerjakan ini ada dua baris. Pertama, AI overfit pada satu detail input ("2 lantai") lalu keluar dari kamus — gerbang paksaan kamus harus menangkap ini pada level kode. Kedua, AI cenderung ingin mengisi slot kosong — bila tidak menyatakan eksplisit "tidak perlu dipaksa diisi", ia berusaha memenuhi kelima slot. Kedua kegagalan itu lumrah, dan kedua resep penanganannya harus dipaksakan bukan dari prompt melainkan dari rulebook (kamus + batas atas) agar stabil.
+Pelajaran dari worked transcript ini ada dua baris. Pertama, AI overfit pada satu detail input ("2 lantai") lalu keluar dari kamus — gerbang paksaan kamus harus menangkap ini pada level kode. Kedua, AI cenderung ingin mengisi slot kosong — bila tidak menyatakan eksplisit "tidak perlu dipaksa diisi", ia berusaha memenuhi kelima slot. Kedua kegagalan itu lumrah, dan kedua resep penanganannya harus dipaksakan bukan dari prompt melainkan dari rulebook (kamus + batas atas) agar stabil.
 
 ## 7.1.8 Memproduksi Metadata — Siapa yang Mengisi dan Siapa yang Meninjau
 

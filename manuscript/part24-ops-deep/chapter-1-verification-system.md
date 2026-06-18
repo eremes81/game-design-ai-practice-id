@@ -88,7 +88,7 @@ Mari kita lihat bagaimana tahap ini menangkap insiden tautan putus tadi. Andai s
 
 ---
 
-## 24.1.6 Worked Transcript — Menyuruh Claude Membuat Skrip Pemeriksa
+## 24.1.6 Worked Transcript (rekaman sesi nyata) — Menyuruh Claude Membuat Skrip Pemeriksa
 
 Kalau manusia menyusun seluruh logika verifikasi dari nol, ia akan kelelahan. Saya menulis aturan pemeriksaan dalam bahasa alami, lalu meminta draf skrip eksekusinya kepada AI. Berikut adalah rekaman sesi nyata saat saya membuat skrip deteksi stale. Keluarannya tidak saya poles; proses kegagalan dan penolakan saya biarkan apa adanya.
 

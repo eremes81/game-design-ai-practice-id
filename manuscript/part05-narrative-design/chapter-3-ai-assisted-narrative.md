@@ -57,7 +57,7 @@ Tidak setiap kali keempat lapisan dimasukkan semua. Hanya lapisan yang diperluka
 
 ---
 
-## 5.3.2 Satu Worked Transcript — Dialog Emosional Pertama K_007
+## 5.3.2 Satu Worked Transcript (rekaman sesi nyata) — Dialog Emosional Pertama K_007
 
 Alih-alih menjelaskan secara abstrak, saya akan mengikuti satu permintaan nyata sampai tuntas. Tugasnya adalah menyusun 3 opsi dialog untuk adegan di mana karakter yang sama (NPC bertipe sarjana, ID internal `K_007`) untuk pertama kalinya harus menunjukkan emosi. Saya mulai dari prompt selengkapnya.
 
@@ -66,7 +66,7 @@ Alih-alih menjelaskan secara abstrak, saya akan mengikuti satu permintaan nyata 
 ```
 [SISTEM]
 Kamu penulis naratif Proyek A. Jangan pakai klise RPG seperti "pahlawan" atau "sang terpilih",
-ikuti tone gaya bicara dari dialog terakhir di bawah persis seperti itu. Jangan mengarang setelan yang tidak kamu ketahui,
+ikuti tone gaya bicara dari dialog terakhir di bawah persis seperti itu. Jangan mengarang latar yang tidak kamu ketahui,
 jawab saja "Tidak bisa ditentukan dari konteks". Kamu cuma membuat draf, keputusan ada di tanganku.
 
 [Tone L0 — kutipan tone_manifesto]
@@ -120,7 +120,7 @@ Dalam satu transcript ini terkandung segala isi bab ini. Injeksi tone (L0) menye
 
 ## 5.3.3 Layer A — System Prompt, Satu Baris Menentukan Segalanya
 
-Inilah definisi persona yang menjadi alas paling atas. Ditetapkan sekali dan hampir tidak diubah. Blok sistem pada transcript di atas adalah wujud nyatanya. Dari kelima baris, baris terakhir ("Penulisan draf, keputusan ada di penulis") yang paling penting. Jika baris ini hilang, AI dengan percaya diri menyodorkan kalimat yang berpura-pura "final", dan penulis pun bukan memeriksa melainkan menilai. Lalu baris ketiga ("Jangan membuat setelan yang tidak diketahui, jawab tidak bisa ditentukan") adalah yang kedua terpenting. Tanpa baris ini, model mengisi ruang kosong dengan kebohongan yang masuk akal. Dalam naratif, kebohongan yang masuk akal akan kembali beberapa hari kemudian sebagai benturan lore.
+Inilah definisi persona yang menjadi alas paling atas. Ditetapkan sekali dan hampir tidak diubah. Blok sistem pada transcript di atas adalah wujud nyatanya. Dari kelima baris, baris terakhir ("Penulisan draf, keputusan ada di penulis") yang paling penting. Jika baris ini hilang, AI dengan percaya diri menyodorkan kalimat yang berpura-pura "final", dan penulis pun bukan memeriksa melainkan menilai. Lalu baris ketiga ("Jangan membuat latar yang tidak diketahui, jawab tidak bisa ditentukan") adalah yang kedua terpenting. Tanpa baris ini, model mengisi ruang kosong dengan kebohongan yang masuk akal. Dalam naratif, kebohongan yang masuk akal akan kembali beberapa hari kemudian sebagai benturan lore.
 
 ---
 
@@ -237,7 +237,7 @@ Jika hanya melempar instruksi tugas tanpa system prompt, yang keluar rata-rata. 
 
 Sejauh ini adalah penerapan konservatif. Penulis menginjeksikan konteks dengan saksama, dan AI hanya membuat draf baris demi baris. Unitnya adalah tugas kecil seperti "3 opsi dialog berikutnya karakter ini" atau "sinopsis quest ini". Stabil, tetapi punya keterbatasan pada skala produksi massal dan responsivitas dinamis.
 
-Di sini saya tegaskan dulu satu hal. Procedural generation, simulasi dunia, dan quest dinamis adalah visi yang sudah digambar para Game Designer di atas kertas sejak 20\~30 tahun lalu. PCG berbasis rulebook deterministik menangani area numerik seperti ruang dungeon, opsi senjata, dan distribusi spawn, tetapi belum menyentuh teks bahasa alami, persona karakter, percabangan naratif, dan dialog NPC. Sebagian besar perancangan, boleh dibilang, tetap tertahan di atas kertas. Kemajuan LLM dan model gambar pada 2024\~2026 membawa area itu ke posisi yang bisa diimplementasikan. Makna inti dari kemajuan AI bukanlah skor model, melainkan terbukanya kelayakan realisasi atas perancangan yang lama tertahan di kertas. Hanya saja, terbukanya kemungkinan dengan menetap menjadi sistem yang dapat dioperasikan adalah dua persoalan berbeda.
+Di sini saya tegaskan dulu satu hal. Procedural generation, simulasi dunia, dan quest dinamis adalah visi yang sudah digambar para Game Designer di atas kertas sejak 20\~30 tahun lalu. PCG berbasis rulebook deterministik menangani area numerik seperti ruang dungeon, opsi senjata, dan distribusi spawn, tetapi belum menyentuh teks bahasa alami, persona karakter, percabangan naratif, dan dialog NPC. Sebagian besar perancangan, boleh dibilang, tetap tertahan di atas kertas. Kemajuan LLM dan model gambar pada 2024\~2026 membawa area itu ke posisi yang bisa diimplementasikan. Makna inti dari kemajuan AI bukanlah skor model, melainkan terbukanya kelayakan realisasi atas perancangan yang lama tertahan di kertas. Hanya saja, terbukanya kemungkinan dan menetapnya menjadi sistem yang dapat dioperasikan adalah dua persoalan yang berbeda.
 
 ### Penguraian Layer Adalah Prasyarat Procedural Generation
 
