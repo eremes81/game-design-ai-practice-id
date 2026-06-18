@@ -266,7 +266,7 @@ Cobalah membakukan satu aturan yang sering Anda langgar menjadi atom, lalu membu
 
 1. **setup** — Buat folder `atoms/rules/`, lalu tulis satu aturan yang paling sering Anda jelaskan berulang ke dalam sebuah file. Contoh: `atoms/rules/xlsm_svn_update_before_edit.md`.
 2. **prompt** — Tulis tiga baris "kapan·apa·mengapa" di isi atom tersebut. ("Wajib SVN update sebelum mengubah xlsm — kalau tidak, baris orang lain akan tertimpa.")
-3. **verify** — Tambahkan `{"name":..., "regex":"xlsm|쿨타임", "score":100, "path":...}` ke manifes JIT, lalu ketik prompt yang mengandung token "쿨타임" atau "xlsm" (mis. "쿨타임 수정" / ubah cooldown) agar cocok dengan regex, dan pastikan atom bersangkutan tercatat sebagai hit di `_injection_log.txt`.
+3. **verify** — Tambahkan `{"name":..., "regex":"xlsm|쿨타임", "score":100, "path":...}` ke manifes JIT, lalu ketik prompt yang mengandung token "쿨타임" atau "xlsm" (mis. "쿨타임 수정", artinya "ubah cooldown") agar cocok dengan regex, dan pastikan atom bersangkutan tercatat sebagai hit di `_injection_log.txt`.
 
 Kalau tercatat, aturan itu sekarang tidak lagi ada di kepala Anda, melainkan di dalam sistem.
 

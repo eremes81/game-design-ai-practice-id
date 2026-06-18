@@ -209,7 +209,7 @@ Keputusan memiliki tingkatan, dan tingkatan itulah wewenang. Inilah matriks wewe
 | T3 satuan·kecil | senior | penanggung jawab | yang langsung terkait | pemeriksaan sampel |
 | T4 segera·hotfix | penanggung jawab | senior (pascakejadian) | Game Director (pascakejadian) | dikecualikan dari pemeriksaan |
 
-26 berkas `decisions/` sebagian besar adalah T1·T2 — keputusan-keputusan yang didelegasikan. Game Director tidak melihat sendiri semua T2. Sebagai gantinya, pemeriksaan visi (§19.1.3) menguji keputusan T1·T2 yang didelegasikan terhadap visi sekali setiap kuartal. **Jaring pengaman pendelegasian itu sekaligus adalah pemeriksaan visi.** T0 bukan objek pemeriksaan melainkan garis dasar pemeriksaan, dan hotfix T4 dikecualikan karena jumlahnya banyak dan hampir tidak berdampak pada visi.
+26 atom `decisions/` sebagian besar adalah T1·T2 — keputusan-keputusan yang didelegasikan. Game Director tidak melihat sendiri semua T2. Sebagai gantinya, pemeriksaan visi (§19.1.3) menguji keputusan T1·T2 yang didelegasikan terhadap visi sekali setiap kuartal. **Jaring pengaman pendelegasian itu sekaligus adalah pemeriksaan visi.** T0 bukan objek pemeriksaan melainkan garis dasar pemeriksaan, dan hotfix T4 dikecualikan karena jumlahnya banyak dan hampir tidak berdampak pada visi.
 
 Pendelegasian itu sendiri tidak langsung penuh sekaligus, melainkan bertahap dalam 4 langkah.
 

@@ -83,7 +83,7 @@ graph TB
 ```
 ````
 
-Sintaksisnya beres dan node-nya pun tepat tujuh. Ia tidak mengarang sistem baru. Aturan 1 dan 4 terpenuhi. Namun ada satu hal yang mengganjal. Label garis putus-putus masih memuat label hasil terjemahan dari teks Korea asli yang mengandung spasi (`langganan reward hook`, `baca derived stat`). Ini bukan pelanggaran aturan. Aturan 3 menyuruh "tempelkan nama relasi", jadi model setia mengikutinya. Hanya saja, dari pengalaman saya tahu bahwa pada Mermaid, bila label yang mengandung spasi dipakai pada teks aslinya yang berbahasa Korea, sebagian renderer versi lama akan rusak. Model tidak punya cara untuk mengetahui hal itu.
+Sintaksisnya beres dan node-nya pun tepat tujuh. Ia tidak mengarang sistem baru. Aturan 1 dan 4 terpenuhi. Namun ada satu hal yang mengganjal. Label garis putus-putus masih memuat label hasil terjemahan dari teks Korea asli yang mengandung spasi (`langganan reward hook`, `baca derived stat`). Ini bukan pelanggaran aturan. Aturan 3 menyuruh "tempelkan nama relasi", jadi model setia mengikutinya. Hanya saja, dari pengalaman saya tahu bahwa pada Mermaid, bila label yang mengandung spasi dipakai (label ini diterjemahkan dari teks Korea asli yang memuat spasi), sebagian renderer versi lama akan rusak. Model tidak punya cara untuk mengetahui hal itu.
 
 ### Tahap 3 — Verifikasi dan Penolakan oleh Manusia
 

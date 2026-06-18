@@ -90,7 +90,7 @@ Mari kita lihat bagaimana tahap ini menangkap insiden tautan putus tadi. Andai s
 
 ## 24.1.6 Worked Transcript — Menyuruh Claude Membuat Skrip Pemeriksa
 
-Kalau manusia menyusun seluruh logika verifikasi dari nol, ia akan kelelahan. Saya menulis aturan pemeriksaan dalam bahasa alami, lalu meminta draf skrip eksekusinya kepada AI. Berikut adalah sesi nyata saat saya membuat skrip deteksi stale. Keluarannya tidak saya poles; proses kegagalan dan penolakan saya biarkan apa adanya.
+Kalau manusia menyusun seluruh logika verifikasi dari nol, ia akan kelelahan. Saya menulis aturan pemeriksaan dalam bahasa alami, lalu meminta draf skrip eksekusinya kepada AI. Berikut adalah rekaman sesi nyata saat saya membuat skrip deteksi stale. Keluarannya tidak saya poles; proses kegagalan dan penolakan saya biarkan apa adanya.
 
 **[Prompt lengkap]**
 
@@ -224,7 +224,7 @@ Daripada mempercayai angka secara harfiah, saya menyarankan untuk hanya memercay
 
 **setup.** Kelola folder dokumen dengan git (sebagai acuan perbandingan waktu commit). Seragamkan wikilink dengan notasi `[[대상]]` atau `[[대상|별칭]]`.
 
-**prompt.** Berikan prompt lengkap dari transkrip di atas kepada AI apa adanya, tetapi jangan pernah memakai keluaran pertamanya langsung. Wajib verifikasi (1) penanganan berkas yang belum di-commit, (2) penelusuran subfolder, dan (3) parsing alias pipa — ketiga hal ini — lalu tolak dan minta ulang. Ini adalah titik yang hampir selalu dilewatkan AI pada putaran pertama.
+**prompt.** Berikan prompt lengkap dari worked transcript di atas kepada AI apa adanya, tetapi jangan pernah memakai keluaran pertamanya langsung. Wajib verifikasi (1) penanganan berkas yang belum di-commit, (2) penelusuran subfolder, dan (3) parsing alias pipa — ketiga hal ini — lalu tolak dan minta ulang. Ini adalah titik yang hampir selalu dilewatkan AI pada putaran pertama.
 
 **verify.** Jalankan skrip dan terima TSV-nya. Periksa dengan tangan 5 sampel apakah baris `BROKEN` itu benar-benar tautan putus. Jika muncul BROKEN palsu, berarti parsing alias/subfolder masih kurang. Begitu normalnya terkonfirmasi, ikat ke hook pre-commit, lalu cabangkan kode keluar: WARN (STALE/BROKEN) diloloskan dan BLOCK (P0 integritas data) dihalangi.
 

@@ -211,7 +211,7 @@ grep -rln "\[\[D2026_Q2_017\]\]" decisions/ manuscript/ gdd/
 grep -A20 "affected_files:" decisions/D2026_Q2_017.md
 
 # Pelacakan akhir: hanya baris yang menyimpang dari maksud (kolom putusan)
-grep -E "이탈|판정 불가" tracking/D2026_Q2_017_post.md
+grep -E "menyimpang|tidak dapat diputuskan" tracking/D2026_Q2_017_post.md
 ```
 
 Dengan tiga baris ini, kerangka pelacakan awal dan akhir sudah berjalan. LLM adalah tempat untuk **membaca dan menafsirkan** hasil ini, bukan menggantikan pencarian itu sendiri. grep memberi fakta (berkas mana yang menunjuk keputusan ini), LLM merangkai fakta-fakta itu menjadi tabel kandidat dampak, dan manusia bertanggung jawab atas besar dampak serta putusannya. Pemisahan inilah alasan mengapa "jangan mengarang +12%" pada §18.3.2 itu berhasil.
@@ -278,7 +278,7 @@ Baris yang menyimpang, jadikan draf atom keputusan lanjutan dan pasang referensi
 **verify** — Pastikan graf sudah tertutup dengan grep.
 ```bash
 grep -rln "\[\[<ID>\]\]" decisions/   # jika referensi balik keputusan lanjutan tertangkap, loop tertutup
-grep -E "이탈|미측정" tracking/<ID>_post.md   # cek lubang yang tersisa
+grep -E "menyimpang|belum terukur" tracking/<ID>_post.md   # cek lubang yang tersisa
 ```
 
 ## Versi Ringkas Solo

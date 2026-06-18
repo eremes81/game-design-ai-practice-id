@@ -376,7 +376,7 @@ Ketika pola bertambah, disiplin operasional dibutuhkan. Lima prinsip di bawah in
 | Ukur frekuensi penggunaan | Perintah yang dipakai kurang dari 1 kali per bulan adalah kandidat penghapusan. Pangkas dengan data |
 | Tangan manusia hanya untuk keputusan | Perintah hanya sampai pembuatan kandidat. Keputusan otomatis dilarang |
 
-Terakhir satu titik konvergensi. Pada suatu proyek MMORPG yang penulis operasikan, slash command yang stabil bertahan di desain sistem seiring waktu mengerucut ke kisaran 12 buah. Ini bukan standar publik, melainkan nilai pengamatan satu proyek (pengalaman penulis, belum terverifikasi). Namun arahnya jelas. Perintah bukan untuk ditambah tanpa batas, melainkan berhenti pada jumlah yang muat di kepala dengan menambah·mengurangi 1\~2 per bulan. Laci dengan 100 label sama saja dengan laci tanpa label.
+Terakhir satu titik konvergensi. Pada suatu proyek MMORPG yang penulis operasikan, slash command yang stabil bertahan di desain sistem seiring waktu mengerucut ke kisaran 12 buah. Ini bukan standar publik, melainkan nilai pengamatan satu proyek (pengalaman penulis, belum terverifikasi). Namun arahnya jelas. Perintah bukan untuk ditambah tanpa batas, melainkan berhenti pada jumlah yang muat di kepala dengan menambah dan mengurangi 1\~2 per bulan. Laci dengan 100 label sama saja dengan laci tanpa label.
 
 Adopsi tidak dilakukan sekaligus. Pada bulan pertama, cukup membakukan satu pekerjaan yang Anda ulang setiap minggu menjadi slash command. Jika satu itu menunjukkan nilainya, pada bulan berikutnya ia menyebar sendiri menjadi dua, tiga.
 
@@ -407,9 +407,9 @@ Part 4 berikutnya adalah desain tempur. Sebagai saudara terdekat dari desain sis
 
 ## Poin-Poin Penting
 
-- Siklus membakukan prompt dadakan menjadi slash command·atom·template adalah titik pemulihan nilai terbesar dari bantuan AI.
-- Semua pola mengikuti kerangka yang sama: panggilan satu baris → keluaran mentah → verifikasi·veto manusia → aliran balik aturan.
-- AI mendorong kandidat, dan tangan terakhir untuk terima·benahi·tolak tetap berada di sisi manusia sampai akhir.
+- Siklus membakukan prompt dadakan menjadi slash command, atom, dan template adalah titik pemulihan nilai terbesar dari bantuan AI.
+- Semua pola mengikuti kerangka yang sama: panggilan satu baris → keluaran mentah → verifikasi dan veto manusia → aliran balik aturan.
+- AI mendorong kandidat, dan tangan terakhir untuk terima, benahi, dan tolak tetap berada di sisi manusia sampai akhir.
 
 ---
 
@@ -423,7 +423,7 @@ Part 4 berikutnya adalah desain tempur. Sebagai saudara terdekat dari desain sis
 /check-sheet skill_table
 ```
 
-**verify.** Putuskan tabel yang kembali baris demi baris sebagai terima·benahi·tolak. Jika muncul penolakan, itu bukan kebetulan melainkan cacat aturan. Kirim ulang satu baris yang menambahkan pengecualian itu ke definisi perintah, agar panggilan berikutnya tidak menyaring kesalahan yang sama dua kali.
+**verify.** Putuskan tabel yang kembali baris demi baris sebagai terima, benahi, atau tolak. Jika muncul penolakan, itu bukan kebetulan melainkan cacat aturan. Kirim ulang satu baris yang menambahkan pengecualian itu ke definisi perintah, agar panggilan berikutnya tidak menyaring kesalahan yang sama dua kali.
 
 ### Versi Ringkas Solo
 

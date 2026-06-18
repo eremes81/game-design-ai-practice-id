@@ -177,7 +177,7 @@ Repository ini adalah **edisi Bahasa Indonesia (sumber markdown)** dari buku yan
 ### Bagian 20 · Kolaborasi Tim
 
 - [20.1 Seorang DD Solo Menjalankan Memori Kolaborasi untuk Lima Orang — Sistem team_memory](manuscript/part20-team-collab/chapter-1-team-memory-operations.md)
-- [20.2 Memori per Anggota Tim — Memisahkan Kolom Pengguna dan Kolom Bersama](manuscript/part20-team-collab/chapter-2-team-member-memory.md)
+- [20.2 Memori per Anggota Tim — Memisahkan Kompartemen Pengguna dan Kompartemen Bersama](manuscript/part20-team-collab/chapter-2-team-member-memory.md)
 - [20.3 Portal Desain — Pintu Masuk Tim Lewat Browser](manuscript/part20-team-collab/chapter-3-portal-web.md)
 - [20.4 Manajemen Proyek dengan MCP — Menghubungkan Alat Kolaborasi dan Dokumen ke LLM](manuscript/part20-team-collab/chapter-4-mcp-project-management.md)
 
