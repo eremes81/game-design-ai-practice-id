@@ -430,13 +430,13 @@ hr{border:none;border-top:1px solid #ddd;margin:2em 0;}
 </table>
 <p>Dengan kata lain, pada keluaran yang direkonstruksi, <strong>saya tidak menambahkan angka yang menggelembungkan dampak ataupun keberhasilan yang tidak pernah ada.</strong> Saya hanya menyamarkan, mengutip, dan merapikannya agar sesuai dengan halaman. Tidak ada satu tempat pun yang keluaran gagalnya saya ubah menjadi keberhasilan — justru saya sengaja membiarkan kegagalannya. Sebab itulah tempat yang memperlihatkan apa yang ditolak manusia. (Sebaliknya, tempat yang saya tandai sebagai 'hasil ukur nyata' · 'dikutip apa adanya' untuk hasil eksekusi kode atau log sistem adalah yang dipindahkan tanpa penyuntingan.)</p>
 <p><em>Catatan penerjemah: Edisi Bahasa Indonesia ini diterjemahkan dengan AI sebagai draf awal, lalu ditinjau dan disunting oleh manusia. Seluruh worked transcript dalam edisi ini adalah terjemahan dari sesi asli berbahasa Korea — bukan dijalankan ulang dalam Bahasa Indonesia. Prompt dan keluaran di dalam blok kode juga diterjemahkan agar mudah dibaca. Teks asli Korea — materi yang dijanjikan buku ini untuk tidak diubah — tetap dipertahankan apa adanya di edisi Korea (pada repository sumber di GitHub). Sintaksis kode, pengidentifikasi, angka, dan nilai verifikasi tidak diubah sama sekali. Konversi mata uang bersifat perkiraan, dengan kurs sekitar 1.500 won per dolar AS pada pertengahan 2026.</em></p>
-<hr /><hr><div class="toc"><h2>Daftar Isi</h2><ul><li><a href="#part01_foundation">Bagian 1 · Foundation</a> (4)</li>
-<li><a href="#part02_info_architecture">Bagian 2 · Info Architecture</a> (4)</li>
+<hr /><hr><div class="toc"><h2>Daftar Isi</h2><ul><li><a href="#part01_foundation">Bagian 1 · Pengenalan</a> (4)</li>
+<li><a href="#part02_info_architecture">Bagian 2 · Arsitektur Informasi</a> (4)</li>
 <li><a href="#part03_system_design">Bagian 3 · System Design</a> (4)</li>
 <li><a href="#part04_combat_design">Bagian 4 · Combat Design</a> (4)</li>
 <li><a href="#part05_narrative_design">Bagian 5 · Narrative Design</a> (4)</li>
 <li><a href="#part06_content_design">Bagian 6 · Content Design</a> (4)</li>
-<li><a href="#part07_level_design">Bagian 7 · Level Design</a> (3)</li>
+<li><a href="#part07_level_design">Bagian 7 · Desain Level</a> (3)</li>
 <li><a href="#part08_balance_design">Bagian 8 · Balance Design</a> (5)</li>
 <li><a href="#part09_ux_ui_design">Bagian 9 · Ux Ui Design</a> (3)</li>
 <li><a href="#part10_qa_design">Bagian 10 · Qa Design</a> (3)</li>
@@ -446,16 +446,16 @@ hr{border:none;border-top:1px solid #ddd;margin:2em 0;}
 <li><a href="#part14_mobile_platform">Bagian 14 · Mobile Platform</a> (3)</li>
 <li><a href="#part15_live_ops">Bagian 15 · Live Ops</a> (3)</li>
 <li><a href="#part16_communicator">Bagian 16 · Communicator</a> (3)</li>
-<li><a href="#part17_meeting_notes">Bagian 17 · Meeting Notes</a> (4)</li>
-<li><a href="#part18_decision_impact">Bagian 18 · Decision Impact</a> (4)</li>
+<li><a href="#part17_meeting_notes">Bagian 17 · Notula Rapat</a> (4)</li>
+<li><a href="#part18_decision_impact">Bagian 18 · Pengambilan Keputusan</a> (4)</li>
 <li><a href="#part19_team_lead">Bagian 19 · Team Lead</a> (3)</li>
 <li><a href="#part20_team_collab">Bagian 20 · Team Collab</a> (4)</li>
-<li><a href="#part21_self_improving">Bagian 21 · Self Improving</a> (3)</li>
-<li><a href="#part22_governance">Bagian 22 · Governance</a> (4)</li>
+<li><a href="#part21_self_improving">Bagian 21 · Perbaikan Diri</a> (3)</li>
+<li><a href="#part22_governance">Bagian 22 · Tata Kelola</a> (4)</li>
 <li><a href="#part23_extension">Bagian 23 · Extension</a> (4)</li>
 <li><a href="#part24_ops_deep">Bagian 24 · Ops Deep</a> (4)</li>
 <li><a href="#part99_appendix">Lampiran</a> (15)</li></ul></div>
-<h1 class="part" id="part01_foundation">Bagian 1 · Foundation</h1>
+<h1 class="part" id="part01_foundation">Bagian 1 · Pengenalan</h1>
 
 <h1>1.0 Sebelum Memulai — Instalasi, Akun, Biaya, dan Kit Bertahan Terminal</h1>
 <p>Bab 1.1 adalah "pertemuan pertama". Itulah momen ketika Anda duduk di depan kursor yang berkedip dan mencoba mengetikkan sesuatu. Namun untuk bisa duduk di kursi itu, ada beberapa hal yang harus disiapkan lebih dulu. Alatnya sudah terpasang, Anda sudah masuk (login), Anda sudah punya gambaran kasar tentang bagaimana biaya dikenakan, dan Anda bisa mengetikkan beberapa karakter di layar hitam. Bab ini berada satu langkah sebelum 1.1.</p>
@@ -1466,7 +1466,7 @@ settings.local.json.bak_2026-05
 <p><strong>Versi Ringkas Solo</strong>
 - Mulailah tanpa hook maupun manifest. Tulis saja 3 baris identitas + 3 baris aturan kolaborasi di satu berkas global <code>MEMORY.md</code>, dan setel hanya <code>Read(*)</code> dan <code>Grep(*)</code> sebagai izin otomatis. Saat atom sudah terbiasa di tangan dan mendekati 50, baru saat itu pasangkan hook dari 1.3.2. Infrastruktur dimulai kecil lalu dibesarkan mengikuti jejak, bukan dilengkapi 304 sejak awal.</p>
 
-<h1 class="part" id="part02_info_architecture">Bagian 2 · Info Architecture</h1>
+<h1 class="part" id="part02_info_architecture">Bagian 2 · Arsitektur Informasi</h1>
 
 <h1>2.1 YAML Frontmatter — Setiap Dokumen sebagai Data</h1>
 <p>Malam menjelang build milestone, rekan tim System Designer, anggota A, bertanya lewat messenger. "Ada berapa dokumen yang menyentuh kurva reward minggu ini? Sampai mana yang sudah selesai ditinjau?" Saya tidak tahu jawabannya. Dokumen-dokumen itu ada di suatu tempat dalam folder, dan soal siapa yang terakhir menyentuhnya atau milestone mana — semuanya tercecer di ingatan masing-masing orang dan di kesepakatan penamaan file. Yang kami lakukan malam itu adalah membuat satu kesepakatan: menulis enam baris di awal setiap dokumen. Enam baris itulah yang, mulai milestone berikutnya, membuat pertanyaan anggota A bisa dijawab tanpa seorang pun perlu membuka folder.</p>
@@ -7711,7 +7711,7 @@ ALERT-3 (duplikasi nama) — info
 <li>Tinjauan hulu 5 menit menghapus tinjauan hilir 2 jam; cegahlah dari atas</li>
 </ul>
 
-<h1 class="part" id="part07_level_design">Bagian 7 · Level Design</h1>
+<h1 class="part" id="part07_level_design">Bagian 7 · Desain Level</h1>
 
 <h1>7.1 Menguasai Desain Level Prosedural</h1>
 <p>Pintu keluar ruang nomor 47 di sebuah dungeon tertutup rapat. Build lolos, QA juga lolos. Tangkapan layar seorang pengguna yang berdiri menatap dinding tepat sebelum ruang bos muncul di komunitas pada hari ketiga setelah game live. Ruang itu dibuat dengan menyalin sebuah ruang yang dirancang manual dua patch sebelumnya, dan dalam proses penyalinan itu satu koridor timur hanya menyisakan visualnya tanpa informasi koneksi apa pun. Tidak ada seorang pun yang memverifikasinya. Tidak ada alat untuk memverifikasinya.</p>
@@ -17103,7 +17103,7 @@ kemasan seni dibuat swasembada hanya dengan satu lembar itu tanpa referensi doku
 <li>LLM sampai pada draf kemasan dan penandaan celah, sedangkan penilaian tolak, perkuat, dan pertahankan adalah bagian manusia</li>
 </ul>
 
-<h1 class="part" id="part17_meeting_notes">Bagian 17 · Meeting Notes</h1>
+<h1 class="part" id="part17_meeting_notes">Bagian 17 · Notula Rapat</h1>
 
 <h1>17.1 Mengapa Notula Rapat Adalah Titik Nyeri Terbesar</h1>
 <p>Rapat baru saja selesai lima menit lalu. Di papan tulis ruang rapat masih tersisa coretan. "Deteksi hit pada combat, kita pakai pendekatan client-side dulu. Tapi prioritas verifikasi server kita undur ke sprint berikutnya." Inilah kesimpulan yang dicapai lima orang setelah menghabiskan 30 menit. Semua mengangguk, dan seseorang memotretnya.</p>
@@ -18189,7 +18189,7 @@ D1:
 <p><strong>Versi Ringkas Solo</strong>
 Jika Anda bekerja sendirian atau tidak punya waktu memasang perkakas, tanpa skrip pun tuliskan saja dengan tangan empat baris blok keputusan (<code>keputusan / penanggung jawab / dasar / tindakan berikutnya</code>) di akhir notula rapat. Bahkan jika owner-nya adalah diri Anda sendiri, tetap tuliskan namanya. Kepada AI cukup minta, "Kutipkan dasar keputusan ini dari memo rapat, kalau tidak ada bilang tidak ada". Tanpa pipeline pun, hanya dengan dua hal — <strong>posisi tempat keputusan dinyatakan dan prompt yang mewajibkan pengutipan dasar</strong> — notula rapat mulai menjadi basis data keputusan.</p>
 
-<h1 class="part" id="part18_decision_impact">Bagian 18 · Decision Impact</h1>
+<h1 class="part" id="part18_decision_impact">Bagian 18 · Pengambilan Keputusan</h1>
 
 <h1>18.1 Sistem Pelacakan Keputusan</h1>
 <p>Saat itu di tengah rapat kuartalan. Desainer combat mengusulkan, "Mari kita seragamkan global cooldown menjadi 0.5 detik," dan semua orang mengangguk setuju. Namun seorang senior di sebelah mengangkat tangan. "Bukankah ini bertabrakan dengan keputusan kuartal keempat tahun lalu yang menetapkan 0.3 detik? Waktu itu kenapa kita pilih 0.3 detik?" Ruang rapat sejenak hening. Tidak ada yang ingat alasan keputusan itu. Kami mengaduk-aduk notula rapat, tetapi hanya ada satu baris: "Dibahas di TF Combat." Akhirnya kami menghabiskan 30 menit untuk merekonstruksi keputusan tahun lalu, dan toh "kenapa 0.3" tetap tidak pernah ketemu.</p>
@@ -21680,7 +21680,7 @@ Sertakan penanggung jawab dan sisa hari menuju tenggat, dan naikkan yang sudah l
 <h3>Versi Ringkas Solo</h3>
 <p>Jika Anda developer solo tanpa tim maupun alat kolaborasi, sasaran pertama MCP adalah <strong>GitHub dan dokumen lokal</strong>. Pasang MCP GitHub secara read-only dan mulai dari query seperti "isu yang belum ditutup minggu ini, urut dari yang paling lama", lalu alih-alih decision card, tanyakan markdown pada folder <code>decisions/</code> lokal lewat MCP dokumen. Laporan otomatis (Pola 1) berlaku begitu saja — cukup ganti tujuan pengirimannya dari messenger tim menjadi file catatan Anda sendiri. Jebakan izin dan biaya tetap berlaku sama meski Anda sendirian, jadi sebaiknya patuhi memulai dengan read-only dan cap panggilan sejak awal.</p>
 
-<h1 class="part" id="part21_self_improving">Bagian 21 · Self Improving</h1>
+<h1 class="part" id="part21_self_improving">Bagian 21 · Perbaikan Diri</h1>
 
 <h1>Bagian 21 · Bab 1. Retrospektif, Titik Awal dari Segalanya</h1>
 <p>Jumat pukul 18.40. Saat hendak menutup laptop untuk pulang kerja, pekerjaan yang saya lakukan hari itu terasa familier entah dari mana. Saya menemukan dan memperbaiki referensi enum yang rusak di sheet data, tetapi minggu lalu pun saya jelas memperbaiki hal yang persis sama. Minggu sebelumnya juga. Setiap kali saya mengetik ulang prompt yang sama, dan setiap kali saya memeriksa item yang sama pada keluaran Claude. Saya baru menyadari bahwa ini sudah ketiga kalinya tepat sebelum menutup laptop.</p>
@@ -22297,7 +22297,7 @@ Cantumkan dasar tiap angka perkiraan dalam satu baris, dan jika bukan pengukuran
 <h3>Versi Ringkas Solo</h3>
 <p>Tak perlu punya tim. Kalau sendirian, ringkas seperti ini. Di penghujung hari, satu baris catatan — "apa yang hari ini saya kerjakan dua kali dengan tangan." Satu hal itu Anda ubah keesokan harinya menjadi satu baris otomatisasi (atom·alias·snippet). Seminggu kemudian, cukup lihat apakah satu baris itu benar-benar terpakai. Kalau terpakai biarkan, kalau tidak hapus. Satu baris ujaran → satu baris otomatisasi → satu baris pengukuran. Unit terkecil dari loop adalah ketiga baris ini.</p>
 
-<h1 class="part" id="part22_governance">Bagian 22 · Governance</h1>
+<h1 class="part" id="part22_governance">Bagian 22 · Tata Kelola</h1>
 
 <h1>22.1 Rekayasa Prompt — Satu Halaman Surat Perintah Kerja bagi Game Designer</h1>
 <blockquote><p>Pembaca utama: Game Designer yang menarik LLM ke dalam pekerjaan nyata (tim skala menengah, 10\~50 orang)
