@@ -5,6 +5,7 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
 [![Korean Original](https://img.shields.io/badge/Asli-%ED%95%9C%EA%B5%AD%EC%96%B4%20(Korea)-blue.svg)](https://github.com/eremes81/game-design-ai-practice)
 [![Print Edition (KR)](https://img.shields.io/badge/BOOKK-Edisi%20Cetak%20(Korea)-orange.svg)](https://bookk.co.kr/bookStore/6a298be0ff49b1a6034c7703)
+[![E-book (KR EPUB)](https://img.shields.io/badge/uPaper-EPUB%20(Korea)-6f42c1.svg)](https://eremes.upaper.kr/content/1217657)
 
 **🌐 Edisi:** [한국어 — Asli](https://github.com/eremes81/game-design-ai-practice) · [English](https://github.com/eremes81/game-design-ai-practice-en) · [日本語](https://github.com/eremes81/game-design-ai-practice-ja) · **Bahasa Indonesia** · [简体中文](https://github.com/eremes81/game-design-ai-practice-zh-hans) · [繁體中文](https://github.com/eremes81/game-design-ai-practice-zh-hant)
 
