@@ -10,6 +10,11 @@
 
 **🌐 Edisi:** [한국어 — Asli](https://github.com/eremes81/game-design-ai-practice) · [English](https://github.com/eremes81/game-design-ai-practice-en) · [日本語](https://github.com/eremes81/game-design-ai-practice-ja) · **Bahasa Indonesia** · [简体中文](https://github.com/eremes81/game-design-ai-practice-zh-hans) · [繁體中文](https://github.com/eremes81/game-design-ai-practice-zh-hant)
 
+> 🧰 **Alat pendamping — [Harness Starter Kit](https://github.com/eremes81/harness-starter-kit)**
+> Versi minimal yang bisa langsung dijalankan dari struktur memori, hook, dan retrospektif yang dibangun buku ini di 1.3, Bagian 21, dan Bagian 24. Unduh foldernya, buka di agen, langsung jalan.
+> Dibuat sebagai lampiran buku penulis yang lain, tetapi kerangkanya sama. Lisensi MIT.
+
+
 <img src="assets/cover.png" alt="Sampul" width="320">
 
 Panduan lapangan praktis dari seorang design director dengan 24 tahun di industri game tentang membawa AI generatif (Claude Code) ke dalam **pekerjaan produksi sehari-hari**. Bukan teori atau ramalan — buku ini menelusuri satu tugas demi satu tugas, dari layar paling awal (instalasi, akun, harga) melalui desain sistem, pertarungan, naratif, level design, balance, UX, dan Live Ops, hingga mengubah notula rapat menjadi keputusan, gerbang validasi, manajemen biaya, dan hak cipta.
