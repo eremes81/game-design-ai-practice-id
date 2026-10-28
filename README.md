@@ -9,6 +9,8 @@
 
 **🌐 Edisi:** [한국어 — Asli](https://github.com/eremes81/game-design-ai-practice) · [English](https://github.com/eremes81/game-design-ai-practice-en) · [日本語](https://github.com/eremes81/game-design-ai-practice-ja) · **Bahasa Indonesia** · [简体中文](https://github.com/eremes81/game-design-ai-practice-zh-hans) · [繁體中文](https://github.com/eremes81/game-design-ai-practice-zh-hant)
 
+📢 The author's second book, 『직장인을 위한 AI 업무 설계의 기술』 (Hanbit Media, Korean) — the author interview is out (in Korean) → https://www.youtube.com/watch?v=v8ygfpAAVQM
+
 > 🧰 **Alat pendamping — [Harness Starter Kit](https://github.com/eremes81/harness-starter-kit)**
 > Versi minimal yang bisa langsung dijalankan dari struktur memori, hook, dan retrospektif yang dibangun buku ini di 1.3, Bagian 21, dan Bagian 24. Unduh foldernya, buka di agen, langsung jalan.
 > Dibuat sebagai lampiran buku penulis yang lain, tetapi kerangkanya sama. Lisensi MIT.
