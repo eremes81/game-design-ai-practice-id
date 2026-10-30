@@ -7,6 +7,8 @@
 [![Amazon Kindle (EN)](https://img.shields.io/badge/Amazon%20Kindle-%249.99-FF9900.svg)](https://www.amazon.com/dp/B0H421TWBM)
 [![WikiDocs (KR)](https://img.shields.io/badge/WikiDocs-Baca%20Gratis%20(Korea)-1f8b4c.svg)](https://wikidocs.net/book/20216)
 
+**📖 Baca di web:** [https://eremes81.github.io/game-design-ai-practice-id/](https://eremes81.github.io/game-design-ai-practice-id/)
+
 **🌐 Edisi:** [한국어 — Asli](https://github.com/eremes81/game-design-ai-practice) · [English](https://github.com/eremes81/game-design-ai-practice-en) · [日本語](https://github.com/eremes81/game-design-ai-practice-ja) · **Bahasa Indonesia** · [简体中文](https://github.com/eremes81/game-design-ai-practice-zh-hans) · [繁體中文](https://github.com/eremes81/game-design-ai-practice-zh-hant)
 
 📢 The author's second book, 『직장인을 위한 AI 업무 설계의 기술』 (Hanbit Media, Korean) — the author interview is out (in Korean) → https://www.youtube.com/watch?v=v8ygfpAAVQM
