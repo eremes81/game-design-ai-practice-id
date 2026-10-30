@@ -1,6 +1,6 @@
 ---
 title: "Lampiran M. Vektor Dimensi dan Embedding — Intuisi untuk Game Designer"
-author: 이민수
+author: 이민수, 조지희
 status: v3
 ip_check: done
 ---

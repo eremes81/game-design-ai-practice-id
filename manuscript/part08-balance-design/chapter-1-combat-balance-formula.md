@@ -4,7 +4,7 @@ part: 8
 chapter: 1
 status: v3
 version: v3
-author: Minsoo Lee
+author: Minsoo Lee, Jihee Jo
 ip_check: done
 ---
 

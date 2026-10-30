@@ -3,7 +3,7 @@ title: "Sampul · Kata Pengantar · Cara Membaca"
 part: 0
 status: v3
 written: 2026-06-06
-author: 이민수
+author: 이민수, 조지희
 version: v3
 ---
 
@@ -13,7 +13,7 @@ version: v3
 
 304 aturan, 48 alat, dan sistem otomasi yang benar-benar dioperasikan seorang direktur dengan pengalaman 24 tahun di sebuah tim berukuran menengah (10–50 orang) — apa adanya
 
-Ditulis oleh Minsoo Lee · 2026
+Ditulis oleh Minsoo Lee dan Jihee Jo · Ditinjau oleh Jihee Jo · 2026
 
 > Seluruh isi buku ini mengacu pada **paruh pertama 2026**. Harga, model, dan fitur alat AI berubah dengan cepat, jadi mohon periksa angka spesifik dan cara pemasangan pada masing-masing halaman resmi untuk informasi terbaru.
 
@@ -21,10 +21,11 @@ Ditulis oleh Minsoo Lee · 2026
 
 ## Distribusi dan Hak Cipta Buku Ini
 
-Buku ini dipublikasikan secara gratis dengan harapan dapat dibaca seluas-luasnya. Namun, baik versi asli berbahasa Korea maupun terjemahan Bahasa Inggris dan Jepang, satu hal harus tetap dipertahankan di mana pun: bahwa penulis asli buku ini adalah **Minsoo Lee (이민수)**.
+Buku ini dipublikasikan secara gratis dengan harapan dapat dibaca seluas-luasnya. Namun, baik versi asli berbahasa Korea maupun terjemahan Bahasa Inggris dan Jepang, satu hal harus tetap dipertahankan di mana pun: bahwa penulis asli buku ini adalah **Minsoo Lee (이민수) dan Jihee Jo (조지희)**.
 
 - **Lisensi**: Creative Commons **Atribusi-NonKomersial-BerbagiSerupa 4.0** (CC BY-NC-SA 4.0)
-- **Penulis asli**: Minsoo Lee (이민수), 2026
+- **Penulis asli**: Minsoo Lee (이민수) dan Jihee Jo (조지희), 2026
+- **Peninjau**: Jihee Jo (조지희)
 - **Edisi resmi (canonical)**: `https://eremes81.github.io/game-design-ai-practice` (GitHub Pages penulis — edisi resmi yang hak penyuntingannya berada pada penulis)
 
 **Anda bebas melakukan hal berikut.** Pembelajaran pribadi, berbagi dan mengutip untuk tujuan nonkomersial, penerjemahan nonkomersial, serta pemanfaatan untuk studi internal di kantor — selama Anda mencantumkan penulis asli beserta tautan edisi resmi, dan jika Anda mengubah isinya atau mengalihbahasakannya ke bahasa lain, sebutkanlah hal itu. Mohon bagikan pula karya turunan dengan ketentuan yang sama.

@@ -3,7 +3,7 @@ title: "16.1 Mengoperasikan TF Tempur — Hanya Keputusan yang Menjadi Versi Res
 part: 16
 chapter: 1
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 16.1 Mengoperasikan TF Tempur — Hanya Keputusan yang Menjadi Versi Resmi di Ruang Kerja Terisolasi

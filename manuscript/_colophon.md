@@ -9,12 +9,13 @@ Ini adalah **edisi Bahasa Indonesia** dari naskah asli berbahasa Korea, diterjem
 | | |
 |---|---|
 | Judul asli | 게임 기획 실무에서 바로 쓰는 AI·클로드 코드 활용법 |
-| Penulis | Minsoo Lee (이민수) |
+| Penulis | Minsoo Lee (이민수) · Jihee Jo (조지희) |
+| Peninjau | Jihee Jo (조지희) |
 | Penerbit asli | BOOKK Co., Ltd. (edisi cetak Korea) |
 | Terbit pertama | 11 Juni 2026 |
 | **ISBN asli** | **979-11-12-21479-9** (edisi cetak Korea) |
 | Sumber Korea | https://github.com/eremes81/game-design-ai-practice |
 
-ⓒ Minsoo Lee 2026
+ⓒ Minsoo Lee · Jihee Jo 2026
 
-Buku ini dirilis di bawah lisensi **CC BY-NC-SA 4.0** — berbagi dan menerjemahkan untuk tujuan nonkomersial diizinkan dengan mencantumkan kredit penulis asli (Minsoo Lee · 이민수) dan sumbernya; penggunaan komersial memerlukan izin tersendiri dari penulis.
+Buku ini dirilis di bawah lisensi **CC BY-NC-SA 4.0** — berbagi dan menerjemahkan untuk tujuan nonkomersial diizinkan dengan mencantumkan kredit penulis asli (Minsoo Lee · 이민수, Jihee Jo · 조지희) dan sumbernya; penggunaan komersial memerlukan izin tersendiri dari penulis.

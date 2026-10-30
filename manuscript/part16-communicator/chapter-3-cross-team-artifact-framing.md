@@ -3,7 +3,7 @@ title: "16.3 Satu Keputusan, Tiga Kemasan — Framing Artefak per Disiplin"
 part: 16
 chapter: 3
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 16.3 Satu Keputusan, Tiga Kemasan — Framing Artefak per Disiplin

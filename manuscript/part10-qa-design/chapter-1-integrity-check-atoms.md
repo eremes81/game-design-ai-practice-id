@@ -2,7 +2,7 @@
 title: "10.1 Atom Verifikasi Konsistensi — Cascade yang Menjaga FK pada 30 Sheet"
 part: 10
 chapter: 1
-author: 이민수
+author: 이민수, 조지희
 status: v3
 version: v3
 ---

@@ -46,7 +46,8 @@ Sesuai prinsip "kejujuran lebih dulu" buku ini, inilah persisnya cara edisi ini 
 
 | | |
 |---|---|
-| Penulis | Minsoo Lee (이민수) |
+| Penulis | Minsoo Lee (이민수) · Jihee Jo (조지희) |
+| Peninjau | Jihee Jo (조지희) |
 | Penerbit | BOOKK · sampul lunak (Korea) |
 | ISBN | 979-11-12-21479-9 |
 | Terbit | 2026-06-11 |
@@ -241,9 +242,9 @@ Repository ini adalah **edisi Bahasa Indonesia (sumber markdown)** dari buku yan
 
 Karya ini dilisensikan di bawah **[CC BY-NC-SA 4.0](LICENSE)** (Atribusi-NonKomersial-BerbagiSerupa).
 
-- Berbagi, menerjemahkan, dan mengadaptasi untuk tujuan nonkomersial diizinkan dengan mencantumkan kredit penulis asli (Minsoo Lee · 이민수) dan sumbernya.
+- Berbagi, menerjemahkan, dan mengadaptasi untuk tujuan nonkomersial diizinkan dengan mencantumkan kredit penulis asli (Minsoo Lee · 이민수, Jihee Jo · 조지희) dan sumbernya.
 - Penggunaan komersial memerlukan izin tersendiri dari penulis.
 
 Beberapa referensi gambar raster contoh (mis. `char_skill_ui.png`) adalah placeholder tanpa berkas asli dan mungkin tampil sebagai gambar rusak — pada edisi cetak/PDF resmi, slot tersebut terisi.
 
-ⓒ Minsoo Lee 2026
+ⓒ Minsoo Lee · Jihee Jo 2026

@@ -3,7 +3,7 @@ title: "16.2 Kolaborasi Lintas Peran — Memilah Permintaan Eksternal ke dalam 3
 part: 16
 chapter: 2
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 16.2 Kolaborasi Lintas Peran — Memilah Permintaan Eksternal ke dalam 3 Jalur

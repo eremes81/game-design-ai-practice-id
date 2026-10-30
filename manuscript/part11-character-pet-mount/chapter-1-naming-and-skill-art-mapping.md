@@ -4,7 +4,7 @@ part: 11
 chapter: 1
 version: v3
 status: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 11.1 Konvensi Penamaan dan Pemetaan Skill-Aset Seni

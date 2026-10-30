@@ -4,7 +4,7 @@ part: 10
 chapter: 2
 status: v3
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 10.2 Sensor 3-Layer Validasi Keputusan — Tempat Bukti Tinjauan Manusia
